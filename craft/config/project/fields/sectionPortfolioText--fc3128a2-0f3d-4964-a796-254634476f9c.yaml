@@ -1,0 +1,19 @@
+columnSuffix: pgiqtivw
+contentColumnType: text
+fieldGroup: 580f024d-e333-4b61-b418-9d32309d1e9e # home
+handle: sectionPortfolioText
+instructions: null
+name: 'Sektion - Portfolio Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

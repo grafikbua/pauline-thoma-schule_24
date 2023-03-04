@@ -1,0 +1,29 @@
+{# site template #}
+{% extends "_layout/base" %}
+
+{# set the `bodyClass` variable to the entry's section handle if there is one,
+or the first URI segment (this is used by the parent template) #}
+{% if bodyClass is not defined %}
+   {% set bodyClass = entry is defined ? entry.section.handle : craft.app.request.segments|first %}
+{% endif %}
+
+{# set the `title` variable to the nav item that matches the first segment #}
+{% if nav[bodyClass] is defined %}
+   {% set title %}{% if title is defined %}{{ title }} - {% endif %}{{ nav[bodyClass].title }}{% endset %}
+{% endif %}
+
+{% block body %}
+
+<header id="js-header" class="shadow-sm py-42">
+   {% include '_layout/_header' %}
+</header>
+
+<main id="main" role="main">
+   {% block main %}{% endblock %}
+</main>
+
+<footer id="footer">
+   {% include '_layout/_footer' %}
+</footer>
+
+{% endblock %}

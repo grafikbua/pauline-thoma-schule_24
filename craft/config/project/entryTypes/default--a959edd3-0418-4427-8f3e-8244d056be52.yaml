@@ -1,0 +1,55 @@
+fieldLayouts:
+  f9c0722c-c76d-486f-a8df-0fd5dd432312:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 254b9998-72eb-4c90-a588-1c26a19baf3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f6b5071c-af6b-4660-8413-09076476a456 # Portfolio Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 352debbf-3088-4782-93fb-60c1eabd369e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: eb0ae1a7-c81a-412a-83d1-fce5222f0a91
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 56f4efc4-b036-453e-84a3-fb43a007878f # Portfolio
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

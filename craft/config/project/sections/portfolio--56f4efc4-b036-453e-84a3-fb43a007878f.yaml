@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: portfolio
+name: Portfolio
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_portfolio/_entry
+    uriFormat: 'portfolio/{slug}'
+structure:
+  maxLevels: null
+  uid: d578de66-5556-41a3-8c49-72314b825342
+type: structure

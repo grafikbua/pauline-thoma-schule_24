@@ -1,0 +1,19 @@
+columnSuffix: ymxhzyko
+contentColumnType: text
+fieldGroup: 7ae9cee7-1180-45e3-aaa8-0b08fff2a342 # _footer
+handle: footerContactHeadline
+instructions: null
+name: 'Kontakt Headline'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

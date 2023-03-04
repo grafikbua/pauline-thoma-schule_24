@@ -1,0 +1,28 @@
+/*! basic - fontface import in theme.scss */
+@import "_theme/theme";
+@import "_theme/helper";
+
+
+
+/*! bootstrap 5 - Update via npm */
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "_bootstrap/config";
+
+/*! project plugins
+@import "_plugins/_aos/aos";
+@import "_plugins/_glide/glide.core";
+@import "_plugins/_glide/glide.theme";*/
+@import "_plugins/_swiper/swiper-bundle.min";
+
+
+/*! components */
+@import "_components/_button";
+@import "_components/_hero";
+
+
+
+/*! pagebuilder */
+@import "_components/_pagebuilder";
+
+/*! custom grid and basic css */
+@import "_custom";

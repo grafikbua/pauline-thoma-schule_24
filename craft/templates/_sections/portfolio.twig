@@ -1,0 +1,32 @@
+{% set headline = content.headline ?? null %}
+{% set text = content.text ?? null %}
+
+ {% set portfolio = craft.entries.section('portfolio').all %}
+
+<section class="px-5">
+   <div class="container-fluid bg-dark rounded-5 px-5 text-white">
+      <div class="container py-7">
+         <div class="row pb-7">
+            <div class="col-6">
+               <h3 class="h1">{{ headline }}</h3>
+            </div>
+            <div class="col-6">
+               <p{{ text }}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+  <div class="container mt-n7 px-5">
+      <div class="row row-cols-3 mt-n7">
+         {% for item in portfolio %}
+         {% set image = item.portfolioImage.one() ?? null %}
+         <div class="col">
+            <div class="bg-black rounded-5 p-5 text-white" width="435px" height="435px" style="min-height: 435px;">
+               <h4>{{ item.title }}</h4>
+            </div>
+         </div>
+         {% endfor %}
+      
+      </div>
+   </div>
+</section>

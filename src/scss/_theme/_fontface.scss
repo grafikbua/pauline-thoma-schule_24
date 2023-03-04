@@ -1,0 +1,39 @@
+/* add your fonts here */
+
+
+/* mulish-regular */
+@font-face {
+	font-family: 'Mulish-Regular';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: local('Mulish-Regular'), local("mulish-regular"), local('mulishregular'),
+		 url('/assets/fonts/Mulish-Regular.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+/* mulish-black */
+@font-face {
+	font-family: 'Mulish-Black';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 900;
+	src: local('Mulish-Black'), local("mulish-black"), local('mulishblack'),
+		 url('/assets/fonts/Mulish-Black.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+/* natosans-medium */
+@font-face {
+	font-family: 'NotoSans-Medium';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: local('NotoSans-Medium'), local("notosans-medium"), local('notosansmedium'),
+		 url('/assets/fonts/NotoSans-Medium.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+/* natosans-bold */
+@font-face {
+	font-family: 'NotoSans-Bold';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local('NotoSans-Bold'), local("notosans-bold"), local('notosansbold'),
+		 url('/assets/fonts/NotoSans-Bold.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }

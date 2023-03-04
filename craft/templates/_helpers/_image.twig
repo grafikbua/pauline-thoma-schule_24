@@ -1,0 +1,77 @@
+   {% set image = image ?? false %}
+
+   {% if image %}
+      {% set alt = image.title ?? null %}
+      {% set class = class ?? '' %}
+      {% set ratio = ratio|default(image.height / image.width) %}
+      {% set lazyload = lazyload ?? true %}
+      {% set sizes = sizes ?? null %}
+      {% set mode = mode ?? "crop" %}
+      {% set widths = widths ?? [
+         375,
+         667,
+         768,
+         1024,
+         1280,
+         1440,
+         1920
+      ] %}
+
+      {#
+      Image Transforms
+      #}
+      {% set transforms = [] %}
+
+      {% for width in widths %}
+         {% set transforms = transforms|merge([{
+            width: width,
+            height: width * ratio,
+            format: 'jpg'
+         },{
+            width: width * 2,
+            height: width * ratio * 2,
+            format: 'jpg'
+         }]) %}
+      {% endfor %}
+
+      {% set transformWEBP = {
+         mode: mode,
+         quality: 90,
+         format: 'webp'
+      } %}
+
+      {% set transformJPEG = {
+         mode: mode,
+         quality: 90,
+         format: 'jpg'
+      } %}
+
+      {# sets the frame and adds a ratio for lazyloaded images #}
+      <picture
+         class="frame {{ lazyload ? 'js-lazyload' }} {{ class }}"
+         style="--ratio: {{ ratio }}"
+      >
+         {# Sets webP variant, if client supports the format #}
+         <source
+            {{ lazyload ? 'data-' }}srcset="{{ transforms|map(transform => "#{image.getUrl(transform|merge(transformWEBP))} #{image.getWidth(transform|merge(transformWEBP))}w")|join(',') }}"
+            type="image/webp"
+         >
+
+         {# Defaults to jpeg if client does not support webp #}
+         <img
+            class="img {{ lazyload ? 'js-lazyload' }}"
+            width="{{ image.getWidth(transforms|first) }}"
+            height="{{ image.getHeight(transforms|first) }}"
+            {{ lazyload ? 'data-' }}src="{{ image.getUrl(transforms|first) }}"
+            {{ lazyload ? 'data-' }}srcset="{{ transforms|map(transform => "#{image.getUrl(transform|merge(transformJPEG))} #{image.getWidth(transform|merge(transformJPEG))}w")|join(',') }}"
+
+            {% if alt %}
+               alt="{{ alt }}"
+            {% endif %}
+
+            {% if sizes %}
+               sizes="{{ sizes }}"
+            {% endif %}
+         >
+      </picture>
+   {% endif %}

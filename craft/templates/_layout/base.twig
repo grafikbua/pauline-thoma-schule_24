@@ -1,0 +1,62 @@
+{% apply spaceless %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ currentSite.language }}">
+	<head>
+
+		{# system partials #}
+		{% include '_system/_meta' %}
+		{% include '_system/_seo' %}
+		{% include '_system/_favicons' %}
+
+		{# preload fonts #}
+		<link rel="preload" href="/assets/fonts/Milush-Black.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/Milush-Regular.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/NotoSans-Bold.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/NotoSans-Medium.woff" as="font" type="font/woff" crossorigin>
+
+		{% set placeholderImg = "https://source.unsplash.com/1800x1000/?creative" %}
+
+		{% block head %}{% endblock %}
+
+    {# min css for production #}
+		{% if devMode %}
+			<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+		{% else %}
+			<link rel="stylesheet" type="text/css" href="/assets/css/styles.post.css">
+		{% endif %}
+		{# sprig #}
+		<script src="/assets/js/htmx.min.js" defer></script>
+		<script src="/assets/js/swiper-bundle.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/popper.min.js"></script>
+
+	</head>
+	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
+
+		{# defined in _layout/site #}
+		{% block body %}{% endblock %}
+
+		{% block foot %}{% endblock %}
+
+	</body>
+
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		var header = document.getElementById("js-header");
+		var logo = document.getElementById("js-logo")
+
+		function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			logo.style.width = ("50px");
+			header.classList.remove("py-42", "shadow-sm");
+			header.classList.add("py-24", "shadow");
+		} else {
+			logo.style.width = ("75px");
+			header.classList.add("py-42", "shadow-sm");
+			header.classList.remove("py-24", "shadow");
+		}
+		};
+	</script>
+
+</html>
+{% endapply %}

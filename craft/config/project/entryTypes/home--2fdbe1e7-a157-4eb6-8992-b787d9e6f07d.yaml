@@ -1,0 +1,199 @@
+fieldLayouts:
+  2514f597-0871-46f2-bdb3-8803fe676013:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6e99fb5b-fd16-47db-a271-9da8b9a4fcb2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5b43d38d-0e2d-4180-a20e-b09541cad40e # Hero Hintergrundbild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa6983b6-a41b-4ad3-b9ed-45aef3f233ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3dcccecf-d02c-4e90-b3fe-6f68e666d45b # Hero Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00d1ca3d-5694-47b0-90cc-1e90adc443cd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4990761b-1b15-4092-9905-ebdda0697aeb # Hero Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c0c40f3-ce4a-4349-bf70-93a92fde783e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 5c803eb7-3d12-4b84-8f67-c62e70e385aa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            heading: Leistungen
+            type: craft\fieldlayoutelements\Heading
+            uid: afae198d-0e9b-4be1-81e1-341458e49312
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 4b5bca94-0221-49f6-9b4e-32d4e6e2284c # Sektion - Leistungen Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 666c93f4-eb38-4cfa-b7f8-4f565b7b976f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 364062db-aa9c-4531-b6d1-b2c95fd09d37 # Sektion - Leistungen Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 727a13a8-9e46-4caf-acc7-447dc52fda32
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: 'Über uns'
+            type: craft\fieldlayoutelements\Heading
+            uid: fb9f288d-018f-4b48-b5c6-552b507fa853
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 83a9b875-b961-46a4-9c70-ce5618a9b929 # Sektion - Über uns Galerie
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57c9fd69-ac8e-43a0-a9d4-a9bcd9d598e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 313e29bc-0a8e-4436-9b83-2d45c4bf876d # Sektion - Über uns Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2700b17b-a8a9-4a51-a86e-a731e26903dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ce38246d-0856-4926-8249-5043bc927079 # Sektion - Über uns Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31046aba-958e-4046-a1bf-a6b052fe2c6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 60abd6f6-4409-4a8e-a8e1-a24415162032 # Sektion - Über uns Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ac983f3-986f-4996-9c77-a8bc4d2e3261
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Portfolio
+            type: craft\fieldlayoutelements\Heading
+            uid: dd951266-0569-456e-aec7-c1c9b2a39931
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: fa280788-5ca8-4fd1-b88e-b039ff738609 # Sektion - Portfolio Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 232e6eec-1fe4-420d-a2a9-13e47ce95771
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc3128a2-0f3d-4964-a796-254634476f9c # Sektion - Portfolio Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c27f67b1-dcc0-4704-adc5-e97f889a3934
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalte
+        uid: 5ba45dd2-92e7-4d5f-90be-5a28fdd0688e
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: ce59a5cd-637f-4905-9501-1492d913aba4 # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

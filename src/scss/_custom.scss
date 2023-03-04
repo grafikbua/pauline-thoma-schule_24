@@ -1,0 +1,99 @@
+/*! basic.css | by grafikbuam.de */
+
+@use "sass:math";
+
+/* doc
+   ========================================================================== */
+
+
+/**
+      * 1. basic
+      * 2. typo
+      * 3. buttons
+      * 4. backgrounds / colours
+      * 5. forms
+      * 6. sections
+        *  6.1. footer
+        *  6.2. fachbereiche
+        *  6.3. slider (ueber uns)
+        *  6.4. team
+        *  6.5. modal
+        *  6.6. menu
+   */
+
+
+/* 1. basic
+   ========================================================================== */
+
+.pointer {
+	cursor: pointer; 
+}
+
+.object-fit__cover {
+   object-fit: cover;
+}
+
+.shadow__hover {
+   box-shadow: none;
+   transition: 0.5s
+}
+.shadow__hover:hover {
+   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.45);
+   transition: 0.5s
+}
+
+.img-dark {
+   filter: brightness(70%)
+}
+
+.img-dark__hover:hover .img-dark{
+   filter: brightness(50%);
+   transform: scale(1.1);
+   transition: .4s;
+}
+
+.img__hover {
+   transition: 0.5s;
+}
+.img__hover:hover {
+   transform: scale(1.1);
+   transition: 0.5s
+}
+
+
+/* 2. typo
+   ========================================================================== */
+
+body {
+  font-size: math.div(1rem, 16) * 18;
+
+   @include media-breakpoint-up('md') {
+      font-size: math.div(1rem, 16) * 20;
+   }
+}
+
+/* font-smoothing */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+   }
+
+.hyphens {
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto; }
+
+/* 3. buttons
+   ========================================================================== */
+
+/* 4. backgrounds / colours
+   ========================================================================== */
+
+/* 5. forms
+   ========================================================================== */
+
+/* 6. sections
+   ========================================================================== */
+
+
+

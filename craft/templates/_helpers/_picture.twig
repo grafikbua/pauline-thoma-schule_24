@@ -1,0 +1,200 @@
+ {% apply spaceless %}
+
+   {#
+   Use this helper to add images with included srcset
+   Use if ratio differs from breakpoint to breakpoint
+   #}
+
+   {% set image = image ?? false %}
+
+   {% if image %}
+      {% set alt = image.title ?? null %}
+      {% set class = class ?? '' %}
+      {% set mode = mode ?? 'crop' %}
+      {% set frameClass = frameClass ?? '' %}
+      {% set imageClass = imageClass ?? '' %}
+      {% set lazyload = lazyload ?? true %}
+
+      {% set widths = widths ?? {
+         xs: 375,
+         sm: 667,
+         md: 768,
+         lg: 1024,
+         xl: 1280,
+         xxl: 1440,
+         xxxl: 1920
+      } %}
+
+      {% set ratios = ratios ?? {
+         xs: 1,
+         sm: 1,
+         md: 1,
+         lg: 1,
+         xl: 1,
+         xxl: 1,
+         xxxl: 1
+      } %}
+
+      {% set sizes = sizes ?? null %}
+
+      {% set breakpoints = {
+         xs: "0",
+         sm: "576px",
+         md: "768px",
+         lg: "992px",
+         xl: "1200px",
+         xxl: "1400px",
+         xxxl: "1840px"
+      } %}
+
+      {#
+      Image Transforms
+      #}
+
+      {% set transformWEBP = {
+         mode: mode,
+         quality: 90,
+         format: 'webp'
+      } %}
+
+      {% set transformJPEG = {
+         mode: mode,
+         quality: 90,
+         format: 'jpg'
+      } %}
+
+      {# sets the frame and adds a ratio for lazyloaded images #}
+      <picture
+         class="frame {{ frameClass }} {{ class }}"
+         style="--ratio: {{ ratios.xs ?? ratios|last }}; --ratio-sm: {{ ratios.sm ?? ratios|last }}; --ratio-md: {{ ratios.md ?? ratios|last }}; --ratio-lg: {{ ratios.lg ?? ratios|last }}; --ratio-xl: {{ ratios.xl ?? ratios|last }}; --ratio-xxl: {{ ratios.xxl ?? ratios|last }}; --ratio-xxxl: {{ ratios.xxxl ?? ratios|last }};"
+      >
+         {% if widths.xxxl|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.xxxl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.url({ width: widths.xxxl, height: widths.xxxl * ratios.xxxl }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xxl * 2, height: widths.xxxl * ratios.xxxl * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.xxxl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xxxl, height: widths.xxxl * ratios.xxxl }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xxxl * 2, height: widths.xxxl * ratios.xxxl * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         {% if widths.xxl|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.xxl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xxl, height: widths.xxl * ratios.xxl }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xxl * 2, height: widths.xxl * ratios.xxl * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.xxl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xxl, height: widths.xxl * ratios.xxl }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xxl * 2, height: widths.xxl * ratios.xxl * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         {% if widths.xl|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.xl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xl, height: widths.xl * ratios.xl }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xl * 2, height: widths.xl * ratios.xl * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.xl }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xl, height: widths.xl * ratios.xl }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.xl * 2, height: widths.xl * ratios.xl * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         {% if widths.lg|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.lg }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.lg, height: widths.lg * ratios.lg }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.lg * 2, height: widths.lg * ratios.lg * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.lg }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.lg, height: widths.lg * ratios.lg }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.lg * 2, height: widths.lg * ratios.lg * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         {% if widths.md|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.md }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.md, height: widths.md * ratios.md }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.md * 2, height: widths.md * ratios.md * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.md }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.md, height: widths.md * ratios.md }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.md * 2, height: widths.md * ratios.md * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         {% if widths.sm|default(false) %}
+            <source
+               media="(min-width: {{ breakpoints.sm }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.sm, height: widths.sm * ratios.sm }|merge(transformWEBP)) }} 1x,
+                                               {{ image.getUrl({ width: widths.sm * 2, height: widths.sm * ratios.sm * 2 }|merge(transformWEBP)) }} 2x"
+               type="image/webp"
+            >
+            <source
+               media="(min-width: {{ breakpoints.sm }})"
+               {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.sm, height: widths.sm * ratios.sm }|merge(transformJPEG)) }} 1x,
+                                               {{ image.getUrl({ width: widths.sm * 2, height: widths.sm * ratios.sm * 2 }|merge(transformJPEG)) }} 2x"
+               type="image/jpeg"
+            >
+         {% endif %}
+
+         <!-- XS -->
+         <source
+            {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xs, height: widths.xs * ratios.xs }|merge(transformWEBP)) }} 1x,
+                                            {{ image.getUrl({ width: widths.xs * 2, height: widths.xs * ratios.xs * 2 }|merge(transformJPEG)) }} 2x,
+                                            {{ image.getUrl({ width: widths.xs * 3, height: widths.xs * ratios.xs * 3 }|merge(transformWEBP)) }} 3x"
+            type="image/webp"
+         >
+         <source
+            {{ lazyload ? 'data-' }}srcset="{{ image.getUrl({ width: widths.xs, height: widths.xs * ratios.xs }|merge(transformJPEG)) }} 1x,
+                                            {{ image.getUrl({ width: widths.xs * 2, height: widths.xs * ratios.xs * 2 }|merge(transformJPEG)) }} 2x,
+                                            {{ image.getUrl({ width: widths.xs * 3, height: widths.xs * ratios.xs * 3 }|merge(transformJPEG)) }} 3x"
+            type="image/jpeg"
+         >
+
+         {# Desktop not supported #}
+         <img
+            class="img {{ lazyload ? 'js-lazyload' }} {{ imageClass }}"
+            {{ lazyload ? 'data-' }}src="{{ image.getUrl({ width: widths|last, height: widths|last * ratios|last }|merge(transformJPEG)) }}"
+
+            alt="{{ alt }}"
+            width="{{ widths|last }}"
+            height="{{ widths|last * ratios|last }}"
+
+            {% if alt %}
+               alt="{{ alt }}"
+            {% endif %}
+
+            {% if sizes %}
+               sizes="{{ sizes }}"
+            {% endif %}
+
+            {% if lazyload %}
+               loading="lazy"
+            {% endif %}
+         >
+      </picture>
+   {% endif %}
+
+
+{% endapply %}

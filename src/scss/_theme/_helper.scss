@@ -1,0 +1,49 @@
+@media (min-width:1200px) {
+    .rotate-90 {
+        transform: rotate(-90deg)
+    }
+}
+
+.hover-zoom {
+    overflow: hidden;
+}
+.hover-zoom img {
+    transition: .5s;
+}
+.hover-zoom:hover img {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    transition: .4s;
+}
+
+.object-fit__cover {
+    object-fit: cover;
+ }
+ 
+ .shadow__hover {
+    box-shadow: none;
+    transition: 0.5s
+ }
+ .shadow__hover:hover {
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.45);
+    transition: 0.5s
+ }
+ 
+ .img-dark {
+    filter: brightness(70%)
+ }
+ 
+ .img-dark__hover:hover .img-dark{
+    filter: brightness(50%);
+    transform: scale(1.1);
+    transition: .4s;
+ }
+ 
+ .img__hover {
+    transition: 0.5s;
+ }
+ .img__hover:hover {
+    transform: scale(1.1);
+    transition: 0.5s
+ }

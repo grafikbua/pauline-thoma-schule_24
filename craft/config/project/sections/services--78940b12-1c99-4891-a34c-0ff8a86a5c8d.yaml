@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: services
+name: Leistungen
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_services/_entry
+    uriFormat: 'leistungen/{slug}'
+structure:
+  maxLevels: 1
+  uid: b31e8d73-ad28-48f0-8729-f5840a15de98
+type: structure

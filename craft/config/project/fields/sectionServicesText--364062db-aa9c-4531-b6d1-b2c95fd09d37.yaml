@@ -1,0 +1,19 @@
+columnSuffix: ntowyucg
+contentColumnType: text
+fieldGroup: 580f024d-e333-4b61-b418-9d32309d1e9e # home
+handle: sectionServicesText
+instructions: null
+name: 'Sektion - Leistungen Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

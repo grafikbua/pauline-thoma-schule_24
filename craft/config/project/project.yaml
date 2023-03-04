@@ -1,0 +1,102 @@
+dateModified: 1677887020
+email:
+  fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
+  fromName: $SYSTEM_MAIL_SENDER
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  documents:
+    hasUrls: true
+    name: Documents
+    settings:
+      path: '@documents_root'
+    type: craft\fs\Local
+    url: '@documents_url'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@images_path'
+    type: craft\fs\Local
+    url: '@images_url'
+  theme:
+    hasUrls: true
+    name: Theme
+    settings:
+      path: '@theme_root'
+    type: craft\fs\Local
+    url: '@theme_url'
+meta:
+  __names__:
+    0cafd6b0-a390-4f26-8a65-1ac56dddc831: _hero # _hero
+    0ec3fd07-a143-4155-839a-4ffd252ba245: portfolio # portfolio
+    1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
+    2fdbe1e7-a157-4eb6-8992-b787d9e6f07d: Home # Home
+    3dcccecf-d02c-4e90-b3fe-6f68e666d45b: 'Hero Headline' # Hero Headline
+    4b5bca94-0221-49f6-9b4e-32d4e6e2284c: 'Sektion - Leistungen Headline' # Sektion - Leistungen Headline
+    5b43d38d-0e2d-4180-a20e-b09541cad40e: 'Hero Hintergrundbild' # Hero Hintergrundbild
+    6aee8eeb-9148-4f6c-9e02-6dba602de699: Leistungskategorie # Leistungskategorie
+    7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
+    7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
+    56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
+    60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
+    77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
+    83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
+    257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
+    313e29bc-0a8e-4436-9b83-2d45c4bf876d: 'Sektion - Über uns Headline' # Sektion - Über uns Headline
+    580f024d-e333-4b61-b418-9d32309d1e9e: home # home
+    05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
+    66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
+    78940b12-1c99-4891-a34c-0ff8a86a5c8d: Leistungen # Leistungen
+    227252fb-a26f-42b6-ae49-f1e8f6a82c86: Images # Images
+    364062db-aa9c-4531-b6d1-b2c95fd09d37: 'Sektion - Leistungen Text' # Sektion - Leistungen Text
+    4990761b-1b15-4092-9905-ebdda0697aeb: 'Hero Subline' # Hero Subline
+    40561686-cc85-41c8-b248-f6b3be7a414c: Leistungskategorie # Leistungskategorie
+    a85b5fdd-d3bd-4778-a5f4-818ad2c04917: services # services
+    a959edd3-0418-4427-8f3e-8244d056be52: Standard # Standard
+    a6399dbb-26c9-4495-aab8-574ca5fc0f4a: Theme # Theme
+    bc200003-f687-4b98-9c86-b159d30605fe: Craft4 # Craft4
+    ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
+    ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
+    f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
+    f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image
+    fa280788-5ca8-4fd1-b88e-b039ff738609: 'Sektion - Portfolio Headline' # Sektion - Portfolio Headline
+    fb08b855-3bf9-4c67-afe2-49291cae828f: grafikbuam. # grafikbuam.
+    fc3128a2-0f3d-4964-a796-254634476f9c: 'Sektion - Portfolio Text' # Sektion - Portfolio Text
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'Mitteilung von'
+      prependSubject: 'Neue Nachricht von Craft Basic'
+      successFlashMessage: 'Ihre Nachricht wurde versendet.'
+      toEmail: $SYSTEM_MAIL_ADDRESS
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: grafikbuamDev23!
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft Basic'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,19 @@
+columnSuffix: ptrrlwtc
+contentColumnType: text
+fieldGroup: 580f024d-e333-4b61-b418-9d32309d1e9e # home
+handle: sectionServicesHeadline
+instructions: null
+name: 'Sektion - Leistungen Headline'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
