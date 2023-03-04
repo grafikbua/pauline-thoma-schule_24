@@ -3,12 +3,9 @@
         "craftcms/cms": "4.3.10",
         "craftcms/contact-form": "3.0.0",
         "craftcms/contact-form-honeypot": "2.0.0",
-        "craftcms/feed-me": "5.0.4",
         "craftcms/redactor": "3.0.3",
         "putyourlightson/craft-sprig": "2.2.1",
-        "verbb/field-manager": "3.0.4",
         "verbb/image-resizer": "3.0.2",
-        "verbb/knock-knock": "2.0.3",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {

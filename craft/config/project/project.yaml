@@ -1,4 +1,4 @@
-dateModified: 1677887020
+dateModified: 1677939788
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -91,9 +91,10 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'Craft Basic'
+  name: $SITE_NAME
+  retryDuration: null
   schemaVersion: 4.0.0.9
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false
   defaultGroup: null
