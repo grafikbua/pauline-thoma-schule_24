@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: team
+name: Team
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_team/_entry
+    uriFormat: 'team/{slug}'
+structure:
+  maxLevels: 1
+  uid: 55e6607c-51fb-4756-b8bf-1dfe644dc1cb
+type: structure

@@ -1,0 +1,43 @@
+fieldLayouts:
+  2b8cc162-87ff-4b3e-877a-70e71ac4b961:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 94402de0-7ebe-4490-b69b-642b79840902
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 94341283-047b-4534-ae4c-5a74e3f468c0
+        userCondition: null
+handle: teamMemberBasic
+hasTitleField: true
+name: 'Team Member (Basic)'
+section: c2cd05e6-a83d-4c05-ba35-c7c61951cc78 # Team
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

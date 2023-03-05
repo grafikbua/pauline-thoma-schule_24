@@ -1,0 +1,19 @@
+columnSuffix: llyfvdcc
+contentColumnType: text
+fieldGroup: aff9de1b-f6aa-40ca-9db3-2c84e7804817 # team
+handle: teamSubline
+instructions: null
+name: 'Subline zum Teammitglied'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'z.B. foto x video x social media'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

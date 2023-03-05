@@ -1,4 +1,4 @@
-dateModified: 1677939788
+dateModified: 1678024685
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -34,20 +34,25 @@ meta:
     0cafd6b0-a390-4f26-8a65-1ac56dddc831: _hero # _hero
     0ec3fd07-a143-4155-839a-4ffd252ba245: portfolio # portfolio
     1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
+    2ce9cabf-ec24-4086-86c9-4cf1a29fe1d1: 'Team Member (Basic)' # Team Member (Basic)
     2fdbe1e7-a157-4eb6-8992-b787d9e6f07d: Home # Home
+    3d80dbe4-bb3b-4248-8d0e-dc85789145ba: Portraitfoto # Portraitfoto
     3dcccecf-d02c-4e90-b3fe-6f68e666d45b: 'Hero Headline' # Hero Headline
     4b5bca94-0221-49f6-9b4e-32d4e6e2284c: 'Sektion - Leistungen Headline' # Sektion - Leistungen Headline
     5b43d38d-0e2d-4180-a20e-b09541cad40e: 'Hero Hintergrundbild' # Hero Hintergrundbild
     6aee8eeb-9148-4f6c-9e02-6dba602de699: Leistungskategorie # Leistungskategorie
     7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
     7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
+    8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
     83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
     257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
     313e29bc-0a8e-4436-9b83-2d45c4bf876d: 'Sektion - Über uns Headline' # Sektion - Über uns Headline
+    354c00ae-bedd-49fa-8c36-fb631c82a20a: Skills # Skills
     580f024d-e333-4b61-b418-9d32309d1e9e: home # home
+    2876dd87-48d7-449a-a4d1-d9702c959595: 'Subline zum Teammitglied' # Subline zum Teammitglied
     05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
     66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
     78940b12-1c99-4891-a34c-0ff8a86a5c8d: Leistungen # Leistungen
@@ -58,7 +63,11 @@ meta:
     a85b5fdd-d3bd-4778-a5f4-818ad2c04917: services # services
     a959edd3-0418-4427-8f3e-8244d056be52: Standard # Standard
     a6399dbb-26c9-4495-aab8-574ca5fc0f4a: Theme # Theme
+    aff9de1b-f6aa-40ca-9db3-2c84e7804817: team # team
     bc200003-f687-4b98-9c86-b159d30605fe: Craft4 # Craft4
+    c2cd05e6-a83d-4c05-ba35-c7c61951cc78: Team # Team
+    c3ebd5a1-ee6c-49e5-b41d-0f9b231d6fa0: Skills # Skills
+    c72e9ef9-03ed-4887-a29a-0a517fbc7e04: 'Team Member (Extern)' # Team Member (Extern)
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
