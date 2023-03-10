@@ -1,5 +1,8 @@
 .fixed-menu {
     position: fixed;
+    display: flex;
+    background: $violet;
+    background: linear-gradient(163deg, rgb(188, 140, 187), rgb(188, 140, 176) 35%, rgb(154, 114, 153));
     left: 50%;
     bottom: 5%;
     padding: 1rem;
@@ -7,4 +10,5 @@
     z-index: 99;
     border-radius: 1rem;
     transform: translate(-50%);
-}
+    box-shadow: 0 4px 12px -3px rgba(0, 0, 0, 0.74);
+}   

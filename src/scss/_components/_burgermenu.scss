@@ -1,18 +1,16 @@
 #burger-menu {
     cursor: pointer;
-    height: 27px;
-    width: 27px;
-    margin-right: 4px;
     overflow: visible;
     position: relative;
     z-index:99;
+    padding: 0.8rem 1rem
   }
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
-    background: black;
+    background: white;
     display: block;
-    height: 4px;
+    height: 2px;
     opacity: 1;
     position: absolute;
     transition: 0.3s ease-in-out;
@@ -22,25 +20,34 @@
     content: "";
   }
   #burger-menu span {
-    right: 0px;
-    top: 13px;
-    width: 27px;
+    right: 16px;
+    top: 24px;
+    width: 24px;
   }
   #burger-menu span:before {
     right: 0px;
-    top: -10px;
-    width: 27px;
+    top: -8px;
+    width: 16px;
+    transition: .5s;
+  }
+  #burger-menu:hover span:before {
+    width: 24px;
+    transition: .5s;
   }
   #burger-menu span:after {
     left: 0px;
-    top: 10px;
-    width: 27px;
+    top: 8px;
+    width: 16px;
+  }
+  #burger-menu:hover span:after {
+    width: 24px;
+    transition: .5s;
   }
   
   #burger-menu.close span {
     background: white;
     transform: rotate(-45deg);
-    top: 13px;
+    top: 24px;
     width: 27px;
   }
   #burger-menu.close span:before {
@@ -63,9 +70,7 @@
     min-height:100%;
     min-width: 100%;
     position: fixed;
-    top:0;
     right: 0;
-    height:0;
     visibility: hidden;
     opacity: 0;
     text-align:center;
@@ -81,13 +86,14 @@
     visibility: visible;
     opacity: 1;
     margin-right: 0px;
-    background: black;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: rgb(61,99,107);
+    background: linear-gradient(66deg, rgba(61,99,107,1) 0%, rgba(51,85,92,1) 61%, rgba(116,86,108,1) 100%);
+    border-radius: 12px;
   }
 
   body.overlay {
       height: 100vh;
-      overflow-y: hidden;
+      overflow: hidden;
   }
   
   #menu li{
@@ -95,7 +101,7 @@
   }
   
   #menu a{
-    color:gray;
+    color:white;
     font-family: $font-family-base;
     display: block;
     font-size: 32px;
@@ -104,8 +110,9 @@
   }
   
   .burger-menu__link:hover {
-    color: white;
-    transition: 0.2s;
+    color: $petrol;
+    filter: brightness(50%);
+    transition: 0.5s;
     cursor: pointer 
   }
   
@@ -113,3 +120,12 @@
     transition: 0.2s
   }
   
+  .btn-menu {
+    display: flex;
+    align-items: center;
+    background-color: $violet;
+    filter: brightness(80%);
+    height: 100%;
+    padding: 0!important;
+    border-radius: 12px;
+  }

@@ -1,4 +1,18 @@
-.btn {
-    color: $white;
-    padding: 0.75rem 2.25rem;
+
+.pulse {
+   transform: scale(1);
+	animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 $petrol;
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px #bc8cbb00;
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 #bc8cbb00;
+	}
 }

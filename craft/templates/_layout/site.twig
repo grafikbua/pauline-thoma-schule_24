@@ -1,6 +1,17 @@
 {# site template #}
 {% extends "_layout/base" %}
 
+{# the site navigation #}
+{% set nav = {
+   main: {
+      ("/"):               { title: "Am Puck" },
+      ("blog"):            { title: "Blog"},
+      ("liga/nhl/stats"):  { title: "Stats"},
+      ("kontakt"):         { title: "Kontakt"},
+
+   }
+} %}
+
 {# set the `bodyClass` variable to the entry's section handle if there is one,
 or the first URI segment (this is used by the parent template) #}
 {% if bodyClass is not defined %}
@@ -14,7 +25,7 @@ or the first URI segment (this is used by the parent template) #}
 
 {% block body %}
 
-<header id="js-header" class="shadow-sm py-42">
+<header id="js-header" class="shadow-sm py-4">
    {% include '_layout/_header' %}
 </header>
 

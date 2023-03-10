@@ -32,12 +32,7 @@
 
 	</head>
 	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
-		<div class="bg-violet fixed-menu d-flex shadow">
-			<div class="btn btn-dark rounded px-3 py-2 me-4 fs-6 d-flex align-items-center">HOME</div>
-			<div class="bg-dark rounded-circle" style="width:48px; height:48px"></div>
-			<div class="bg-dark rounded-circle mx-2" style="width:48px; height:48px"></div>
-			<div class="bg-dark rounded-circle" style="width:48px; height:48px"></div>
-		</div>
+		{% embed "_components/_nav" %}{% endembed %}
 
 		{# defined in _layout/site #}
 		{% block body %}{% endblock %}
@@ -53,13 +48,13 @@
 
 		function scrollFunction() {
 		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-			logo.style.width = ("50px");
-			header.classList.remove("py-42", "shadow-sm");
-			header.classList.add("py-24", "shadow");
+			logo.style.width = ("150px");
+			header.classList.remove("py-4", "shadow-sm");
+			header.classList.add("py-3", "shadow");
 		} else {
-			logo.style.width = ("75px");
-			header.classList.add("py-42", "shadow-sm");
-			header.classList.remove("py-24", "shadow");
+			logo.style.width = ("180px");
+			header.classList.add("py-4", "shadow-sm");
+			header.classList.remove("py-3", "shadow");
 		}
 		};
 	</script>

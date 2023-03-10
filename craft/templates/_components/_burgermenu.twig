@@ -1,0 +1,30 @@
+<div id="menu">
+    <ul class="p-0">
+    {% for slug, item in nav.main %}
+
+        <li class="">
+            <a href="{{ url(slug) }}">
+            <span class="burger-menu__link">{{ item.title }}</span>
+            </a>
+        </li>
+
+    {% endfor %}    
+    </ul>
+
+</div>
+
+{% js %}
+  var burgerMenu = document.getElementById('burger-menu');
+  var overlay = document.getElementById('menu');
+      burgerMenu.addEventListener('click',function(){
+      this.classList.toggle("close");
+      overlay.classList.toggle("overlay");
+      document.body.classList.toggle('overlay');
+  });
+
+  function closeMenu(){
+      burgerMenu.classList.toggle("close");
+      overlay.classList.toggle("overlay");
+      document.body.classList.toggle('overlay');
+  } 
+{% endjs %}
