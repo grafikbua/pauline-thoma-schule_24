@@ -1,0 +1,10 @@
+.fixed-menu {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    padding: 1rem;
+    color: white;
+    z-index: 99;
+    border-radius: 1rem;
+    transform: translate(-50%);
+}

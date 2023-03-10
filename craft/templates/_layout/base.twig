@@ -31,7 +31,13 @@
 		<script src="/assets/js/popper.min.js"></script>
 
 	</head>
-	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
+	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
+		<div class="bg-violet fixed-menu d-flex shadow">
+			<div class="btn btn-dark rounded px-3 py-2 me-4 fs-6 d-flex align-items-center">HOME</div>
+			<div class="bg-dark rounded-circle" style="width:48px; height:48px"></div>
+			<div class="bg-dark rounded-circle mx-2" style="width:48px; height:48px"></div>
+			<div class="bg-dark rounded-circle" style="width:48px; height:48px"></div>
+		</div>
 
 		{# defined in _layout/site #}
 		{% block body %}{% endblock %}

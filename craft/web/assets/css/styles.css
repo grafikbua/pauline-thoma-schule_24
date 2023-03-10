@@ -19343,6 +19343,17 @@ button.swiper-pagination-bullet {
   padding: 0.75rem 2.25rem;
 }
 
+.fixed-menu {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+  padding: 1rem;
+  color: white;
+  z-index: 99;
+  border-radius: 1rem;
+  transform: translate(-50%);
+}
+
 .hero--bg-image {
   width: 100%;
   height: calc(100vh - 140px);
