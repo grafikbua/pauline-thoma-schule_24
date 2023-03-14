@@ -19513,7 +19513,7 @@ body.overlay {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 99;
+  z-index: 90;
   transition: 0.5s;
 }
 
