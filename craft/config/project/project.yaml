@@ -1,4 +1,4 @@
-dateModified: 1678463997
+dateModified: 1679514036
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -44,6 +44,7 @@ meta:
     7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
     7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
     8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
+    9d6cfeee-ff25-4e0d-b8cc-4d208c7fcb11: Hintergrundfarbe # Hintergrundfarbe
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
@@ -98,7 +99,7 @@ plugins:
     enabled: true
     schemaVersion: 2.3.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: $SITE_NAME
   retryDuration: null

@@ -6,19 +6,29 @@ instructions: null
 name: Skills
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
   localizeRelations: false
   maxRelations: null
   minRelations: null
-  selectionLabel: null
-  showSiteMenu: false
-  source: 'taggroup:c3ebd5a1-ee6c-49e5-b41d-0f9b231d6fa0' # Skills
-  sources: '*'
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+  selectionLabel: 'Skills hinzufügen'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:78940b12-1c99-4891-a34c-0ff8a86a5c8d' # Leistungen
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Tags
+type: craft\fields\Entries

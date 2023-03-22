@@ -1,32 +1,33 @@
 {% set headline = content.headline ?? null %}
 {% set text = content.text ?? null %}
 
- {% set portfolio = craft.entries.section('portfolio').all %}
+{% set portfolio = craft.entries.section('portfolio').all %}
 
-<section class="px-5">
-   <div class="container-fluid bg-dark rounded-5 px-5 text-white">
-      <div class="container py-7">
-         <div class="row pb-7">
-            <div class="col-6">
-               <h3 class="h1">{{ headline }}</h3>
-            </div>
-            <div class="col-6">
-               <p{{ text }}</p>
-            </div>
+<div class="container-fluid bg-dark rounded-5 p-4 p-lg-7 text-white">
+   <div class="container">
+      <div class="row pb-7">
+         <div class="col-6">
+            <h3 class="h1">{{ headline }}</h3>
+         </div>
+         <div class="col-6">
+            <p{{ text }}</p>
          </div>
       </div>
    </div>
-  <div class="container mt-n7 px-5">
-      <div class="row row-cols-3 mt-n7">
-         {% for item in portfolio %}
-         {% set image = item.portfolioImage.one() ?? null %}
-         <div class="col">
-            <div class="bg-black rounded-5 p-5 text-white" width="435px" height="435px" style="min-height: 435px;">
-               <h4>{{ item.title }}</h4>
+</div>
+<div class="container mt-n7 px-5">
+   <div class="row row-cols-4 mt-n7">
+      {% for item in portfolio %}
+      {% set image = item.portfolioImage.one() ?? null %}
+      <div class="col">
+         <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} rounded-5 py-5 portfolio_card" width="100%">
+            <div class="portfolio_card__overlay rounded-5">
+               <h4 class="portfolio_card__title">{{ item.title }}</h4>
             </div>
+            <img src="{{ image.getUrl() }}" height="150px" style="object-fit:contain" alt="{{image.title ?? null}}">
          </div>
-         {% endfor %}
-      
       </div>
+      {% endfor %}
+   
    </div>
-</section>
+</div>

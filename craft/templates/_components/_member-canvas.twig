@@ -1,0 +1,30 @@
+<div class="offcanvas offcanvas-end" style="z-index:9999" tabindex="-1" id="canvas{{member.id}}" aria-labelledby="canvas{{member.id}}Label">
+    <div class="offcanvas-header p-3 d-none d-lg-block">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-5 pt-5 pt-lg-0 pb-lg-4 text-center">
+        <div class="bg-dark rounded-circle mx-auto overflow-hidden ratio ratio-1x1 w-50" style="display:inline-table">
+            <img src="{{memberImage.getUrl()}}" height="100%" class="object-fit__cover" alt="{{member.title ~ member.teamSubline}}">
+        </div>
+        <h2 class="h4 mt-4">{{member.title ?? null}}</h2>
+        <p class="small">{{member.teamSubline ?? null}}</p>
+        <div class="py-3">
+            {% for item in memberSkills.all() %}
+                <a class="btn btn-petrol btn-sm text-white" href="{{item.getUrl}}">{{item.title}}</a>
+            {% endfor %}
+        </div>
+
+        <div class="mt-auto pt-3">
+            <h6>Impressum</h6>
+            <ul id="canvas-impressum">
+                <li>Birkenstraße 3</li>
+                <li>83075 Bad Feilnbach</li>
+                <li>t. +49 151 2210 7244</li>
+                <li>m. <a href="mailto:pedro@grafikbuam.de">pedro@grafikbuam.de</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="offcanvas-header px-3 pb-4 d-lg-none shadow-lg">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+</div>

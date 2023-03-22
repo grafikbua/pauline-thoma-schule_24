@@ -1,6 +1,7 @@
 .fixed-menu {
     position: fixed;
     display: flex;
+    align-items: center;
     background: $violet;
     background: linear-gradient(163deg, rgb(188, 140, 187), rgb(188, 140, 176) 35%, rgb(154, 114, 153));
     left: 50%;

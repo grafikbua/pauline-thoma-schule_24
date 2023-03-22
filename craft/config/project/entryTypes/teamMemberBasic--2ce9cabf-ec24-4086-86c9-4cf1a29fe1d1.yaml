@@ -30,6 +30,42 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d80dbe4-bb3b-4248-8d0e-dc85789145ba # Portraitfoto
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21604313-35c8-4111-88c8-729c230319ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2876dd87-48d7-449a-a4d1-d9702c959595 # Subline zum Teammitglied
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cce2e137-96fb-41e0-8aa2-8d51521f8f12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 354c00ae-bedd-49fa-8c36-fb631c82a20a # Skills
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1d27afb-0408-4974-baad-32492c149aa8
+            userCondition: null
+            warning: null
+            width: 100
         name: Inhalt
         uid: 94341283-047b-4534-ae4c-5a74e3f468c0
         userCondition: null

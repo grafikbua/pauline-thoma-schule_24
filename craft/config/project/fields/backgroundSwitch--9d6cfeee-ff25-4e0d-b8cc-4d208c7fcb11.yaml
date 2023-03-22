@@ -1,0 +1,14 @@
+columnSuffix: dcrpuqna
+contentColumnType: boolean
+fieldGroup: 0ec3fd07-a143-4155-839a-4ffd252ba245 # portfolio
+handle: backgroundSwitch
+instructions: null
+name: Hintergrundfarbe
+searchable: false
+settings:
+  default: false
+  offLabel: hell
+  onLabel: dunkel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,57 +1,70 @@
+{% set gallery = entry.sectionAboutUsGallery.all() %}
+
 {# index #}
 {% extends "_layout/site" %}
 {% block main %}
 
 {# hero #}
-{% embed '_components/_hero' with {
-   content: {
-      image: entry.heroImage.one(),
-      headline: entry.heroHeadline,
-      subline: entry.heroSubline
-   }
-} %}{% endembed %}
+<section>
+   {% embed '_components/_hero' with {
+      content: {
+         image: entry.heroImage.one(),
+         headline: entry.heroHeadline,
+         subline: entry.heroSubline
+      }
+   } %}{% endembed %}
+</section>
 
 
-<div class="container-fluid d-flex align-items-center p-5" style="min-height: 100vh;">
-   <div class="container">
-      <div class="row">
-         <div class="col-xl-8 mx-auto">
-            <h2 class="display-1">Konzeption,</br>
-               Design,</br>
-               Entwicklung.
-            </h2>
+<section class="px-2 px-lg-5">
+   <div class="container-fluid d-flex align-items-center" style="min-height: 100vh;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-8 mx-auto">
+               <h2 class="display-1">Konzeption,</br>
+                  Design,</br>
+                  Entwicklung.
+               </h2>
+            </div>
          </div>
       </div>
    </div>
-</div>
+</section>
 
-{% embed '_sections/services' with {
-   content: {
-      headline: entry.sectionServicesHeadline,
-      text: entry.sectionServicesText,
-   }
-}%}{% endembed %}
+<section class="px-2 px-lg-5 py-7">
+   {% embed '_sections/services' with {
+      content: {
+         headline: entry.sectionServicesHeadline,
+         text: entry.sectionServicesText,
+      }
+   }%}{% endembed %}
+</section>
 
-{% set gallery = entry.sectionAboutUsGallery.all() %}
-<div class="container py-7 py-xxl-9">
-    <div class="row align-items-center">
-        <div class="col-xl-5">
-        {% for image in gallery %}
-            <img class="object-fit__cover rounded-5" src="{{ placeholderImg }}" height="600px" width="600px"/>
-         {% endfor %}
-        </div>
-        <div class="col-xl-7 p-7">
-            <h1>{{ entry.sectionAboutUsHeadline }}</h1>
-            <h5>{{ entry.sectionAboutUsSubline}}</h5>
-            <p class="pt-4">{{ entry.sectionAboutUsText }}</p>
-        </div>
-    </div>
-</div>
-{% embed '_sections/portfolio' with {
-   content: {
-      headline: entry.sectionPortfolioHeadline,
-      text: entry.sectionPortfolioText,
-   }
-}%}{% endembed %}
+
+<section class="px-2 px-lg-5 py-7 py-xxl-9">
+   <div class="container">
+       <div class="row align-items-center">
+           <div class="col-xl-5">
+           {% for image in gallery %}
+               <img class="object-fit__cover rounded-5" src="{{ placeholderImg }}" width="100%"/>
+            {% endfor %}
+           </div>
+           <div class="col-xl-7 p-4 p-lg-7">
+               <h1>{{ entry.sectionAboutUsHeadline }}</h1>
+               <h5>{{ entry.sectionAboutUsSubline}}</h5>
+               <p class="pt-4">{{ entry.sectionAboutUsText }}</p>
+           </div>
+       </div>
+   </div>
+</section>
+
+<section class="px-2 px-lg-5 py-7">
+   {% embed '_sections/portfolio' with {
+      content: {
+         headline: entry.sectionPortfolioHeadline,
+         text: entry.sectionPortfolioText,
+      }
+   }%}{% endembed %}
+</section>
 
 {% endblock %}

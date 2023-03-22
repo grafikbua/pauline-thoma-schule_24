@@ -30,6 +30,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 6aee8eeb-9148-4f6c-9e02-6dba602de699 # Leistungskategorie
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a44843a3-c501-4214-8a89-e9257f728294
+            userCondition: null
+            warning: null
+            width: 100
         name: Inhalt
         uid: 9d49afa0-3762-49d3-b0eb-3e8bce4d6be2
         userCondition: null
