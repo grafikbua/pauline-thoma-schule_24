@@ -1,0 +1,65 @@
+{# intro - form #}
+{% set formName = 'Vorname*' %}
+{% set formSurname = 'Nachname*' %}
+{% set formEmail = 'E-Mail*' %}
+{% set formPhone = 'Telefonnummer' %}
+{% set formProduct = 'Produkt' %}
+{% set formVendor = 'Händler' %}
+{% set formMessage = 'Deine Nachricht*' %}
+{% set formButton = 'Nachricht senden' %}
+{% set formSubject = 'Betreff*' %}
+
+
+
+<form id="contactForm" method="post" action="" accept-charset="UTF-8">
+    {{ csrfInput() }}
+    {{ redirectInput('danke') }}
+    <input type="hidden" name="action" value="contact-form/send">
+    
+        {# kontaktdaten #}
+        <div class="row g-3 fs-6">
+            <div class="form-floating col-12 col-lg-6">
+                <input class="form-control" id="from-name" type="text" name="fromName" placeholder="Vorname*" required>
+                <label class="ps-4" for="from-name">{{ formName }}</label>
+            </div>
+            <div class="form-floating col-12 col-lg-6">
+                <input class="form-control" id="surname" type="text" name="message[Nachname]" placeholder="Nachname*" value="">
+                <label class="ps-4" for="surname">{{ formSurname }}</label>
+            </div>
+            <div class="form-floating col-12 col-lg-6">
+                <input class="form-control" id="from-email" type="email" name="fromEmail" placeholder="E-Mail*" required>
+                <label class="ps-4" for="from-email">{{ formEmail }}</label>
+            </div>
+            <div class="form-floating col-12 col-lg-6">
+                <input class="form-control" id="phone" type="text" name="message[Telefonnummer]" placeholder="Telefonnummer" value="">
+                <label class="ps-4" for="phone">{{ formPhone }}</label>
+            </div>
+        </div>
+
+    
+        {# adresse und nachricht #}
+        <div class="row g-3 mt-3 fs-6">
+            <div id="address" class="col-12 form-floating d-none">
+                <input class="form-control" id="" type="text" name="address">
+                <label class="ps-4" for="address">Address</label>
+            </div>
+            <div class="col-12 form-floating">
+                <textarea class="form-control" style="min-height:150px" id="message" name="message[body]" placeholder="Deine Nachricht2" required></textarea>
+                <label class="ps-4" for="message">{{ formMessage }}</label>
+            </div>
+        </div>
+    
+        {# datenschutz und button #}
+        <div class="pt-4 px-16 fs-6">
+            <input id="honeyPot00!" name="honeyPot00!" type="text" class="d-none">
+            <label class="checkbox-inline d-flex align-items-top">
+                <input type="checkbox" class="mt-1" value="" required>
+                <p class="ps-2 mb-0 small">Ich bestätige, die <a href="/datenschutz" class="text-dark" target="_blank"><u>Datenschutzerklärung</u></a> gelesen zu haben und bin mit dieser einverstanden.</p>
+            </label>
+            <input class="btn btn-dark mt-5" type="submit" value="{{ formButton }}">
+
+            {# {{ craft.snaptcha.field }} #}
+        </div>
+
+
+</form>

@@ -33,6 +33,7 @@
 	</head>
 	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
 		{% embed "_components/_nav" %}{% endembed %}
+		{% embed "_components/_contactModal" %}{% endembed %}
 
 		{# defined in _layout/site #}
 		{% block body %}{% endblock %}
