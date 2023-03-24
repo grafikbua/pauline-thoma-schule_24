@@ -66,10 +66,10 @@
    ========================================================================== */
 
 body {
-  font-size: math.div(1rem, 16) * 18;
+  font-size: math.div(1rem, 16) * 16;
 
    @include media-breakpoint-up('md') {
-      font-size: math.div(1rem, 16) * 20;
+      font-size: math.div(1rem, 16) * 18;
    }
 }
 

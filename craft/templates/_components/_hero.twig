@@ -7,11 +7,17 @@
    <img class="position-relative hero--bg-image object-fit__cover rounded-5 img-dark " src="{{ image.getUrl ?? placeholderImg }}" width="100%"/>
    <div class="position-absolute container top-75 start-50 translate-middle">
          <div class="row">
-            <div class="col-10 col-xl-7 mx-auto text-center text-white">
+            <div id="jsHero" data-trig class="col-10 col-xl-7 mx-auto text-center text-white">
                <h1 class="h2">{{ headline }}</h1>
                <p class="lead">{{ subline }}</p>
             </div>
       </div>
    </div>
 </div>
+
+<style>
+   #jsHero {
+      transform: translateY( var(--trig-px-reverse-jsHero) ); }
+</style>
 {% endblock %}
+

@@ -2,37 +2,48 @@
    <div class="container-fluid bg-light rounded-5 py-5 px-3 p-lg-5">
       <div class="container">
          <div class="row">
-            <div class="col-lg-6">
+
+            <div class="col-lg-7">
                <h3 class="h1">Lass uns gemeinsam kreative Lösungen entwicklen.</h3>
-               <button type="button" class="btn btn-violet mt-5">Anfragen</button>
+               <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-violet pulse mt-4">Anfragen</button>
+
             </div>
-            <div class="pt-5 pt-lg-0 offset-lg-1 col-lg-5">
-               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-               <p class="py-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <div class="offset-lg-1 col-lg-4 pt-5 pt-lg-3">
+                  {% for member in members %}
+                     <ul class="list-unstyled {% if loop.index == 2 %}py-4{% endif %}">
+                           <li class="text-uppercase"><b>{{member.title ?? null}}</b></li>
+                           <li>{{member.teamSubline ?? null}}</li>
+                           <li>{{member.memberStreet ?? null}} | {{member.memberLocation ?? null}}</li>
+                     </ul>
+                  {% endfor %}
             </div>
+
          </div>
       </div>
    </div>
 </section>
+
 <section class="px-2 px-lg-5 pt-95 pt-5 pb-3 py-lg-5">
-   <div class="container-fluid rounded-5">
-         <div class="row d-flex align-items-center">
-            <div class="col-lg-8">
-               <p class="small mb-0">Grafikbuam. – ist ein gemeinsamer Webauftritt der Einzelunternehmen Clemens Kerber, Pedro Lucillo & Nino Lucillo. Jeder Einzelunternehmer handelt wirtschaftlich und haftungsrechtlich selbständig..</p>
-            </div>
-            <div class="ms-auto col-lg-3 col-xxl-2 mt-3 mt-lg-0">
-               <div class="rounded-4 p-4 border border-dark row d-flex align-items-center">
-                  <div class="col-8 col-lg-12">
-                     <h4 class="mb-0">Wir sind spezialisiert auf komplexe Projekte mit</h4>
-                  </div>
-                  <div class="col-4 col-lg-12 pt-lg-3">
-                     <img src="/assets/img/_system/logo-craft-cms.svg" style="max-width:200px" width="100%"/>
-                  </div>
+   <div class="container-fluid">
+      <div class="row mt-3 mt-lg-0 d-flex justify-content-between align-items-center">
+
+         <div class="col-xl-4">
+            <p class="small">Grafikbuam. – ist ein gemeinsamer Webauftritt der Einzelunternehmen Clemens Kerber, Pedro Lucillo & Nino Lucillo. Jeder Einzelunternehmer handelt wirtschaftlich und haftungsrechtlich selbständig.
+            </p>
+         </div>
+
+         <div class="col-auto">
+            <div class="rounded-4 p-3 border border-light">
+               {# <h4 class="h5 mb-4">Wir sind spezialisiert auf komplexe Projekte mit</h4> #}
+               <a href="https://craftcms.com" alt="Craft CMS Website" title="Craft CMS Website - by Pixel & Tonic" target="_blank"><img class="pointer" src="/assets/img/_system/logo-craft-cms.svg" style="max-width:120px" width="100%"/></a>
             </div>
          </div>
+
+      </div>
    </div>
 </section>
+
 <section class="px-2 px-lg-5 mb-9 mb-lg-3">
    <div class="container-fluid">
       <div class="row d-flex justify-content-between small">
@@ -40,7 +51,10 @@
             ©{{now|date('yy')}} – Künstlerkollektiv <b>GRAFIKBUAM</b> aus Rosenheim & Innsbruck
          </div>
          <div class="col-md-6 text-md-end pt-3 pt-md-0">
-            Datenschutz | Impressum
+             {% for slug, item in nav.footer %}
+               <a class="text-dark" href="{{ url(slug) }}">{{item.title}}</a>
+               {% if loop.index == 1 %}|{% endif %}
+            {% endfor %}    
          </div>
       </div>
    </div>

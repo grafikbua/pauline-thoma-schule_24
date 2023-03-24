@@ -1,4 +1,4 @@
-dateModified: 1679653297
+dateModified: 1679667102
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -48,6 +48,7 @@ meta:
     7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
     8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
     9d6cfeee-ff25-4e0d-b8cc-4d208c7fcb11: Hintergrundfarbe # Hintergrundfarbe
+    32e9b2eb-4f11-42f0-830a-f778253566a0: text # text
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
@@ -57,9 +58,11 @@ meta:
     354c00ae-bedd-49fa-8c36-fb631c82a20a: Skills # Skills
     580f024d-e333-4b61-b418-9d32309d1e9e: home # home
     2876dd87-48d7-449a-a4d1-d9702c959595: 'Subline zum Teammitglied' # Subline zum Teammitglied
+    3066e6a4-a59c-4300-9af3-c66387323f7e: Datenschutz # Datenschutz
     4903f9fb-d73b-41f2-bcc2-d9c4edf40aa9: Mail # Mail
     05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
     66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
+    70602d87-4fe4-4f22-9161-b35e824992ca: Datenschutz # Datenschutz
     78940b12-1c99-4891-a34c-0ff8a86a5c8d: Leistungen # Leistungen
     227252fb-a26f-42b6-ae49-f1e8f6a82c86: Images # Images
     364062db-aa9c-4531-b6d1-b2c95fd09d37: 'Sektion - Leistungen Text' # Sektion - Leistungen Text
@@ -68,6 +71,7 @@ meta:
     a85b5fdd-d3bd-4778-a5f4-818ad2c04917: services # services
     a959edd3-0418-4427-8f3e-8244d056be52: Standard # Standard
     a6399dbb-26c9-4495-aab8-574ca5fc0f4a: Theme # Theme
+    abe89ac8-438d-4fe3-acf3-f816dcdfbd6e: Impressum # Impressum
     aff9de1b-f6aa-40ca-9db3-2c84e7804817: team # team
     b52be6aa-63ba-43dd-a979-76ac8ac38f91: 'URL Link' # URL Link
     bc200003-f687-4b98-9c86-b159d30605fe: Craft4 # Craft4
@@ -75,8 +79,10 @@ meta:
     c3ebd5a1-ee6c-49e5-b41d-0f9b231d6fa0: Skills # Skills
     c72e9ef9-03ed-4887-a29a-0a517fbc7e04: 'Team Member (Extern)' # Team Member (Extern)
     c7696060-de57-4ba4-8bca-1ae2954705c2: Ort # Ort
+    cb8632ee-9b5a-4b0f-9275-ba7cad0bad56: Impressum # Impressum
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
+    e9bc973e-8620-4b72-adbd-cea8abf68075: _global # _global
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
     f5c36f37-2100-43b7-b63b-7e40a3ce5c36: 'Straße + Hausnummer' # Straße + Hausnummer
     f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image
