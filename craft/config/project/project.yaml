@@ -1,4 +1,4 @@
-dateModified: 1679667102
+dateModified: 1679697151
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -36,6 +36,7 @@ meta:
     1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
     2b376b85-fe59-4b60-818b-853416605735: Telefonnummer # Telefonnummer
     2ce9cabf-ec24-4086-86c9-4cf1a29fe1d1: 'Team Member (Basic)' # Team Member (Basic)
+    2dcc9df6-ffc4-401a-ae17-40043c057bbb: 'Blog Index' # Blog Index
     2f881031-f799-41d6-8042-e8b92b581f44: Subtitle # Subtitle
     2fdbe1e7-a157-4eb6-8992-b787d9e6f07d: Home # Home
     3d80dbe4-bb3b-4248-8d0e-dc85789145ba: Portraitfoto # Portraitfoto
@@ -47,10 +48,13 @@ meta:
     7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
     7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
     8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
+    8dfb6019-3f5b-4092-8a6c-606de9acd9af: Details # Details
     9d6cfeee-ff25-4e0d-b8cc-4d208c7fcb11: Hintergrundfarbe # Hintergrundfarbe
     32e9b2eb-4f11-42f0-830a-f778253566a0: text # text
+    049ecd40-e0ad-44d8-845a-d642ec8067e4: blog # blog
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
+    67b66019-8059-4ac0-90c4-bc2a19df8329: 'Blog Index' # Blog Index
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
     83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
     257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
@@ -82,7 +86,10 @@ meta:
     cb8632ee-9b5a-4b0f-9275-ba7cad0bad56: Impressum # Impressum
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
+    dbd08c4a-0a1d-4888-a63a-efedf4b3ddab: Blogbeiträge # Blogbeiträge
+    e7ee8b3a-be5d-47ce-b17d-cd53242423a9: 'Blog Autor' # Blog Autor
     e9bc973e-8620-4b72-adbd-cea8abf68075: _global # _global
+    e45f5477-bc4e-46fb-9be2-15a7ccc05ce8: Standard # Standard
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
     f5c36f37-2100-43b7-b63b-7e40a3ce5c36: 'Straße + Hausnummer' # Straße + Hausnummer
     f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image

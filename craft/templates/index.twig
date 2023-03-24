@@ -22,9 +22,9 @@
          <div class="row">
             <div class="col-xl-8 mx-auto">
                <h2 class="display-1">
-                  <div id="konzeption" class="box" data-trig-offset="0" data-trig-max="0" data-trig>Konzeption,</div>
-                  <div id="design" class="box" data-trig-offset="0" data-trig-max="0" data-trig>Design,</div>
-                  <div id="entwicklung" class="box" data-trig-offset="0" data-trig-max="0" data-trig>Entwicklung.</div>
+                  <div id="konzeption" data-trig-offset="0" data-trig-max="0" data-trig>Konzeption</div>
+                  <div id="design" data-trig-offset="0" data-trig-max="100" data-trig>Design</div>
+                  <div id="entwicklung" data-trig-offset="0" data-trig-max="0" data-trig>Entwicklung</div>
                </h2>
             </div>
          </div>
@@ -33,17 +33,6 @@
 </section>
 
 
-<style>
-	#konzeption {
-		transform: translateX(calc(var(--trig-konzeption)));
-	}
-	#design {
-		transform: translateX(calc(var(--trig-reverse-design)));
-	}
-	#entwicklung {
-		transform: translateX(calc(var(--trig-entwicklung)));
-	}
-</style>
 
 
 
@@ -62,7 +51,7 @@
        <div class="row align-items-center">
            <div class="col-xl-5">
            {% for image in gallery %}
-               <img class="object-fit__cover rounded-5" src="{{ placeholderImg }}" width="100%"/>
+               <img id="jsAbout" data-trig class="object-fit__cover rounded-5" src="{{ placeholderImg }}" width="100%"/>
             {% endfor %}
            </div>
            <div class="col-xl-7 p-4 p-lg-7">

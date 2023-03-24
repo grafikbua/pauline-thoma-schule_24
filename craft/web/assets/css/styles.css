@@ -21845,6 +21845,26 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+#jsHero {
+  transform: translateY(var(--trig-px-reverse-jsHero));
+}
+
+#konzeption {
+  transform: translateX(calc(var(--trig-konzeption)));
+}
+
+#design {
+  transform: translateX(calc(var(--trig-reverse-konzeption)));
+}
+
+#entwicklung {
+  transform: translateX(calc(var(--trig-konzeption)));
+}
+
+#jsAbout {
+  transform: translateY(var(--trig-px-reverse-jsAbout));
+}
+
 /*! components */
 #burger-menu {
   cursor: pointer;
@@ -22046,6 +22066,19 @@ body.overlay {
   font-size: small;
   list-style: none;
   padding: 0px;
+}
+
+.blog_thumb__canvas {
+  background-color: #f0f0f0;
+  width: 100%;
+  text-align: start;
+  box-shadow: 0 1px 10px -6px black;
+  transition: 0.5s;
+}
+
+.blog_thumb__canvas:hover {
+  box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.657);
+  transition: 0.5s;
 }
 
 .portfolio_card__overlay {

@@ -1,0 +1,20 @@
+// Startseite - hero
+#jsHero {
+    transform: translateY( var(--trig-px-reverse-jsHero) );
+}
+
+// Startseite - animated headlines
+#konzeption {
+    transform: translateX(calc(var(--trig-konzeption)));
+}
+#design {
+    transform: translateX(calc(var(--trig-reverse-konzeption)));
+}
+#entwicklung {
+    transform: translateX(calc(var(--trig-konzeption)));
+}
+
+// Startseite - about
+#jsAbout {
+    transform: translateY( var(--trig-px-reverse-jsAbout));
+}

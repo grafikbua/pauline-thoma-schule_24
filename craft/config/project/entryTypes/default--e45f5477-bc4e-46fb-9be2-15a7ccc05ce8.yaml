@@ -1,5 +1,5 @@
 fieldLayouts:
-  547c31ae-a8f1-4bf2-bd59-3923c64a69ac:
+  e4baae65-27cf-4e30-afd7-37fbb7476ab3:
     tabs:
       -
         elementCondition: null
@@ -26,41 +26,29 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 07e23876-6f01-4994-b90d-5c73ba0ce6e9
+            uid: 1d0cf233-78d4-4262-8f57-2c84c18b488f
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 8dfb6019-3f5b-4092-8a6c-606de9acd9af # Details
+            fieldUid: e7ee8b3a-be5d-47ce-b17d-cd53242423a9 # Blog Autor
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d752e9dd-9f70-47d1-80f7-935a4784100a
+            uid: c5b4ad05-689a-4b94-9828-4972b4404167
             userCondition: null
             warning: null
-            width: 25
-          -
-            elementCondition: null
-            fieldUid: 6aee8eeb-9148-4f6c-9e02-6dba602de699 # Leistungskategorie
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a44843a3-c501-4214-8a89-e9257f728294
-            userCondition: null
-            warning: null
-            width: 100
+            width: 50
         name: Inhalt
-        uid: 9d49afa0-3762-49d3-b0eb-3e8bce4d6be2
+        uid: 750837ec-effa-48a5-a56b-3eaff2214dfe
         userCondition: null
 handle: default
 hasTitleField: true
 name: Standard
-section: 78940b12-1c99-4891-a34c-0ff8a86a5c8d # Leistungen
+section: dbd08c4a-0a1d-4888-a63a-efedf4b3ddab # Blogbeiträge
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

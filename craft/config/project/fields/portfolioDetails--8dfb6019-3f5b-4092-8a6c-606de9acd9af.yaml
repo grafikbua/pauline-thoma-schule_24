@@ -1,0 +1,14 @@
+columnSuffix: bmqqfvja
+contentColumnType: boolean
+fieldGroup: a85b5fdd-d3bd-4778-a5f4-818ad2c04917 # services
+handle: portfolioDetails
+instructions: null
+name: Details
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -8,3 +8,14 @@
     list-style: none;
     padding: 0px;
 }
+.blog_thumb__canvas {
+    background-color: $light;
+    width: 100%;
+    text-align: start;
+    box-shadow: 0 1px 10px -6px black;
+    transition: .5s;
+}
+.blog_thumb__canvas:hover {
+    box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.657);
+    transition: .5s;
+}

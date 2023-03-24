@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: blogEntries
+name: Blogbeiträge
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_blog/_entry.twig
+    uriFormat: 'blog/{slug}'
+type: channel

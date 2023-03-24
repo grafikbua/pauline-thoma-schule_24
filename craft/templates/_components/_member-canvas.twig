@@ -1,3 +1,4 @@
+{% set blogEnties = craft.entries.section('blogEntries').relatedTo(member) %}
 <div class="offcanvas offcanvas-end" style="z-index:9999" tabindex="-1" id="canvas{{member.id}}" aria-labelledby="canvas{{member.id}}Label">
     <div class="offcanvas-header p-3 d-none d-lg-block">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -14,13 +15,26 @@
             {% endfor %}
         </div>
 
+        <div class="mt-auto">
+            {% if blogEnties %}
+                <p class="fs-6">Aktuelle Beiträge</p>
+                {% for entry in blogEnties.all() %}
+                    <a class="text-decoration-none" href="{{entry.getUrl}}">
+                        <div class="blog_thumb__canvas rounded-3 p-4">
+                            <h4 class="h6 text-dark">{{entry.title}}</h4>
+                        </div>
+                    </a>
+                {% endfor %}
+            {% endif %}
+        </div>
+
         <div class="mt-auto pt-3">
-            <h6>Impressum</h6>
+            <h6>Kontakt</h6>
             <ul id="canvas-impressum">
-                <li>Birkenstraße 3</li>
-                <li>83075 Bad Feilnbach</li>
-                <li>t. +49 151 2210 7244</li>
-                <li>m. <a href="mailto:pedro@grafikbuam.de">pedro@grafikbuam.de</a></li>
+                <li>{{member.memberStreet ?? null}}</li>
+                <li>{{member.memberLocation ?? null}}</li>
+                <li>t. <a class="text-dark" href="phone:{{member.memberPhone ?? null}}">{{member.memberPhone ?? null}}</a></li>
+                <li>m. <a class="text-dark" href="mailto:{{member.memberMail ?? null}}">{{member.memberMail ?? null}}</a></li>
             </ul>
         </div>
     </div>

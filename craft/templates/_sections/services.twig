@@ -28,7 +28,12 @@
             <h4>{{ category.title }}</h4>
             <div class="pt-4">
                {% for service in services %}
-                  <span class="d-block">{{ service.title }}</span>
+                  {% if service.portfolioDetails %}
+                     <a href="{{service.getUrl}}" class="text-light">{{ service.title }}</a>
+                     {% else %}
+                     <span class="text-light">{{ service.title }}</span>
+                  {% endif %}
+                  
                {% endfor %}
             </div>
          </div>

@@ -1,0 +1,43 @@
+fieldLayouts:
+  14543b45-71ad-4110-bf14-3ca81cacbdeb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5c0db7a6-61dd-449f-90ff-09c07d14f526
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 6f5f801f-29a0-43c0-bc49-e739d43c88c5
+        userCondition: null
+handle: blogIndex
+hasTitleField: false
+name: 'Blog Index'
+section: 67b66019-8059-4ac0-90c4-bc2a19df8329 # Blog Index
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
