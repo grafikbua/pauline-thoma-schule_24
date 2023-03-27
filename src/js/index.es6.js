@@ -77,6 +77,26 @@ if (sliderCardsPortfolio) {
    );
 }
 
+// #js-slider-cards-portfolio
+const sliderAboutUs = document.querySelector('#js-slider-about-us'); // Checks if one Element is present, to prevent tns error.
+
+if (sliderAboutUs) {
+   tns({
+      container: '#js-slider-about-us',
+      items: 1,
+      swipeAngle: false,
+      loop: true,
+      mouseDrag: true,
+      nav: false,
+      controlsContainer: "#js-slider-about-us--controls",
+      controlsPosition: "bottom",
+      prevButton: document.getElementById('#js-slider-about-us--controls-prev'),
+      prevButton: document.getElementById('#js-slider-about-us--controls-next'),
+      arrowKeys: true,
+      },
+   );
+}
+
 // Scroll to top
 const scrollTopButton = document.querySelector('.js-scroll-top');
 
