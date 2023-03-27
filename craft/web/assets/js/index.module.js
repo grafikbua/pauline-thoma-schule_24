@@ -4179,20 +4179,17 @@ exports.tns = tns;
 "use strict";
 
 require("./polyfills/custom-event");
-
 var _vanillaLazyload = _interopRequireDefault(require("vanilla-lazyload"));
-
 var _rellax = _interopRequireDefault(require("rellax"));
-
 var _tinySlider = require("tiny-slider");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 // Polyfills
+
 // Node Modules
 //import Popper from '../../src/js/plugins/popper.min.js';
 // import Modal from '../../node_modules/bootstrap/dist/js/bootstrap.esm.min.js';
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+
 // Lazy Loading
 // Instance using native lazy loading
 var lazyContent = new _vanillaLazyload.default({
@@ -4201,48 +4198,64 @@ var lazyContent = new _vanillaLazyload.default({
 });
 var lazyFrame = new _vanillaLazyload.default({
   elements_selector: "iframe.js-lazyload"
-}); // Rellax
+});
+
+// Rellax
 // Checks if one Element is present,
+var rellax = document.querySelector('.js-rellax');
 
-var rellax = document.querySelector('.js-rellax'); // Initialize Rellax
-
+// Initialize Rellax
 if (rellax) {
   new _rellax.default('.js-rellax');
 }
+;
 
-; // Initialize Slider
+// Initialize Slider 
 
-var slider = document.querySelector('.js-slider'); // Checks if one Element is present, to prevent tns error.
+// #js-slider-cards-services
+var sliderCardsServices = document.querySelector('#js-slider-services'); // Checks if one Element is present, to prevent tns error.
 
-if (slider) {
+if (sliderCardsServices) {
   (0, _tinySlider.tns)({
-    container: ".js-slider",
-    loop: false,
-    mode: "gallery",
-    responsive: {
-      "350": {
-        "items": 1
-      },
-      "500": {
-        "items": 1
-      }
-    },
+    container: '#js-slider-services',
+    fixedWidth: 400,
     swipeAngle: false,
+    loop: true,
     mouseDrag: true,
-    speed: 800,
     nav: false,
-    edgePadding: 0,
-    gutter: 0,
-    controlsContainer: "#js-slider__controls",
-    prevButton: document.getElementById('#prev'),
-    nextButton: document.getElementById('#next'),
+    gutter: 30,
+    edgePadding: 50,
+    controlsContainer: "#js-slider-services--controls",
+    controlsPosition: "bottom",
+    prevButton: document.getElementById('#js-slider-services--controls-prev'),
+    prevButton: document.getElementById('#js-slider-services--controls-next'),
     arrowKeys: true
   });
-} // Scroll to top
+}
 
+// #js-slider-cards-portfolio
+var sliderCardsPortfolio = document.querySelector('#js-slider-portfolio'); // Checks if one Element is present, to prevent tns error.
 
+if (sliderCardsPortfolio) {
+  (0, _tinySlider.tns)({
+    container: '#js-slider-portfolio',
+    fixedWidth: 400,
+    swipeAngle: false,
+    loop: true,
+    mouseDrag: true,
+    nav: false,
+    gutter: 30,
+    edgePadding: 50,
+    controlsContainer: "#js-slider-portfolio--controls",
+    controlsPosition: "bottom",
+    prevButton: document.getElementById('#js-slider-portfolio--controls-prev'),
+    prevButton: document.getElementById('#js-slider-portfolio--controls-next'),
+    arrowKeys: true
+  });
+}
+
+// Scroll to top
 var scrollTopButton = document.querySelector('.js-scroll-top');
-
 if (scrollTopButton) {
   scrollTopButton.addEventListener('click', event => {
     window.scrollTo({
@@ -4268,7 +4281,6 @@ if (scrollTopButton) {
     evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
     return evt;
   }
-
   CustomEvent.prototype = window.Event.prototype;
   window.CustomEvent = CustomEvent;
 })();

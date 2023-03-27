@@ -36,11 +36,14 @@
 
 
 
-<section class="px-2 px-lg-5 py-7">
+<section class="py-5 py-xl-7">
    {% embed '_sections/services' with {
       content: {
          headline: entry.sectionServicesHeadline,
          text: entry.sectionServicesText,
+      },
+      opt: {
+         sliderName: 'services'
       }
    }%}{% endembed %}
 </section>
@@ -63,11 +66,14 @@
    </div>
 </section>
 
-<section class="px-2 px-lg-5 py-7">
+<section class="py-5 py-xl-7">
    {% embed '_sections/portfolio' with {
       content: {
          headline: entry.sectionPortfolioHeadline,
          text: entry.sectionPortfolioText,
+      },
+      opt: {
+         sliderName: 'portfolio'
       }
    }%}{% endembed %}
 </section>

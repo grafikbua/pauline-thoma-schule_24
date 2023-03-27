@@ -1,28 +1,40 @@
 {% set headline = content.headline ?? null %}
 {% set text = content.text ?? null %}
 
-{% set portfolio = craft.entries.section('portfolio').all %}
+{% set portfolio = craft.entries.section('portfolio')
+   .all 
+   %}
 
-<div class="container-fluid bg-dark rounded-5 p-4 p-lg-7 text-white">
-   <div class="container">
-      <div class="row pb-7">
-         <div class="col-6">
-            <h3 class="h1">{{ headline }}</h3>
-         </div>
-         <div class="col-6">
-            <p{{ text }}</p>
+{# sliderSettings #}
+{% set sliderName = "js-slider-" ~ opt.sliderName ?? 'default' %}
+{% set sliderControls = sliderName ~ '--controls' %}
+{% set sliderControlsPrev = sliderName ~ '--controls-prev' %}
+{% set sliderControlsNext = sliderName ~ '--controls-next' %}
+
+<div class="mx-5">
+   <div class="container-fluid bg-dark rounded-5 p-4 p-lg-7 text-white">
+      <div class="container">
+         <div class="row pb-7">
+            <div class="col-6">
+               <h3 class="h1">{{ headline }}</h3>
+            </div>
+            <div class="col-6">
+               <p{{ text }}</p>
+            </div>
          </div>
       </div>
    </div>
 </div>
-<div class="container mt-n7 px-5">
-   <div class="row row-cols-4 mt-n7">
+
+<div class="container-fluid px-0 position-relative mt-n7">
+   <div id="{{ sliderName }}" class="d-flex">
+
       {% for item in portfolio %}
          {% set title = item.title ?? null %}
          {% set portfolioSubtitle = item.portfolioSubtitle ?? null %}
          {% set link = item.portfolioUrl ?? null %}
          {% set image = item.portfolioImage.one() ?? null %}
-         <div class="col">
+         <div class="item">
             <a href="{{link}}" target="_blank" alt="{{title ~ '-' ~ portfolioSubtitle}}" title="{{'Details' ~ ' ' ~ title ~ ' anzeigen'}}">
                <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} py-5 portfolio_card" width="100%">
                   <div class="portfolio_card__overlay">

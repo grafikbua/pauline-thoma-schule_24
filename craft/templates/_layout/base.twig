@@ -62,5 +62,46 @@
 		};
 	</script>
 
+
+			{#<script src="{{ url('/assets/js/plugins/tiny-slider.js') }}"></script>#}
+			<!--[if (lt IE 9)]><script src="{{ url('/assets/js/plugins/tiny-slider.helper.ie8.js') }}"></script><![endif]-->
+
+			{# master js #}
+			{% if devMode %}
+				<script type="module" src="{{ url('/assets/js/index.module.js') }}"> </script>
+				<script nomodule src="{{ url('/assets/js/index.es5.js') }}" async></script>
+			{% else %}
+				<script type="module" src="{{ url('/assets/js/index.module.min.js') }}"></script>
+				<script nomodule src="{{ url('/assets/js/index.es5.min.js') }}" async></script>
+			{% endif %}
+
+			{# Safari Fix -> https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc #}
+			<script>
+				(function () {
+				var check = document.createElement('script');
+				if (!('noModule' in check) && 'onbeforeload' in check) {
+				var support = false;
+				document.addEventListener('beforeload', function (e) {
+				if (e.target === check) {
+				support = true;
+				} else if (! e.target.hasAttribute('nomodule') || ! support) {
+				return;
+				}
+				e.preventDefault();
+				}, true);
+
+				check.type = 'module';
+				check.src = '.';
+				document.head.appendChild(check);
+				check.remove();
+				}
+				}());
+			</script> 
+
+			{# Custom Properties Polyfill #}	
+			<script>
+				window.MSInputMethodContext && document.documentMode && document.write('<script src="/assets/js/ie11custom-properties.es5.js"><\x2fscript>');
+			</script> 
+
 </html>
 {% endapply %}
