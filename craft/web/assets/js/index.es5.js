@@ -7044,7 +7044,7 @@ if (sliderCardsServices) {
     container: '#js-slider-services',
     fixedWidth: 400,
     swipeAngle: false,
-    loop: tfalserue,
+    loop: false,
     mouseDrag: true,
     nav: false,
     gutter: 30,
@@ -7068,7 +7068,7 @@ if (sliderCardsPortfolio) {
     mouseDrag: true,
     nav: false,
     gutter: 30,
-    edgePadding: 250,
+    edgePadding: 150,
     controlsContainer: "#js-slider-portfolio--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-portfolio--controls-prev')
