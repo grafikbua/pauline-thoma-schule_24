@@ -7044,11 +7044,11 @@ if (sliderCardsServices) {
     container: '#js-slider-services',
     fixedWidth: 400,
     swipeAngle: false,
-    loop: true,
+    loop: tfalserue,
     mouseDrag: true,
     nav: false,
     gutter: 30,
-    edgePadding: 50,
+    edgePadding: 150,
     controlsContainer: "#js-slider-services--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-services--controls-prev')
@@ -7068,7 +7068,7 @@ if (sliderCardsPortfolio) {
     mouseDrag: true,
     nav: false,
     gutter: 30,
-    edgePadding: 50,
+    edgePadding: 250,
     controlsContainer: "#js-slider-portfolio--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-portfolio--controls-prev')
@@ -7086,7 +7086,7 @@ if (sliderAboutUs) {
     swipeAngle: false,
     loop: true,
     mouseDrag: true,
-    nav: false,
+    nav: true,
     controlsContainer: "#js-slider-about-us--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-about-us--controls-prev')
