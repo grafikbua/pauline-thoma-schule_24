@@ -38,9 +38,9 @@
             <div class="pt-4">
                {% for service in services %}
                   {% if service.portfolioDetails %}
-                     <a href="{{service.getUrl}}" class="text-light">{{ service.title }}</a>
+                     <a href="{{service.getUrl}}" class="text-light d-block">{{ service.title }}</a>
                      {% else %}
-                     <span class="text-light">{{ service.title }}</span>
+                     <span class="text-light d-block">{{ service.title }}</span>
                   {% endif %}
                   
                {% endfor %}
