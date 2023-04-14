@@ -1,11 +1,12 @@
 {
     "require": {
-        "craftcms/cms": "4.3.10",
-        "craftcms/contact-form": "3.0.0",
+        "craftcms/cms": "4.4.7",
+        "craftcms/contact-form": "3.0.1",
         "craftcms/contact-form-honeypot": "2.0.0",
-        "craftcms/redactor": "3.0.3",
+        "craftcms/redactor": "3.0.4",
         "putyourlightson/craft-sprig": "2.2.1",
-        "verbb/image-resizer": "3.0.2",
+        "verbb/image-resizer": "3.0.4",
+        "verbb/knock-knock": "2.0.8",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {

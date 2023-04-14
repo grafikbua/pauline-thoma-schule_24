@@ -1,4 +1,4 @@
-dateModified: 1681459078
+dateModified: 1681464210
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -127,6 +127,14 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       honeypotParam: grafikbuamDev23!
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
   redactor:
     edition: standard
     enabled: true
@@ -136,7 +144,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false
