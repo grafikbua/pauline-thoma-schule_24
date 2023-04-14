@@ -1,0 +1,27 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set blogEntries = craft.entries.section('blogEntries') %}
+{% block main %}
+
+<section class="pt-14">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="mb-2 text-primary">{{'Grafikbuam Blog'}}</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            {% for item in blogEntries.all() %}
+                <div class="col-12">
+                    <a href="{{item.getUrl ?? null}}" class="btn btn-outline-primary w-100 text-start border-top-0 border-start-0 border-end-0 rounded-0 py-3 d-flex">
+
+                            <div>{{item.title ?? null}}</div>
+                            <div class="ms-auto">{{item.blogAuthor.one() ?? null}} x {{entry.postDate|date('d-m-yy')}}</div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

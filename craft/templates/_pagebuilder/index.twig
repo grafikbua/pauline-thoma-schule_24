@@ -1,0 +1,5 @@
+<section>
+   {% for module in entry.pagebuilder.all() %}
+     {% include '_pagebuilder/'  ~ module.type  %}
+   {% endfor %}
+</section>

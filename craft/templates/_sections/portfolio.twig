@@ -36,14 +36,14 @@
          {% set image = item.portfolioImage.one() ?? null %}
          <div class="item">
             <a href="{{link}}" target="_blank" alt="{{title ~ '-' ~ portfolioSubtitle}}" title="{{'Details' ~ ' ' ~ title ~ ' anzeigen'}}">
-               <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} py-5 portfolio_card" style="height: 250px;">
+               <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} portfolio_card" style="height: 250px;">
                   <div class="portfolio_card__overlay">
                      <div class="portfolio_card__title p-4">
                         <h4>{{ title ?? null }}</h4>
                         <p>{{ portfolioSubtitle ?? null }}</p>
                      </div>
                   </div>
-                  <img src="{{ image.url() }}" width="100%" class="mx-auto px-4" style="object-fit:contain" alt="{{image.title ?? null}}">
+                  <img src="{{ image.url() }}" width="250px" class="mx-auto object-fit__contain" style="max-height:80%" alt="{{image.title ?? null}}">
                </div>
             </a>
          </div>

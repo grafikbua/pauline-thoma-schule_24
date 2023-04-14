@@ -45,6 +45,24 @@ fieldLayouts:
         name: Inhalt
         uid: 750837ec-effa-48a5-a56b-3eaff2214dfe
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 36fcb770-0e73-4e62-b21a-adbfcef75309 # Pagebuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba684182-1e9e-4a8c-8a08-49d54353b8c6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Pagebuilder
+        uid: cefda7ae-d640-417d-b426-564b8168a129
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Standard

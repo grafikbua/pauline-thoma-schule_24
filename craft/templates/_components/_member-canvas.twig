@@ -16,7 +16,7 @@
         </div>
 
         <div class="mt-auto">
-            {% if blogEnties %}
+            {% if blogEnties is not empty %}
                 <p class="fs-6">Aktuelle Beiträge</p>
                 {% for entry in blogEnties.all() %}
                     <a class="text-decoration-none" href="{{entry.getUrl}}">
@@ -35,6 +35,7 @@
                 <li>{{member.memberLocation ?? null}}</li>
                 <li>t. <a class="text-dark" href="phone:{{member.memberPhone ?? null}}">{{member.memberPhone ?? null}}</a></li>
                 <li>m. <a class="text-dark" href="mailto:{{member.memberMail ?? null}}">{{member.memberMail ?? null}}</a></li>
+                <li>w. <a class="text-dark" href="{{member.memberWeb ?? null}}">{{member.memberWeb ?? null}}</a></li>
             </ul>
         </div>
     </div>

@@ -1,4 +1,4 @@
-dateModified: 1679697151
+dateModified: 1681459078
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -31,9 +31,11 @@ fs:
     url: '@theme_url'
 meta:
   __names__:
+    0a9f0664-5623-4180-a2ed-6954f31d9596: 'Padding Bottom' # Padding Bottom
     0cafd6b0-a390-4f26-8a65-1ac56dddc831: _hero # _hero
     0ec3fd07-a143-4155-839a-4ffd252ba245: portfolio # portfolio
     1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
+    2b97a2c8-45d0-40e6-a04f-3a66896add23: Text # Text
     2b376b85-fe59-4b60-818b-853416605735: Telefonnummer # Telefonnummer
     2ce9cabf-ec24-4086-86c9-4cf1a29fe1d1: 'Team Member (Basic)' # Team Member (Basic)
     2dcc9df6-ffc4-401a-ae17-40043c057bbb: 'Blog Index' # Blog Index
@@ -42,6 +44,7 @@ meta:
     3d80dbe4-bb3b-4248-8d0e-dc85789145ba: Portraitfoto # Portraitfoto
     3dcccecf-d02c-4e90-b3fe-6f68e666d45b: 'Hero Headline' # Hero Headline
     4a9472b4-14a2-4642-b0d4-1715ae07df0e: Webseite # Webseite
+    4adfd44c-695c-434a-85d5-974eda9a3b97: 'Padding Top' # Padding Top
     4b5bca94-0221-49f6-9b4e-32d4e6e2284c: 'Sektion - Leistungen Headline' # Sektion - Leistungen Headline
     5b43d38d-0e2d-4180-a20e-b09541cad40e: 'Hero Hintergrundbild' # Hero Hintergrundbild
     6aee8eeb-9148-4f6c-9e02-6dba602de699: Leistungskategorie # Leistungskategorie
@@ -50,13 +53,16 @@ meta:
     8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
     8dfb6019-3f5b-4092-8a6c-606de9acd9af: Details # Details
     9d6cfeee-ff25-4e0d-b8cc-4d208c7fcb11: Hintergrundfarbe # Hintergrundfarbe
+    9d636f74-6956-4046-9690-c3aebdd51be6: Bild # Bild
     32e9b2eb-4f11-42f0-830a-f778253566a0: text # text
+    36fcb770-0e73-4e62-b21a-adbfcef75309: Pagebuilder # Pagebuilder
     049ecd40-e0ad-44d8-845a-d642ec8067e4: blog # blog
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
     67b66019-8059-4ac0-90c4-bc2a19df8329: 'Blog Index' # Blog Index
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
     83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
+    88f24a34-4ebc-4bf2-b615-1d432547918a: Bild # Bild
     257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
     313e29bc-0a8e-4436-9b83-2d45c4bf876d: 'Sektion - Über uns Headline' # Sektion - Über uns Headline
     354c00ae-bedd-49fa-8c36-fb631c82a20a: Skills # Skills
@@ -66,6 +72,7 @@ meta:
     4903f9fb-d73b-41f2-bcc2-d9c4edf40aa9: Mail # Mail
     05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
     66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
+    70469a65-40a0-458a-a72a-9af0a8fe1f9b: Headline # Headline
     70602d87-4fe4-4f22-9161-b35e824992ca: Datenschutz # Datenschutz
     78940b12-1c99-4891-a34c-0ff8a86a5c8d: Leistungen # Leistungen
     227252fb-a26f-42b6-ae49-f1e8f6a82c86: Images # Images
@@ -78,6 +85,7 @@ meta:
     abe89ac8-438d-4fe3-acf3-f816dcdfbd6e: Impressum # Impressum
     aff9de1b-f6aa-40ca-9db3-2c84e7804817: team # team
     b52be6aa-63ba-43dd-a979-76ac8ac38f91: 'URL Link' # URL Link
+    bb54d838-09fe-4083-8116-a503684a87e2: Text # Text
     bc200003-f687-4b98-9c86-b159d30605fe: Craft4 # Craft4
     c2cd05e6-a83d-4c05-ba35-c7c61951cc78: Team # Team
     c3ebd5a1-ee6c-49e5-b41d-0f9b231d6fa0: Skills # Skills
@@ -86,10 +94,15 @@ meta:
     cb8632ee-9b5a-4b0f-9275-ba7cad0bad56: Impressum # Impressum
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
+    cee2892e-09a0-46fc-ac6a-0ee40419f6a3: 'Padding Bottom' # Padding Bottom
+    cef17153-828d-491f-bc13-0c4448e870df: 'Padding Bottom' # Padding Bottom
+    cf4769d8-2e9c-4092-b448-a281a2c406bb: Headline # Headline
     dbd08c4a-0a1d-4888-a63a-efedf4b3ddab: Blogbeiträge # Blogbeiträge
+    e4fc67e5-1248-4164-adce-fc6dea4bed0c: 'Padding top' # Padding top
     e7ee8b3a-be5d-47ce-b17d-cd53242423a9: 'Blog Autor' # Blog Autor
     e9bc973e-8620-4b72-adbd-cea8abf68075: _global # _global
     e45f5477-bc4e-46fb-9be2-15a7ccc05ce8: Standard # Standard
+    ef1162f4-9ab1-4c07-ba05-097fac7582b3: 'Padding Top' # Padding Top
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
     f5c36f37-2100-43b7-b63b-7e40a3ce5c36: 'Straße + Hausnummer' # Straße + Hausnummer
     f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image
