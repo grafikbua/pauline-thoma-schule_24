@@ -22233,16 +22233,18 @@ body.overlay {
 }
 
 .blog_thumb__canvas {
-  background-color: #f0f0f0;
+  background: linear-gradient(150deg, transparent, #528690) #3D636B;
+  color: white;
   width: 100%;
   text-align: start;
   box-shadow: 0 1px 10px -6px black;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .blog_thumb__canvas:hover {
+  background-color: #BC8CBB;
   box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.657);
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .btn-prev img {
