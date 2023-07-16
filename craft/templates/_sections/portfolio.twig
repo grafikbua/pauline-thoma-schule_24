@@ -34,8 +34,8 @@
          {% set portfolioSubtitle = item.portfolioSubtitle ?? null %}
          {% set link = item.portfolioUrl ?? null %}
          {% set image = item.portfolioImage.one() ?? null %}
-         <div class="item">
-            <a href="{{link}}" target="_blank" alt="{{title ~ '-' ~ portfolioSubtitle}}" title="{{'Details' ~ ' ' ~ title ~ ' anzeigen'}}">
+         <div class="item pointer">
+            <a href="{{link}}" class="pointer" target="_blank" alt="{{title ~ '-' ~ portfolioSubtitle}}" title="{{'Details' ~ ' ' ~ title ~ ' anzeigen'}}">
                <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} portfolio_card" style="height: 250px;">
                   <div class="portfolio_card__overlay">
                      <div class="portfolio_card__title p-4">
@@ -43,7 +43,7 @@
                         <p>{{ portfolioSubtitle ?? null }}</p>
                      </div>
                   </div>
-                  <img src="{{ image.url() }}" width="250px" class="mx-auto object-fit__contain" style="max-height:80%" alt="{{image.title ?? null}}">
+                  <img src="{{ image.url() }}" width="250" class="mx-auto object-fit__contain" style="max-height:46%" alt="{{image.title ?? null}}">
                </div>
             </a>
          </div>

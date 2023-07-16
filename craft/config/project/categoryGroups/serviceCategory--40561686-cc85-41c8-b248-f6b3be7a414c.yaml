@@ -37,6 +37,10 @@ fieldLayouts:
 handle: serviceCategory
 name: Leistungskategorie
 siteSettings:
+  92fa6fe8-29b4-416b-97c9-1cbe33fd43e7: # $PEDRO_SITE_NAME
+    hasUrls: false
+    template: null
+    uriFormat: null
   fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
     hasUrls: false
     template: null

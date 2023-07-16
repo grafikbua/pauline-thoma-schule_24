@@ -1,9 +1,9 @@
-dateModified: 1681464210
+dateModified: 1689503831
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
   replyToEmail: null
-  template: null
+  template: ''
   transportSettings:
     command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
@@ -63,6 +63,7 @@ meta:
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
     83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
     88f24a34-4ebc-4bf2-b615-1d432547918a: Bild # Bild
+    92fa6fe8-29b4-416b-97c9-1cbe33fd43e7: $PEDRO_SITE_NAME # $PEDRO_SITE_NAME
     257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
     313e29bc-0a8e-4436-9b83-2d45c4bf876d: 'Sektion - Über uns Headline' # Sektion - Über uns Headline
     354c00ae-bedd-49fa-8c36-fb631c82a20a: Skills # Skills

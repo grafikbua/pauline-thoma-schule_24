@@ -1,0 +1,9 @@
+baseUrl: $PEDRO_SITE_URL
+enabled: '1'
+handle: pedro
+hasUrls: true
+language: de
+name: $PEDRO_SITE_NAME
+primary: false
+siteGroup: 257a5eca-fc1b-4a37-8a1d-5841c1c0539b # Craft Basic
+sortOrder: 2

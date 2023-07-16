@@ -4220,7 +4220,7 @@ if (sliderCardsServices) {
     container: '#js-slider-services',
     fixedWidth: 400,
     swipeAngle: false,
-    loop: false,
+    loop: true,
     mouseDrag: true,
     nav: false,
     gutter: 30,
