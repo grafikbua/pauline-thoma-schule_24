@@ -1,4 +1,4 @@
-dateModified: 1689503831
+dateModified: 1689504505
 email:
   fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
   fromName: $SYSTEM_MAIL_SENDER
@@ -141,7 +141,7 @@ plugins:
     enabled: true
     schemaVersion: 2.3.0
 system:
-  edition: pro
+  edition: solo
   live: true
   name: $SITE_NAME
   retryDuration: null
