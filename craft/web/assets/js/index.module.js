@@ -4218,13 +4218,30 @@ var sliderCardsServices = document.querySelector('#js-slider-services'); // Chec
 if (sliderCardsServices) {
   (0, _tinySlider.tns)({
     container: '#js-slider-services',
-    fixedWidth: 400,
     swipeAngle: false,
-    loop: true,
-    mouseDrag: true,
+    preventScrollOnTouch: 'auto',
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3,
+        edgePadding: 120
+      },
+      2400: {
+        items: 3.5,
+        edgePadding: 200
+      }
+    },
+    loop: false,
+    mouseDrag: false,
     nav: false,
     gutter: 30,
-    edgePadding: 150,
+    edgePadding: 10,
     controlsContainer: "#js-slider-services--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-services--controls-prev'),
@@ -4239,13 +4256,35 @@ var sliderCardsPortfolio = document.querySelector('#js-slider-portfolio'); // Ch
 if (sliderCardsPortfolio) {
   (0, _tinySlider.tns)({
     container: '#js-slider-portfolio',
-    fixedWidth: 400,
     swipeAngle: false,
+    preventScrollOnTouch: 'auto',
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20
+      },
+      700: {
+        items: 2,
+        gutter: 30
+      },
+      1200: {
+        items: 3,
+        edgePadding: 120
+      },
+      1600: {
+        items: 4,
+        edgePadding: 120
+      },
+      2400: {
+        items: 5,
+        edgePadding: 120
+      }
+    },
     loop: true,
-    mouseDrag: true,
+    mouseDrag: false,
     nav: false,
     gutter: 30,
-    edgePadding: 150,
+    edgePadding: 10,
     controlsContainer: "#js-slider-portfolio--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-portfolio--controls-prev'),
@@ -4260,11 +4299,13 @@ var sliderAboutUs = document.querySelector('#js-slider-about-us'); // Checks if 
 if (sliderAboutUs) {
   (0, _tinySlider.tns)({
     container: '#js-slider-about-us',
-    items: 1,
     swipeAngle: false,
+    preventScrollOnTouch: 'auto',
     loop: true,
-    mouseDrag: true,
-    nav: true,
+    mouseDrag: false,
+    nav: false,
+    gutter: 30,
+    edgePadding: 10,
     controlsContainer: "#js-slider-about-us--controls",
     controlsPosition: "bottom",
     prevButton: document.getElementById('#js-slider-about-us--controls-prev'),
@@ -4272,6 +4313,15 @@ if (sliderAboutUs) {
     arrowKeys: true
   });
 }
+sliderCardsPortfolio.events.on('touchStart', function (e) {
+  e.stopImmediatePropagation();
+});
+sliderCardsPortfolio.events.on('touchMove', function (e) {
+  e.stopImmediatePropagation();
+});
+sliderCardsPortfolio.events.on('touchEnd', function (e) {
+  e.stopImmediatePropagation();
+});
 
 // Scroll to top
 var scrollTopButton = document.querySelector('.js-scroll-top');
