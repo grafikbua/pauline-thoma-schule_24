@@ -1,20 +1,29 @@
 {% set blogEnties = craft.entries.section('blogEntries').relatedTo(member) %}
-<div class="offcanvas offcanvas-end" style="z-index:9999" tabindex="-1" id="canvas{{member.id}}" aria-labelledby="canvas{{member.id}}Label">
+{% set memberID = member.id ?? null %}
+{% set memberTitle = member.title ?? null %}
+{% set memberSubline = member.teamSubline ?? null %}
+{% set memberPhone = member.memberPhone ?? null %}
+{% set memberMail = member.memberMail ?? null %}
+{% set memberWeb = member.memberWeb ?? null %}
+{% set memberStreet = member.memberStreet ?? null %}
+{% set memberLocation = member.memberLocation ?? null %}
+
+<div class="offcanvas offcanvas-end" style="z-index:9999" tabindex="-1" id="canvas{{memberID}}" aria-labelledby="canvas{{memberID}}Label">
     <div class="offcanvas-header p-3 d-none d-lg-block">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-5 pt-5 pt-lg-0 pb-lg-4 text-center">
         <div class="bg-dark rounded-circle mx-auto overflow-hidden ratio ratio-1x1 w-50" style="display:inline-table">
-            <img src="{{memberImage.getUrl()}}" height="100%" class="object-fit__cover" alt="{{member.title ~ member.teamSubline}}">
+            <img src="{{memberImage.getUrl()}}" height="100%" class="object-fit__cover" title="{{'Profilbild' ~ ' - ' ~ memberTitle}}" alt="{{memberTitle ~ memberSubline}}">
         </div>
-        <h2 class="h4 mt-4">{{member.title ?? null}}</h2>
-        <p class="small">{{member.teamSubline ?? null}}</p>
+        <h2 class="h4 mt-4">{{memberTitle}}</h2>
+        <p class="small">{{memberSubline}}</p>
         <div class="py-3">
             {% for item in memberSkills.all() %}
                 {% if item.portfolioDetails %}
-                    <a class="btn btn-petrol btn-sm text-white m-2" href="{{item.getUrl}}">{{item.title}}</a>
+                    <a class="btn btn-petrol btn-sm text-white m-2" title="{{memberTitle}} {{item.title ?? null}} ansehen" href="{{item.getUrl}}">{{item.title}}</a>
                     {% else %}
-                    <button type="button" class="btn btn-petrol btn-sm text-white m-2" disabled>{{item.title}}</button>
+                    <button type="button" class="btn btn-petrol btn-sm text-white m-2" title="{{memberTitle}} {{item.title}}" disabled>{{item.title}}</button>
                 {% endif %}
             {% endfor %}
         </div>
@@ -23,7 +32,9 @@
             {% if blogEnties is not empty %}
                 <p class="fs-6">Aktuelle Beiträge</p>
                 {% for entry in blogEnties.all() %}
-                    <a class="text-decoration-none" href="{{entry.getUrl}}">
+                {% set blogAuthor = entry.blogAuthor.one() ?? null %}
+
+                    <a class="text-decoration-none" title="Blogbeitrag {{entry.title ?? null}} von {{blogAuthor}} lesen" href="{{entry.getUrl}}">
                         <div class="blog_thumb__canvas rounded-3 p-4 my-3">
                             <h4 class="fs-6 text-white">{{entry.title}}</h4>
                         </div>
@@ -35,15 +46,15 @@
         <div class="mt-auto pt-3">
             <h6>Kontakt</h6>
             <ul id="canvas-impressum">
-                <li>{{member.memberStreet ?? null}}</li>
-                <li>{{member.memberLocation ?? null}}</li>
-                <li>t. <a class="text-dark" href="phone:{{member.memberPhone ?? null}}">{{member.memberPhone ?? null}}</a></li>
-                <li>m. <a class="text-dark" href="mailto:{{member.memberMail ?? null}}">{{member.memberMail ?? null}}</a></li>
-                <li>w. <a class="text-dark" href="{{member.memberWeb ?? null}}">{{member.memberWeb ?? null}}</a></li>
+                <li>{{memberStreet}}</li>
+                <li>{{memberLocation}}</li>
+                <li>t. <a class="text-dark" href="phone:{{memberPhone ? memberPhone|replace({' ': ''}) }}" title="{{memberTitle}} anrufen">{{memberPhone}}</a></li>
+                <li>m. <a class="text-dark" href="mailto:{{memberMail}}" title="{{memberTitle}} anschreiben">{{memberMail}}</a></li>
+                <li>w. <a class="text-dark" href="{{memberWeb}}" title="Webauftritt von {{memberTitle}}">{{memberWeb}}</a></li>
             </ul>
         </div>
     </div>
     <div class="offcanvas-header px-3 pb-4 d-lg-none shadow-lg">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" title="schliessen"></button>
     </div>
 </div>

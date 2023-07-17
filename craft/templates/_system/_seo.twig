@@ -1,5 +1,19 @@
+{% set title = entry.title ?? null %}
+{% set author = entry.blogAuthor.one() ?? null %}
+
 {# seo #}
-<title>{% if entry.title is defined %}{{ entry.title }} - {% endif %}{{ siteName }}</title>
-<meta name="description" content="Everyday carry retro farm-to-table, readymade microdosing street art XOXO.">
-<meta name="keywords" content="HTML, CSS, JavaScript, Twig">
+<title>
+    {% if title is not empty %}
+        {% if title == 'Home' %}
+            {{ siteName }} - Kreativgemeinschaft aus Rosenheim
+        {% else %}
+            {{ title }} - {{author ? author : siteName }}
+                
+        {% endif %}
+    {% else %}
+        {{ siteName }} - Kreativgemeinschaft aus Rosenheim
+    {% endif %}
+</title>
+<meta name="description" content="Künstler- und Kreativgemeinschaft für Grafik, Foto, Video, Webdesign und Webentwicklung. Kreative Lösungen für Unternehmen aus Bayern und Deutschland.">
+<meta name="keywords" content="HTML, CSS, JavaScript, Twig, Fotografie, Videografie, Videoschnitt, Black Magic, Webdesign, Webentwicklung">
 <meta name="author" content="Grafikbuam">

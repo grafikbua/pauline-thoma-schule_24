@@ -38,7 +38,7 @@
             <div class="pt-4">
                {% for service in services %}
                   {% if service.portfolioDetails %}
-                     <a href="{{service.getUrl}}" class="text-light d-block">{{ service.title }}</a>
+                     <a href="{{service.getUrl}}" class="text-light d-block" title="Leistung {{service.title}} bei Grafikbuam">{{ service.title }}</a>
                      {% else %}
                      <span class="text-light d-block">{{ service.title }}</span>
                   {% endif %}
