@@ -1,12 +1,16 @@
-dateModified: 1689504505
+dateModified: 1689605640
 email:
-  fromEmail: $SYSTEM_MAIL_ADDRESS_SENDER
-  fromName: $SYSTEM_MAIL_SENDER
+  fromEmail: $MAIL_USER
+  fromName: 'Grafikbuam Webform'
   replyToEmail: null
-  template: ''
+  template: null
   transportSettings:
-    command: '/usr/sbin/sendmail -bs'
-  transportType: craft\mail\transportadapters\Sendmail
+    host: $MAIL_HOST
+    password: $MAIL_PW
+    port: $MAIL_PORT
+    useAuthentication: '1'
+    username: $MAIL_USER
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   documents:
     hasUrls: true
@@ -35,6 +39,7 @@ meta:
     0cafd6b0-a390-4f26-8a65-1ac56dddc831: _hero # _hero
     0ec3fd07-a143-4155-839a-4ffd252ba245: portfolio # portfolio
     1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
+    1eb88eb9-dc8e-4f62-a756-a0f68f2c4b56: Intro # Intro
     2b97a2c8-45d0-40e6-a04f-3a66896add23: Text # Text
     2b376b85-fe59-4b60-818b-853416605735: Telefonnummer # Telefonnummer
     2ce9cabf-ec24-4086-86c9-4cf1a29fe1d1: 'Team Member (Basic)' # Team Member (Basic)
@@ -121,7 +126,7 @@ plugins:
       prependSender: 'Mitteilung von'
       prependSubject: 'Neue Nachricht von Craft Basic'
       successFlashMessage: 'Ihre Nachricht wurde versendet.'
-      toEmail: $SYSTEM_MAIL_ADDRESS
+      toEmail: pedro@grafikbuam.de
   contact-form-honeypot:
     edition: standard
     enabled: true
@@ -136,6 +141,45 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+    settings:
+      checkInvalidLogins: false
+      enableCpProtection: false
+      enabled: true
+      forcedRedirect: ''
+      invalidLoginWindowDuration: '3600'
+      loginPath: ''
+      maxInvalidLogins: 10
+      password: Grafikbuam23!
+      siteSettings:
+        __assoc__:
+          -
+            - default
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+          -
+            - pedro
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+      template: ''
+      useRemoteIp: false
   redactor:
     edition: standard
     enabled: true
