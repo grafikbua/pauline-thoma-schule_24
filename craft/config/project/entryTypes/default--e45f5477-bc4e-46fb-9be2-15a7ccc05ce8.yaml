@@ -75,6 +75,24 @@ fieldLayouts:
         name: Pagebuilder
         uid: cefda7ae-d640-417d-b426-564b8168a129
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0069fb1-a81e-4026-b13b-dd41dd98beae
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: ddf3d818-74f1-4713-ad78-e84ae52f880d
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Standard

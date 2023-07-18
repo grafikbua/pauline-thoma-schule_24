@@ -2,7 +2,11 @@
 
 {# index #}
 {% extends "_layout/site" %}
+
 {% block main %}
+{% cache for 1 sec %}
+   
+
 
 {# hero #}
 <section>
@@ -15,25 +19,21 @@
    } %}{% endembed %}
 </section>
 
-
 <section class="px-2 px-lg-5">
    <div class="container-fluid d-flex align-items-center overflow-hidden" style="min-height: 100vh;">
       <div class="container">
          <div class="row">
             <div class="col-xl-8 mx-auto">
-               <h2 class="display-1 text-primary">
-                  <div id="konzeption" data-trig-offset="0" data-trig-max="0" data-trig>Konzeption</div>
-                  <div id="design" data-trig-offset="0" data-trig-max="0" data-trig>Design</div>
-                  <div id="entwicklung" data-trig-offset="0" data-trig-max="0" data-trig>Entwicklung</div>
+               <h2 class="display-1 text-primary rellax" data-rellax-percentage="0.5" data-rellax-speed="-2">
+                  <div id="konzeption">Konzeption</div>
+                  <div id="design">Design</div>
+                  <div id="entwicklung">Entwicklung</div>
                </h2>
             </div>
          </div>
       </div>
    </div>
 </section>
-
-
-
 
 
 <section class="py-5 py-xl-7">
@@ -73,5 +73,5 @@
       }
    }%}{% endembed %}
 </section>
-
+{% endcache %}
 {% endblock %}

@@ -1,8 +1,11 @@
-{% set title = entry.title ?? null %}
-{% set author = entry.blogAuthor.one() ?? null %}
+{# {% set title = entry.title ?? null %}
+{% set author = entry.blogAuthor.one() ?? null %} #}
 
-{# seo #}
-<title>
+{% set seo = entry.seoField %}
+{% hook "seo" %}
+
+
+{# <title>
     {% if title is not empty %}
         {% if title == 'Home' %}
             {{ siteName }} - Kreativgemeinschaft aus Rosenheim
@@ -15,5 +18,5 @@
     {% endif %}
 </title>
 <meta name="description" content="Künstler- und Kreativgemeinschaft für Grafik, Foto, Video, Webdesign und Webentwicklung. Kreative Lösungen für Unternehmen aus Bayern und Deutschland.">
-<meta name="keywords" content="HTML, CSS, JavaScript, Twig, Fotografie, Videografie, Videoschnitt, Black Magic, Webdesign, Webentwicklung">
+<meta name="keywords" content="HTML, CSS, JavaScript, Twig, Fotografie, Videografie, Videoschnitt, Black Magic, Webdesign, Webentwicklung"> #}
 <meta name="author" content="Grafikbuam">

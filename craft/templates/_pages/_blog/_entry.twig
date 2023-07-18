@@ -5,12 +5,12 @@
 <section class="pt-14">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
+            <div class="col-lg-8 mx-auto text-center rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
                 <div class="small text-muted mb-3">{{entry.blogAuthor.one() ?? null}} x {{entry.postDate|date('d-m-yy')}}</div>
                 <h1 class="mb-2 text-primary ">{{entry.title ?? null}}</h1>
                 <p>{{entry.blogIntro ?? null}}</p>
             </div>
-            {% embed "_pagebuilder/index" %}{% endembed %}
+            <div class="px-xl-4">{% embed "_pagebuilder/index" %}{% endembed %}</div>
         </div>
     </div>
 </section>

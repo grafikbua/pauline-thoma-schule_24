@@ -189,6 +189,24 @@ fieldLayouts:
         name: Inhalte
         uid: 5ba45dd2-92e7-4d5f-90be-5a28fdd0688e
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17cddb2a-00da-480f-af73-b322c3ff5626
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 77e46325-49b5-4a9b-b142-8448c78c8331
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home

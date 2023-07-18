@@ -1,5 +1,6 @@
 {# site template #}
 {% extends "_layout/base" %}
+{% set isMobile = craft.app.request.isMobileBrowser ? true : false %}
 
 {# the site navigation #}
 {% set nav = {

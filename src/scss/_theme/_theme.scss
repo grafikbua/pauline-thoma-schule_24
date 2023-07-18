@@ -225,13 +225,15 @@ $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
 $h1-font-size:                $font-size-base * 4.3 !default;
-$h2-font-size:                $font-size-base * 3 !default;
-$h3-font-size:                $font-size-base * 2.3 !default;
+$h2-font-size:                $font-size-base * 2.3 !default;
+$h3-font-size:                $font-size-base * 2 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
-
+.h1, h1, .h2, h2, .h3 h3, .h4 h4, .h5 h5, .h6 h6 {
+  color: $primary!important;
+}
 // scss-docs-start display-headings
 $display-font-sizes: (
   1: 8rem,
@@ -242,6 +244,11 @@ $display-font-sizes: (
   6: 2.5rem
 ) !default;
 
+p {
+  line-height: 2.1rem;
+  letter-spacing: .5px;
+  color: $gray-700
+}
 
 .text-bold {
   font-family: "jost-bold"

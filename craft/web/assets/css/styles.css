@@ -36,6 +36,16 @@
   src: local("NotoSans-Bold"), local("notosans-bold"), local("notosansbold"), url("/assets/fonts/NotoSans-Bold.woff") format("woff"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 /* font size */
+.h1, h1, .h2, h2, .h3 h3, .h3 .h3, .h4 h4, .h4 .h4, .h5 h5, .h5 .h5, .h6 h6, .h6 .h6 {
+  color: #3D636B !important;
+}
+
+p {
+  line-height: 2.1rem;
+  letter-spacing: 0.5px;
+  color: #495057;
+}
+
 .text-bold {
   font-family: "jost-bold";
 }
@@ -337,20 +347,20 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: calc(1.355rem + 1.26vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.355rem + 1.26vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -11329,11 +11339,11 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: calc(1.355rem + 1.26vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.355rem + 1.26vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-4 {
@@ -21129,10 +21139,10 @@ textarea.form-control-lg {
     font-size: 4.3rem !important;
   }
   .fs-2 {
-    font-size: 3rem !important;
+    font-size: 2.3rem !important;
   }
   .fs-3 {
-    font-size: 2.3rem !important;
+    font-size: 2rem !important;
   }
   .fs-4 {
     font-size: 1.5rem !important;
@@ -22316,7 +22326,7 @@ body.overlay {
 
 /*! pagebuilder */
 .pb-text__headline {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .pb-list-group__item {

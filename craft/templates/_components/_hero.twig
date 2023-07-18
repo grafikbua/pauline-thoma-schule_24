@@ -4,12 +4,49 @@
 
 {% block hero %}
 <div class="container-fluid position-relative px-2 px-lg-5">
-   <img class="position-relative hero--bg-image object-fit__cover rounded-5 img-dark " src="{{ image.getUrl ?? placeholderImg }}" width="100%"/>
+
+   <picture>
+      <source  media="(min-width:1601)"
+               srcset="{{ image.getUrl('hero2560') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero2560') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="2560">
+      <source  media="(max-width:1600)"
+               srcset="{{ image.getUrl('hero1600') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero1600') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="1600">
+      <source  media="(max-width:1200)"
+               srcset="{{ image.getUrl('hero1200') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero1200') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="1200">
+      <source  media="(max-width:992)"
+               srcset="{{ image.getUrl('hero992') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero992') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="992">
+      <source  media="(max-width:768)"
+               srcset="{{ image.getUrl('hero768') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero768') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="768">
+      <source  media="(max-width:576)"
+               srcset="{{ image.getUrl('hero576') ?? placeholderImg ?? '' }} 1x, {{ image.getUrl('hero576') ?? placeholderImg ?? '' }} 2x"
+               alt="{{headline}}" title="{{headline}}"
+               class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark "
+               width="576">
+
+      <img class="w-100 position-relative hero--bg-image object-fit__cover rounded-5 img-dark " alt="{{headline}}" title="{{headline}}" src="{{ image.getUrl ?? placeholderImg }}" width="1024"/>
+      
+   </picture>
+
+
    <div class="position-absolute container top-75 start-50 translate-middle">
          <div class="row">
-            <div id="jsHero" data-trig class="col-10 col-xl-7 mx-auto text-center text-white">
-               <h1 class="h2">{{ headline }}</h1>
-               <p class="lead">{{ subline }}</p>
+            <div id="jsHero" class=" col-10 col-xl-7 mx-auto text-center text-white rellax" data-rellax-speed="2" >
+               <h1 class="text-light">{{ headline }}</h1>
+               <p class="lead text-light">{{ subline }}</p>
             </div>
       </div>
    </div>

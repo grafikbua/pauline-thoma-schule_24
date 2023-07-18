@@ -3,7 +3,7 @@ import './polyfills/custom-event';
 
 // Node Modules
 //import Popper from '../../src/js/plugins/popper.min.js';
-// import Modal from '../../node_modules/bootstrap/dist/js/bootstrap.esm.min.js';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import Lazyload from 'vanilla-lazyload';
 import Rellax from 'rellax';
@@ -23,13 +23,31 @@ const lazyFrame = new Lazyload({
 
 // Rellax
 // Checks if one Element is present,
-const rellax = document.querySelector('.js-rellax');
+const rellax = document.querySelector('.rellax');
 
 // Initialize Rellax
 if (rellax) {
-   new Rellax('.js-rellax');
+   new Rellax('.rellax', {
+    }); 
 };
 
+
+const burgerMenu = document.getElementById('burger-menu');
+if (burgerMenu) {
+   const overlay = document.getElementById('menu');
+       burgerMenu.addEventListener('click',function(){
+       this.classList.toggle("close");
+       overlay.classList.toggle("overlay");
+       document.body.classList.toggle('overlay');
+   });
+   
+   function closeMenu(){
+       burgerMenu.classList.toggle("close");
+       overlay.classList.toggle("overlay");
+       document.body.classList.toggle('overlay');
+   } 
+   
+}
 
 // Initialize Slider 
 
@@ -139,16 +157,6 @@ if (sliderAboutUs) {
    );
 }
 
-sliderCardsPortfolio.events.on('touchStart', function (e) {
-	e.stopImmediatePropagation();
-});
-sliderCardsPortfolio.events.on('touchMove', function (e) {
-	e.stopImmediatePropagation();
-});
-
-sliderCardsPortfolio.events.on('touchEnd', function ( e) {
-	e.stopImmediatePropagation();
-});
 
 // Scroll to top
 const scrollTopButton = document.querySelector('.js-scroll-top');
