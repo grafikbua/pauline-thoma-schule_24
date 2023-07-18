@@ -1,4 +1,4 @@
-dateModified: 1689673482
+dateModified: 1689683501
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -240,7 +240,7 @@ plugins:
   snaptcha:
     edition: standard
     enabled: true
-    licenseKey: KBIUSHWQ2IJ2Y7SQFLL1TW1I
+    licenseKey: A3HTGFFN0IDH9VZ64UWH7YRO
     schemaVersion: 3.0.6
     settings:
       allowList: ''
