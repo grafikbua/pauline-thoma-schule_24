@@ -243,7 +243,11 @@ $display-font-sizes: (
   5: 3rem,
   6: 2.5rem
 ) !default;
-
+@media (max-width:576px) {
+  .display-1 {
+    font-size: 3.5rem!important
+  }  
+}
 p {
   line-height: 2.1rem;
   letter-spacing: .5px;

@@ -40,6 +40,11 @@
   color: #3D636B !important;
 }
 
+@media (max-width: 576px) {
+  .display-1 {
+    font-size: 3.5rem !important;
+  }
+}
 p {
   line-height: 2.1rem;
   letter-spacing: 0.5px;
