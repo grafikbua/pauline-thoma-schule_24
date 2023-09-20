@@ -1,4 +1,4 @@
-dateModified: 1689758107
+dateModified: 1695250108
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -197,7 +197,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false
