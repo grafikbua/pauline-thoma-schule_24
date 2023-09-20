@@ -33,24 +33,6 @@ fieldLayouts:
         name: Inhalt
         uid: 6f5f801f-29a0-43c0-bc49-e739d43c88c5
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 31cecd7f-633d-4521-82d7-630140e37cbd
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 0cddcd72-3ca5-49fd-98ca-58881e6db126
-        userCondition: null
 handle: blogIndex
 hasTitleField: false
 name: 'Blog Index'

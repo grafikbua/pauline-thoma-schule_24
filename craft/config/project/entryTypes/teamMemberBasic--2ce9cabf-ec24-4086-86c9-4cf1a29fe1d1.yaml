@@ -140,24 +140,6 @@ fieldLayouts:
         name: Kontakt
         uid: cf3be5bb-55e2-490c-b044-e1a5147dba0a
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b28a2ac9-6068-4053-ae16-906b01a181e7
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 5d60fe54-0b11-4ddb-8af5-b0c6588385b5
-        userCondition: null
 handle: teamMemberBasic
 hasTitleField: true
 name: 'Team Member (Basic)'
