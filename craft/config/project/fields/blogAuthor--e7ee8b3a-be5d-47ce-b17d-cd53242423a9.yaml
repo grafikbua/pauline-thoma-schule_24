@@ -7,7 +7,9 @@ name: 'Blog Autor'
 searchable: false
 settings:
   allowSelfRelations: false
+  branchLimit: null
   localizeRelations: false
+  maintainHierarchy: false
   maxRelations: null
   minRelations: null
   selectionCondition:
@@ -23,7 +25,6 @@ settings:
         - craft\elements\conditions\entries\EntryCondition
   selectionLabel: null
   showSiteMenu: false
-  source: null
   sources:
     - 'section:c2cd05e6-a83d-4c05-ba35-c7c61951cc78' # Team
   targetSiteId: null

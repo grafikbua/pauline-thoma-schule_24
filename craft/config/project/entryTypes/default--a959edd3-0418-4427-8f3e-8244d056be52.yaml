@@ -87,28 +87,13 @@ fieldLayouts:
         name: Details
         uid: eaf37bd5-8602-4cca-85d5-a701f625fc8d
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e2c16b54-fe98-4341-b775-5c2841da2903
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 81a20f3d-381b-45fa-9fd5-a661ef1f1b5a
-        userCondition: null
 handle: default
 hasTitleField: true
 name: Standard
 section: 56f4efc4-b036-453e-84a3-fb43a007878f # Portfolio
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

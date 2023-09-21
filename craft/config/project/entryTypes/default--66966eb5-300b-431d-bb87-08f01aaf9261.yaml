@@ -84,28 +84,13 @@ fieldLayouts:
         name: Pagebuilder
         uid: 55337274-8aa1-4977-82d6-e123c198ccd8
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c4cc00b0-496f-49a4-98d8-46bae32f4bd3
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: f6365bb5-76d4-40fd-8591-49b3f8567210
-        userCondition: null
 handle: default
 hasTitleField: true
 name: Standard
 section: 78940b12-1c99-4891-a34c-0ff8a86a5c8d # Leistungen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
