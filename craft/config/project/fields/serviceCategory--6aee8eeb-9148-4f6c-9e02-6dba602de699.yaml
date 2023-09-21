@@ -6,17 +6,15 @@ instructions: null
 name: Leistungskategorie
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
   branchLimit: 1
   localizeRelations: false
+  maintainHierarchy: true
   maxRelations: null
   minRelations: null
   selectionLabel: null
   showSiteMenu: false
   source: 'group:40561686-cc85-41c8-b248-f6b3be7a414c' # Leistungskategorie
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

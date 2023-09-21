@@ -1,4 +1,4 @@
-dateModified: 1695250108
+dateModified: 1695296425
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -33,6 +33,10 @@ fs:
       path: '@theme_root'
     type: craft\fs\Local
     url: '@theme_url'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0a9f0664-5623-4180-a2ed-6954f31d9596: 'Padding Bottom' # Padding Bottom

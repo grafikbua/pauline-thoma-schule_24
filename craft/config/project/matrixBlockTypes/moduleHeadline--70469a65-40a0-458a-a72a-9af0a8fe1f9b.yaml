@@ -54,6 +54,7 @@ fields:
     name: 'Padding Bottom'
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:
@@ -142,6 +143,7 @@ fields:
     name: 'Padding top'
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:

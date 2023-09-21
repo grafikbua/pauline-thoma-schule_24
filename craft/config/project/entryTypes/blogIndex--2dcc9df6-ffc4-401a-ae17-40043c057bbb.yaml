@@ -37,6 +37,9 @@ handle: blogIndex
 hasTitleField: false
 name: 'Blog Index'
 section: 67b66019-8059-4ac0-90c4-bc2a19df8329 # Blog Index
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

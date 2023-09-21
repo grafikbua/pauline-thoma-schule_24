@@ -54,6 +54,7 @@ fields:
     name: 'Padding Top'
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:
@@ -127,9 +128,11 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
       defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
       maxRelations: null
       minRelations: null
       previewMode: full
@@ -153,7 +156,6 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources:
         - 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
       targetSiteId: null
@@ -171,6 +173,7 @@ fields:
     name: 'Padding Bottom'
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:

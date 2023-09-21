@@ -91,6 +91,9 @@ handle: default
 hasTitleField: true
 name: Standard
 section: 56f4efc4-b036-453e-84a3-fb43a007878f # Portfolio
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

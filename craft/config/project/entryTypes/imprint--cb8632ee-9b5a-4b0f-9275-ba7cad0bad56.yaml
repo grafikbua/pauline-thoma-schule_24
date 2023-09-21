@@ -49,6 +49,9 @@ handle: imprint
 hasTitleField: true
 name: Impressum
 section: abe89ac8-438d-4fe3-acf3-f816dcdfbd6e # Impressum
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

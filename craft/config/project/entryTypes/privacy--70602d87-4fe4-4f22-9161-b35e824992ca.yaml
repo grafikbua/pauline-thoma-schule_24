@@ -49,6 +49,9 @@ handle: privacy
 hasTitleField: true
 name: Datenschutz
 section: 3066e6a4-a59c-4300-9af3-c66387323f7e # Datenschutz
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

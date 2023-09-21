@@ -88,6 +88,9 @@ handle: default
 hasTitleField: true
 name: Standard
 section: 78940b12-1c99-4891-a34c-0ff8a86a5c8d # Leistungen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

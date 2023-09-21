@@ -144,6 +144,9 @@ handle: teamMemberBasic
 hasTitleField: true
 name: 'Team Member (Basic)'
 section: c2cd05e6-a83d-4c05-ba35-c7c61951cc78 # Team
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
