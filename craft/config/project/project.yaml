@@ -1,4 +1,4 @@
-dateModified: 1695296425
+dateModified: 1695297059
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -55,6 +55,7 @@ meta:
     4a9472b4-14a2-4642-b0d4-1715ae07df0e: Webseite # Webseite
     4adfd44c-695c-434a-85d5-974eda9a3b97: 'Padding Top' # Padding Top
     4b5bca94-0221-49f6-9b4e-32d4e6e2284c: 'Sektion - Leistungen Headline' # Sektion - Leistungen Headline
+    4d679c7d-10f1-455f-9529-80dd605fe433: hero2560 # hero2560
     5b43d38d-0e2d-4180-a20e-b09541cad40e: 'Hero Hintergrundbild' # Hero Hintergrundbild
     6aee8eeb-9148-4f6c-9e02-6dba602de699: Leistungskategorie # Leistungskategorie
     7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
@@ -79,6 +80,7 @@ meta:
     580f024d-e333-4b61-b418-9d32309d1e9e: home # home
     2876dd87-48d7-449a-a4d1-d9702c959595: 'Subline zum Teammitglied' # Subline zum Teammitglied
     3066e6a4-a59c-4300-9af3-c66387323f7e: Datenschutz # Datenschutz
+    3494d0db-46d9-4ef4-b39d-4a5786b70db7: SEO # SEO
     4903f9fb-d73b-41f2-bcc2-d9c4edf40aa9: Mail # Mail
     05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
     66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
@@ -90,6 +92,7 @@ meta:
     4990761b-1b15-4092-9905-ebdda0697aeb: 'Hero Subline' # Hero Subline
     40561686-cc85-41c8-b248-f6b3be7a414c: Leistungskategorie # Leistungskategorie
     a85b5fdd-d3bd-4778-a5f4-818ad2c04917: services # services
+    a456a19e-ffbc-462f-8659-89d4742020be: hero992 # hero992
     a959edd3-0418-4427-8f3e-8244d056be52: Standard # Standard
     a6399dbb-26c9-4495-aab8-574ca5fc0f4a: Theme # Theme
     abe89ac8-438d-4fe3-acf3-f816dcdfbd6e: Impressum # Impressum
@@ -102,10 +105,12 @@ meta:
     c72e9ef9-03ed-4887-a29a-0a517fbc7e04: 'Team Member (Extern)' # Team Member (Extern)
     c7696060-de57-4ba4-8bca-1ae2954705c2: Ort # Ort
     cb8632ee-9b5a-4b0f-9275-ba7cad0bad56: Impressum # Impressum
+    cd3bc283-e4b2-47a7-ba16-0ff85745d5e8: hero1600 # hero1600
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
     cee2892e-09a0-46fc-ac6a-0ee40419f6a3: 'Padding Bottom' # Padding Bottom
     cef17153-828d-491f-bc13-0c4448e870df: 'Padding Bottom' # Padding Bottom
+    cf26b1ce-3b35-415a-8ea2-28fd69026ac7: hero768 # hero768
     cf4769d8-2e9c-4092-b448-a281a2c406bb: Headline # Headline
     dbd08c4a-0a1d-4888-a63a-efedf4b3ddab: Blogbeiträge # Blogbeiträge
     e4fc67e5-1248-4164-adce-fc6dea4bed0c: 'Padding top' # Padding top
@@ -116,8 +121,10 @@ meta:
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
     f5c36f37-2100-43b7-b63b-7e40a3ce5c36: 'Straße + Hausnummer' # Straße + Hausnummer
     f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image
+    f27da15a-2748-4884-8fac-536eb4bc5445: hero576 # hero576
     fa280788-5ca8-4fd1-b88e-b039ff738609: 'Sektion - Portfolio Headline' # Sektion - Portfolio Headline
     fb08b855-3bf9-4c67-afe2-49291cae828f: grafikbuam. # grafikbuam.
+    fc734bf2-1508-4b94-b235-08c8ba1fe2af: hero1200 # hero1200
     fc3128a2-0f3d-4964-a796-254634476f9c: 'Sektion - Portfolio Text' # Sektion - Portfolio Text
 plugins:
   contact-form:
