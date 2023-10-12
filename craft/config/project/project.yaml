@@ -1,4 +1,4 @@
-dateModified: 1695297059
+dateModified: 1697103691
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -155,7 +155,7 @@ plugins:
     settings:
       checkInvalidLogins: false
       enableCpProtection: false
-      enabled: true
+      enabled: false
       forcedRedirect: ''
       invalidLoginWindowDuration: '3600'
       loginPath: ''
@@ -202,6 +202,7 @@ plugins:
   snaptcha:
     edition: standard
     enabled: true
+    licenseKey: ER97EXXL102YKMN4XV2UI53Q
     schemaVersion: 3.0.6
 system:
   edition: solo
