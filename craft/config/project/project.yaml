@@ -1,4 +1,4 @@
-dateModified: 1697103691
+dateModified: 1703163139
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -204,6 +204,23 @@ plugins:
     enabled: true
     licenseKey: ER97EXXL102YKMN4XV2UI53Q
     schemaVersion: 3.0.6
+    settings:
+      allowList: ''
+      denyList: ''
+      errorButtonText: Resubmit
+      errorJavascriptDisabled: 'JavaScript must be enabled for your submission to be verified. Please enable it and refresh the page.'
+      errorMessage: 'For some reason your submission was flagged as spam. Please click the button below to resubmit your data.'
+      errorTemplate: ''
+      errorTitle: Error
+      excludeControllerActions: ''
+      expirationTime: 60
+      fieldName: snaptcha
+      logRejected: true
+      minimumSubmitTime: 2
+      oneTimeKey: true
+      salt: ''
+      validateUsers: true
+      validationEnabled: true
 system:
   edition: solo
   live: true

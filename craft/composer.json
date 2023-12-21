@@ -1,14 +1,14 @@
 {
     "require": {
-        "craftcms/cms": "4.5.5",
+        "craftcms/cms": "4.5.13",
         "craftcms/contact-form": "3.0.1",
         "craftcms/contact-form-honeypot": "2.0.0",
         "craftcms/redactor": "3.0.4",
         "ether/seo": "4.2.1",
         "putyourlightson/craft-snaptcha": "4.0.1",
         "putyourlightson/craft-sprig": "2.2.1",
-        "verbb/image-resizer": "3.0.7",
-        "verbb/knock-knock": "2.0.10",
+        "verbb/image-resizer": "3.0.9",
+        "verbb/knock-knock": "2.0.11",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
@@ -34,5 +34,12 @@
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
+        }
+    ]
 }
