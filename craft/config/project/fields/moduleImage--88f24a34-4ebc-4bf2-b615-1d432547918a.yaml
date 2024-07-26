@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: moduleImage
+instructions: null
+name: 'Pagebuilder - Bild - Bild'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: true
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: pagebuilder
+  restrictedLocationSource: 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
+  restrictedLocationSubpath: pagebuilder
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

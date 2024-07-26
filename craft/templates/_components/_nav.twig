@@ -2,15 +2,15 @@
 	{% for member in members %}
 	{% set memberImage = member.teamImage.one() %}
 		<div class="bg-dark rounded-circle mx-1 overflow-hidden" title="{{member.title ?? null}}" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas{{member.id}}" aria-controls="canvas{{member.id}}" style="width:48px; height:48px">
-			<img src="{{memberImage.getUrl()}}" height="50" width="50" class="w-100 object-fit__cover" alt="{{member.title ~ member.teamSubline}}">
+			<img src="{{memberImage.getUrl()}}" height="50" width="50" class="w-100 object-fit__cover" alt="{{member.title ~ ' x ' ~ member.teamSubline}}" title="{{member.title ~ ' x ' ~ member.teamSubline}}">
 		</div>
 	{% endfor %}
-	{# <div class="btn btn-menu ms-4 fs-6">
+	<div class="btn btn-menu ms-4 fs-6">
 		<div id="burger-menu" class="">
 			<span></span>
 			<div class="me-5 text-white">HOME</div>
 		</div>
-	</div> #}
+	</div>
 </div>
 {% embed "_components/_burgermenu" %}{% endembed %}
 

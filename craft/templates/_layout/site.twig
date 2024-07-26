@@ -3,11 +3,12 @@
 {% set isMobile = craft.app.request.isMobileBrowser ? true : false %}
 
 {# the site navigation #}
+      {# ("projekte"):        { title: "Projekte"}, #}
 {% set nav = {
    main: {
-      ("/"):               { title: "Am Puck" },
+      ("/"):               { title: "Startseite" },
       ("blog"):            { title: "Blog"},
-      ("liga/nhl/stats"):  { title: "Stats"},
+
       ("kontakt"):         { title: "Kontakt"},
    },
    footer: {

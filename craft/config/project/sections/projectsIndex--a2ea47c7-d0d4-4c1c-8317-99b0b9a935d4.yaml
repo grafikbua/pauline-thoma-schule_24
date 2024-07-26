@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 2dcc9df6-ffc4-401a-ae17-40043c057bbb # Blog Index
+handle: projectsIndex
+maxAuthors: 1
+name: 'Projekte Index'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_projects/index.twig
+    uriFormat: projekte
+type: single

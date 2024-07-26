@@ -50,7 +50,7 @@
                 <li>{{memberLocation}}</li>
                 <li>t. <a class="text-dark" href="phone:{{memberPhone ? memberPhone|replace({' ': ''}) }}" title="{{memberTitle}} anrufen">{{memberPhone}}</a></li>
                 <li>m. <a class="text-dark" href="mailto:{{memberMail}}" title="{{memberTitle}} anschreiben">{{memberMail}}</a></li>
-                <li>w. <a class="text-dark" href="{{memberWeb}}" title="Webauftritt von {{memberTitle}}">{{memberWeb}}</a></li>
+                <li>w. <a class="text-dark" href="{{memberWeb}}" title="Webauftritt von {{memberTitle}}">{{memberWeb|replace({'https://': ''})}}</a></li>
             </ul>
         </div>
     </div>

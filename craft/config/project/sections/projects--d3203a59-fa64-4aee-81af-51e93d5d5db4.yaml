@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 903cdc05-11a5-49db-ad25-c88ebc97e6cc # Projekt
+handle: projects
+maxAuthors: 1
+name: Projekte
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre Eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_projects/_entry.twig
+    uriFormat: 'projekte/{slug}'
+structure:
+  maxLevels: null
+  uid: df94d81c-4856-41f9-a730-a41f4b156754
+type: structure

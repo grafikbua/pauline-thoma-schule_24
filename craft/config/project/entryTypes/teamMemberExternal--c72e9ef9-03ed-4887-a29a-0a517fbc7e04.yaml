@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   e0435e04-e33f-4fcb-af32-6bee83671806:
     tabs:
@@ -12,6 +13,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -19,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -35,12 +39,12 @@ fieldLayouts:
         userCondition: null
 handle: teamMemberExternal
 hasTitleField: true
+icon: ''
 name: 'Team Member (Extern)'
-section: c2cd05e6-a83d-4c05-ba35-c7c61951cc78 # Team
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 2
-titleFormat: null
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: none

@@ -1,27 +1,22 @@
 columnSuffix: zmdbgral
 contentColumnType: text
-fieldGroup: 049ecd40-e0ad-44d8-845a-d642ec8067e4 # blog
 handle: blogIntro
 instructions: null
 name: Intro
 searchable: false
 settings:
-  availableTransforms: ''
+  availableTransforms: '*'
   availableVolumes: '*'
+  ckeConfig: 5f81542e-53f3-4e70-bed8-dce586641fd3 # Simple
   columnType: text
-  configSelectionMode: choose
-  defaultTransform: ''
-  manualConfig: ''
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: null
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showHtmlButtonForNonAdmins: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  showWordCount: false
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\redactor\Field
+type: craft\ckeditor\Field

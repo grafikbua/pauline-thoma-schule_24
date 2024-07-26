@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: aff9de1b-f6aa-40ca-9db3-2c84e7804817 # team
 handle: teamSkills
 instructions: null
 name: Skills
@@ -12,17 +11,6 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Entry
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\entries\EntryCondition
   selectionLabel: 'Skills hinzufügen'
   showSiteMenu: true
   sources:

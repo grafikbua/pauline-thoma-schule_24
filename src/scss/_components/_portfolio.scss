@@ -24,6 +24,10 @@
     transition: .5s;
     border-radius: 20px;
 } 
+.portfolio_card:hover {
+    border: 5px solid $violet;
+    transition: 0.3s
+} 
 .portfolio_card__title {
     opacity: 0;
     transition: .5s;

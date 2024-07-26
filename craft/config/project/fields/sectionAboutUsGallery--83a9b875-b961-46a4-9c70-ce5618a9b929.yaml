@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 580f024d-e333-4b61-b418-9d32309d1e9e # home
 handle: sectionAboutUsGallery
 instructions: null
 name: 'Sektion - Über uns Galerie'
@@ -24,17 +23,6 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
   restrictedLocationSubpath: Home
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: false
   showUnpermittedFiles: false

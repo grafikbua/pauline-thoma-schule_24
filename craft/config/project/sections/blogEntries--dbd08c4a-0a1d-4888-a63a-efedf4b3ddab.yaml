@@ -1,19 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - e45f5477-bc4e-46fb-9be2-15a7ccc05ce8 # Blogbeiträge - Standard
 handle: blogEntries
+maxAuthors: 1
 name: Blogbeiträge
 previewTargets:
   -
     __assoc__:
       -
         - label
-        - 'Primäre eintrag Seite'
+        - 'Primary entry page'
       -
         - urlFormat
         - '{url}'
-      -
-        - refresh
-        - '1'
 propagationMethod: all
 siteSettings:
   fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.

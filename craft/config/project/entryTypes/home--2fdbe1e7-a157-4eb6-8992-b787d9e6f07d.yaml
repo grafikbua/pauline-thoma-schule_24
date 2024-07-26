@@ -1,8 +1,19 @@
+color: null
 fieldLayouts:
   2514f597-0871-46f2-bdb3-8803fe676013:
     tabs:
       -
-        elementCondition: null
+        elementCondition:
+          class: craft\elements\conditions\entries\EntryCondition
+          conditionRules:
+            -
+              class: craft\elements\conditions\SiteConditionRule
+              operator: in
+              uid: 2737573e-47f7-4e26-920e-1aa7bf47e447
+              values:
+                - fb08b855-3bf9-4c67-afe2-49291cae828f # grafikbuam.
+          elementType: craft\elements\Entry
+          fieldContext: global
         elements:
           -
             autocapitalize: true
@@ -12,6 +23,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -19,6 +32,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -33,8 +47,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 5b43d38d-0e2d-4180-a20e-b09541cad40e # Hero Hintergrundbild
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -45,8 +62,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 3dcccecf-d02c-4e90-b3fe-6f68e666d45b # Hero Headline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,8 +77,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 4990761b-1b15-4092-9905-ebdda0697aeb # Hero Subline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -70,7 +93,17 @@ fieldLayouts:
         uid: 5c803eb7-3d12-4b84-8f67-c62e70e385aa
         userCondition: null
       -
-        elementCondition: null
+        elementCondition:
+          class: craft\elements\conditions\entries\EntryCondition
+          conditionRules:
+            -
+              class: craft\elements\conditions\SiteConditionRule
+              operator: in
+              uid: c2296729-6f66-4118-a241-a125a2bb43f7
+              values:
+                - fb08b855-3bf9-4c67-afe2-49291cae828f # grafikbuam.
+          elementType: craft\elements\Entry
+          fieldContext: global
         elements:
           -
             elementCondition: null
@@ -81,8 +114,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 4b5bca94-0221-49f6-9b4e-32d4e6e2284c # Sektion - Leistungen Headline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -93,8 +129,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 364062db-aa9c-4531-b6d1-b2c95fd09d37 # Sektion - Leistungen Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -111,8 +150,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 83a9b875-b961-46a4-9c70-ce5618a9b929 # Sektion - Über uns Galerie
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -123,8 +165,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 313e29bc-0a8e-4436-9b83-2d45c4bf876d # Sektion - Über uns Headline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -135,8 +180,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: ce38246d-0856-4926-8249-5043bc927079 # Sektion - Über uns Subline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -147,8 +195,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 60abd6f6-4409-4a8e-a8e1-a24415162032 # Sektion - Über uns Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -165,8 +216,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: fa280788-5ca8-4fd1-b88e-b039ff738609 # Sektion - Portfolio Headline
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -177,8 +231,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: fc3128a2-0f3d-4964-a796-254634476f9c # Sektion - Portfolio Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -189,14 +246,50 @@ fieldLayouts:
         name: Inhalte
         uid: 5ba45dd2-92e7-4d5f-90be-5a28fdd0688e
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 36dca0cd-087b-4ea8-b842-6210cc80f58a # Seiteninhaber
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f0010c3-e296-4083-b70e-ed3e262445c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3494d0db-46d9-4ef4-b39d-4a5786b70db7 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c53be93e-6f63-49c4-a08d-2a07ca79a77f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Einstellungen
+        uid: ff9346a8-ba56-4a13-aa3b-1111538e00c7
+        userCondition: null
 handle: home
 hasTitleField: false
+icon: ''
 name: Home
-section: ce59a5cd-637f-4905-9501-1492d913aba4 # Home
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

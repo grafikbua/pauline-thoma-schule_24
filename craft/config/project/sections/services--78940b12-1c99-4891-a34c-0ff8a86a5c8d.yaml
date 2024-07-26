@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 66966eb5-300b-431d-bb87-08f01aaf9261 # Standard
 handle: services
+maxAuthors: 1
 name: Leistungen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   fb08b855-3bf9-4c67-afe2-49291cae828f: # grafikbuam.

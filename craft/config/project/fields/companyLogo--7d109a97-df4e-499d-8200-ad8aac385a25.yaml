@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 1c988a8a-03a4-48c6-9db8-24703e1dcb2c # __theme
 handle: companyLogo
 instructions: null
 name: Logo
@@ -24,17 +23,6 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:77c942ae-0d22-432c-85f5-0ff8338e871e' # Theme
   restrictedLocationSubpath: Logo
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: 'Logo hinzufügen'
   showSiteMenu: false
   showUnpermittedFiles: false

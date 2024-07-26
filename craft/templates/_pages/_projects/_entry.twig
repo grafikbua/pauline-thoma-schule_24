@@ -1,0 +1,68 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set projectAuthor = entry.blogAuthor %}
+{% set customer = entry.customer.one() %}
+{% set customerLogo = customer.portfolioImage.one() %}
+{% set services = entry.serviceEntries %}
+
+{% block main %}
+
+
+<section class="pt-14">
+    <div class="container">
+        <div class="row pb-6">
+            <div class="col-12 text-center">
+                <a href="/projekte" class="small">Zurück zur Übersicht</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-2 rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
+                <small>{{entry.heroSubline}}</small>
+                <h1 class="mb-2 text-primary">{{entry.title ?? null}}</h1>
+                <p class="pt-5">{{entry.blogIntro ?? null}}</p>
+            </div>
+            <div class="col-lg-3 px-lg-5">
+                <div class="bg-light p-4 rounded-3 h-100">
+                        <ul class="list-unstyled w-100 text-center">
+                            <li class="small mt-2"><img src="{{customerLogo.getUrl ?? null}}" width="200" style="max-height:150" class="" alt="{{customer.title ~ ' Webseite besuchen'}}" title="{{customer.title ~ ' Webseite besuchen'}}"></li>
+                            <li class="small mt-4">Kunde: {{customer.title ?? null}}</li>
+                            <li class="small mt-2">Projektjahr: {{entry.postDate|date('yy')}}</li>
+                            <li class="small mt-2"> 
+                                <div class="mt-3">
+                                    {% for item in services %}
+                                        <a href="{{item.getUrl ?? null}}" target="_blank" title="{{'mehr über ' ~ item.title ~ ' erfahren'}}" class="btn btn-sm btn-violet text-light m-1 {{ item.portfolioDetails == false ? 'disabled'}}" >{{item.title ?? null}}</a>
+                                    {% endfor %}
+                                </div>
+                            </li>
+                            <li class="small mt-4">
+                                <div class="d-flex justify-content-center mt-3">
+                                    {% for member in projectAuthor %}
+                                    {% set memberImage = member.teamImage.one() %}
+                                        <div class="bg-dark rounded-circle mx-1 overflow-hidden" title="{{member.title ?? null}}" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas{{member.id}}" aria-controls="canvas{{member.id}}" style="width:48px; height:48px">
+                                            <img src="{{memberImage.getUrl()}}" height="50" width="50" class="w-100 object-fit__cover" alt="{{member.title ~ ' x ' ~ member.teamSubline}}" title="{{member.title ~ ' x ' ~ member.teamSubline}}">
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {% embed "_pagebuilder/index" %}{% endembed %}
+    </div>
+
+    <div class="container mt-5">
+        <div class="row"> 
+            <div class="col-lg-6 mx-auto text-center">
+                <a href="{{customer.portfolioUrl ?? null}}" target="_blank" >
+                    <img src="{{customerLogo.getUrl ?? null}}" width="200" class="" alt="{{customer.title ~ ' Webseite besuchen'}}" title="{{customer.title ~ ' Webseite besuchen'}}">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

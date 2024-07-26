@@ -281,3 +281,14 @@ $position-values: (
   85: 85%,
   100: 100%
 );
+
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: $violet;
+}
+
+::selection {
+  color: white;
+  background: $violet;
+}

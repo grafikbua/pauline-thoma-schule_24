@@ -1,0 +1,21 @@
+columnSuffix: ulgkuewh
+handle: moduleText
+instructions: null
+name: 'Pagebuilder - Text - Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 5f81542e-53f3-4e70-bed8-dce586641fd3 # Simple
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,4 +1,4 @@
-dateModified: 1703163139
+dateModified: 1719222230
 email:
   fromEmail: $MAIL_USER
   fromName: 'Grafikbuam Webform'
@@ -39,12 +39,8 @@ graphql:
     expiryDate: null
 meta:
   __names__:
-    0a9f0664-5623-4180-a2ed-6954f31d9596: 'Padding Bottom' # Padding Bottom
-    0cafd6b0-a390-4f26-8a65-1ac56dddc831: _hero # _hero
-    0ec3fd07-a143-4155-839a-4ffd252ba245: portfolio # portfolio
-    1c988a8a-03a4-48c6-9db8-24703e1dcb2c: __theme # __theme
+    1dfacd29-1553-497b-bafc-e77dae9cde56: Vorschaubild # Vorschaubild
     1eb88eb9-dc8e-4f62-a756-a0f68f2c4b56: Intro # Intro
-    2b97a2c8-45d0-40e6-a04f-3a66896add23: Text # Text
     2b376b85-fe59-4b60-818b-853416605735: Telefonnummer # Telefonnummer
     2ce9cabf-ec24-4086-86c9-4cf1a29fe1d1: 'Team Member (Basic)' # Team Member (Basic)
     2dcc9df6-ffc4-401a-ae17-40043c057bbb: 'Blog Index' # Blog Index
@@ -53,71 +49,65 @@ meta:
     3d80dbe4-bb3b-4248-8d0e-dc85789145ba: Portraitfoto # Portraitfoto
     3dcccecf-d02c-4e90-b3fe-6f68e666d45b: 'Hero Headline' # Hero Headline
     4a9472b4-14a2-4642-b0d4-1715ae07df0e: Webseite # Webseite
-    4adfd44c-695c-434a-85d5-974eda9a3b97: 'Padding Top' # Padding Top
     4b5bca94-0221-49f6-9b4e-32d4e6e2284c: 'Sektion - Leistungen Headline' # Sektion - Leistungen Headline
     4d679c7d-10f1-455f-9529-80dd605fe433: hero2560 # hero2560
     5b43d38d-0e2d-4180-a20e-b09541cad40e: 'Hero Hintergrundbild' # Hero Hintergrundbild
+    5f81542e-53f3-4e70-bed8-dce586641fd3: Simple # Simple
     6aee8eeb-9148-4f6c-9e02-6dba602de699: Leistungskategorie # Leistungskategorie
-    7ae9cee7-1180-45e3-aaa8-0b08fff2a342: _footer # _footer
     7d109a97-df4e-499d-8200-ad8aac385a25: Logo # Logo
     8b72e633-3e8a-4c63-8bb7-951969ef6c68: 'Name des Teammitglieds' # Name des Teammitglieds
     8dfb6019-3f5b-4092-8a6c-606de9acd9af: Details # Details
     9d6cfeee-ff25-4e0d-b8cc-4d208c7fcb11: Hintergrundfarbe # Hintergrundfarbe
-    9d636f74-6956-4046-9690-c3aebdd51be6: Bild # Bild
     32e9b2eb-4f11-42f0-830a-f778253566a0: text # text
+    36dca0cd-087b-4ea8-b842-6210cc80f58a: Seiteninhaber # Seiteninhaber
     36fcb770-0e73-4e62-b21a-adbfcef75309: Pagebuilder # Pagebuilder
-    049ecd40-e0ad-44d8-845a-d642ec8067e4: blog # blog
     56f4efc4-b036-453e-84a3-fb43a007878f: Portfolio # Portfolio
     60abd6f6-4409-4a8e-a8e1-a24415162032: 'Sektion - Über uns Text' # Sektion - Über uns Text
     67b66019-8059-4ac0-90c4-bc2a19df8329: 'Blog Index' # Blog Index
+    73e0ab0e-42a5-4ce0-bdea-00f683581801: Dienstleistung # Dienstleistung
     77c942ae-0d22-432c-85f5-0ff8338e871e: Theme # Theme
     83a9b875-b961-46a4-9c70-ce5618a9b929: 'Sektion - Über uns Galerie' # Sektion - Über uns Galerie
-    88f24a34-4ebc-4bf2-b615-1d432547918a: Bild # Bild
     92fa6fe8-29b4-416b-97c9-1cbe33fd43e7: $PEDRO_SITE_NAME # $PEDRO_SITE_NAME
     257a5eca-fc1b-4a37-8a1d-5841c1c0539b: 'Craft Basic' # Craft Basic
     313e29bc-0a8e-4436-9b83-2d45c4bf876d: 'Sektion - Über uns Headline' # Sektion - Über uns Headline
     354c00ae-bedd-49fa-8c36-fb631c82a20a: Skills # Skills
-    580f024d-e333-4b61-b418-9d32309d1e9e: home # home
+    866b81a8-4c9d-4d67-bc03-d061bbb282b7: Hot # Hot
+    903cdc05-11a5-49db-ad25-c88ebc97e6cc: Projekt # Projekt
     2876dd87-48d7-449a-a4d1-d9702c959595: 'Subline zum Teammitglied' # Subline zum Teammitglied
     3066e6a4-a59c-4300-9af3-c66387323f7e: Datenschutz # Datenschutz
     3494d0db-46d9-4ef4-b39d-4a5786b70db7: SEO # SEO
     4903f9fb-d73b-41f2-bcc2-d9c4edf40aa9: Mail # Mail
     05703acf-5961-4565-8f00-db2fa98b39c3: Documents # Documents
     66966eb5-300b-431d-bb87-08f01aaf9261: Standard # Standard
-    70469a65-40a0-458a-a72a-9af0a8fe1f9b: Headline # Headline
     70602d87-4fe4-4f22-9161-b35e824992ca: Datenschutz # Datenschutz
     78940b12-1c99-4891-a34c-0ff8a86a5c8d: Leistungen # Leistungen
     227252fb-a26f-42b6-ae49-f1e8f6a82c86: Images # Images
     364062db-aa9c-4531-b6d1-b2c95fd09d37: 'Sektion - Leistungen Text' # Sektion - Leistungen Text
     4990761b-1b15-4092-9905-ebdda0697aeb: 'Hero Subline' # Hero Subline
     40561686-cc85-41c8-b248-f6b3be7a414c: Leistungskategorie # Leistungskategorie
-    a85b5fdd-d3bd-4778-a5f4-818ad2c04917: services # services
+    a2ea47c7-d0d4-4c1c-8317-99b0b9a935d4: 'Projekte Index' # Projekte Index
     a456a19e-ffbc-462f-8659-89d4742020be: hero992 # hero992
-    a959edd3-0418-4427-8f3e-8244d056be52: Standard # Standard
+    a959edd3-0418-4427-8f3e-8244d056be52: 'Portfolio - Standard' # Portfolio - Standard
     a6399dbb-26c9-4495-aab8-574ca5fc0f4a: Theme # Theme
     abe89ac8-438d-4fe3-acf3-f816dcdfbd6e: Impressum # Impressum
-    aff9de1b-f6aa-40ca-9db3-2c84e7804817: team # team
     b52be6aa-63ba-43dd-a979-76ac8ac38f91: 'URL Link' # URL Link
-    bb54d838-09fe-4083-8116-a503684a87e2: Text # Text
+    bb9be132-cd59-415f-abc2-6fc027d47726: Galerie # Galerie
     bc200003-f687-4b98-9c86-b159d30605fe: Craft4 # Craft4
     c2cd05e6-a83d-4c05-ba35-c7c61951cc78: Team # Team
     c3ebd5a1-ee6c-49e5-b41d-0f9b231d6fa0: Skills # Skills
     c72e9ef9-03ed-4887-a29a-0a517fbc7e04: 'Team Member (Extern)' # Team Member (Extern)
     c7696060-de57-4ba4-8bca-1ae2954705c2: Ort # Ort
     cb8632ee-9b5a-4b0f-9275-ba7cad0bad56: Impressum # Impressum
+    cc625440-3f00-4589-8641-1066da038ff5: Kunde # Kunde
     cd3bc283-e4b2-47a7-ba16-0ff85745d5e8: hero1600 # hero1600
     ce59a5cd-637f-4905-9501-1492d913aba4: Home # Home
     ce38246d-0856-4926-8249-5043bc927079: 'Sektion - Über uns Subline' # Sektion - Über uns Subline
-    cee2892e-09a0-46fc-ac6a-0ee40419f6a3: 'Padding Bottom' # Padding Bottom
-    cef17153-828d-491f-bc13-0c4448e870df: 'Padding Bottom' # Padding Bottom
     cf26b1ce-3b35-415a-8ea2-28fd69026ac7: hero768 # hero768
-    cf4769d8-2e9c-4092-b448-a281a2c406bb: Headline # Headline
+    d3203a59-fa64-4aee-81af-51e93d5d5db4: Projekte # Projekte
     dbd08c4a-0a1d-4888-a63a-efedf4b3ddab: Blogbeiträge # Blogbeiträge
-    e4fc67e5-1248-4164-adce-fc6dea4bed0c: 'Padding top' # Padding top
     e7ee8b3a-be5d-47ce-b17d-cd53242423a9: 'Blog Autor' # Blog Autor
-    e9bc973e-8620-4b72-adbd-cea8abf68075: _global # _global
-    e45f5477-bc4e-46fb-9be2-15a7ccc05ce8: Standard # Standard
-    ef1162f4-9ab1-4c07-ba05-097fac7582b3: 'Padding Top' # Padding Top
+    e45f5477-bc4e-46fb-9be2-15a7ccc05ce8: 'Blogbeiträge - Standard' # Blogbeiträge - Standard
+    ebab252a-57d5-4eeb-b5ba-3df5baaef249: Bildgalerie # Bildgalerie
     f3a90505-8d3f-4cce-b052-9f289264e33d: 'Kontakt Headline' # Kontakt Headline
     f5c36f37-2100-43b7-b63b-7e40a3ce5c36: 'Straße + Hausnummer' # Straße + Hausnummer
     f6b5071c-af6b-4660-8413-09076476a456: 'Portfolio Image' # Portfolio Image
@@ -127,6 +117,10 @@ meta:
     fc734bf2-1508-4b94-b235-08c8ba1fe2af: hero1200 # hero1200
     fc3128a2-0f3d-4964-a796-254634476f9c: 'Sektion - Portfolio Text' # Sektion - Portfolio Text
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   contact-form:
     edition: standard
     enabled: true
@@ -216,7 +210,7 @@ plugins:
       expirationTime: 60
       fieldName: snaptcha
       logRejected: true
-      minimumSubmitTime: 2
+      minimumSubmitTime: 60
       oneTimeKey: true
       salt: ''
       validateUsers: true
@@ -226,7 +220,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.0.0.21
   timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false

@@ -1,0 +1,44 @@
+{% set hero650 = {
+  mode: 'crop',
+  width: 650,
+  quality: 75,
+  position: 'center'
+} %}
+{% set hero2000 = {
+  mode: 'crop',
+  width: 2000,
+  quality: 75,
+  position: 'center'
+} %}
+
+{% set gallery = module.imageGallery %}
+
+<section class="pt-6 pb-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 mx-auto">
+            {% if isMobile == true %}
+                <div class="row g-4" >
+                    {% for item in gallery %}
+                        <div class="col-md-6 col-xxl-4">
+                            <img src="{{item.getUrl(hero650)}}" width="300" height="" class="object-fit__cover w-100" alt="{{ item.alt ?? item.title ?? '' }}" title="{{ item.title ?? '' }}">
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {% if gallery is not empty %}
+                    <div class="row g-4" data-masonry='{"percentPosition": true }'>
+                        {% for item in gallery %}
+                            <div class="col-md-6 col-xxl-4">
+                                <a data-fslightbox href="{{item.getUrl(hero2000)}}" title="lightbox_{{ item.title ?? '' }}">
+                                    <img src="{{item.getUrl(hero650)}}" width="300" height="" class="object-fit__cover w-100 h-100" alt="{{ item.alt ?? item.title ?? '' }}" title="{{ item.title ?? '' }}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

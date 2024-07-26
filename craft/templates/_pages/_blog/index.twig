@@ -7,10 +7,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="mb-2 text-primary">{{'Grafikbuam Blog'}}</h1>
+                <h1 class="mb-2 text-primary">{{'Grafikbuam. Blog'}}</h1>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-8">
             {% for item in blogEntries.all() %}
                 <div class="col-12">
                     <a href="{{item.getUrl ?? null}}" class="btn btn-outline-primary w-100 text-start border-top-0 border-start-0 border-end-0 rounded-0 py-3 d-flex">

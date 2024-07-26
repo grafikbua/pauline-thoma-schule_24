@@ -1,0 +1,21 @@
+{% macro headline(level, text, css) %}
+    {% if text is not empty %}
+        {% if level == 1 %}
+            <h1 class="{{css}} js-rellax-1" data-rellax-speed="2">{{ text|striptags('<br><strong>')|raw }}</h1>
+        {% elseif level == 2 %}
+            <h2 class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</h2>
+        {% elseif level == 3 %}
+            <h3 class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</h3>
+        {% elseif level == 4 %}
+            <h4 class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</h4>
+        {% elseif level == 5 %}
+            <h5 class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</h5>
+        {% elseif level == 6 %}
+            <h6 class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</h6>
+        {% elseif level == 'p' %}
+            <p class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</p>
+        {% elseif level == 'li' %}
+            <li class="{{css}}">{{ text|striptags('<br><strong>')|raw }}</li>
+        {% endif %}
+    {% endif %}
+{% endmacro %}

@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 0ec3fd07-a143-4155-839a-4ffd252ba245 # portfolio
 handle: portfolioImage
 instructions: null
 name: 'Portfolio Image'
@@ -24,17 +23,6 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:227252fb-a26f-42b6-ae49-f1e8f6a82c86' # Images
   restrictedLocationSubpath: 'Portfolio/{slug}'
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: false
   showUnpermittedFiles: false

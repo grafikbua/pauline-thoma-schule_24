@@ -67,6 +67,16 @@ sub {
   font-size: 1.25rem;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #BC8CBB;
+}
+
+::selection {
+  color: white;
+  background: #BC8CBB;
+}
+
 @media (min-width: 1200px) {
   .rotate-90 {
     transform: rotate(-90deg);
@@ -22313,6 +22323,11 @@ body.overlay {
   overflow: hidden;
   transition: 0.5s;
   border-radius: 20px;
+}
+
+.portfolio_card:hover {
+  border: 5px solid #BC8CBB;
+  transition: 0.3s;
 }
 
 .portfolio_card__title {

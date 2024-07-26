@@ -1,0 +1,86 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set member = value %}
+{% set memberID = member.id ?? null %}
+{% set memberTitle = member.title ?? null %}
+{% set memberSubline = member.teamSubline ?? null %}
+{% set memberPhone = member.memberPhone ?? null %}
+{% set memberMail = member.memberMail ?? null %}
+{% set memberWeb = member.memberWeb ?? null %}
+{% set memberStreet = member.memberStreet ?? null %}
+{% set memberLocation = member.memberLocation ?? null %}
+
+{% block main %}
+{% cache for 1 sec %}
+   
+
+
+{# hero #}
+<section>
+   <div class="container">
+      <div class="row">
+         <div class="col-12 text-center">
+            <div class="bg-dark rounded-circle mx-auto overflow-hidden ratio ratio-1x1 w-50" style="display:inline-table">
+               <img src="{{memberImage.getUrl()}}" height="100%" class="object-fit__cover" title="{{'Profilbild' ~ ' - ' ~ memberTitle}}" alt="{{memberTitle ~ memberSubline}}">
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="px-2 px-lg-5">
+   <div class="container-fluid d-flex align-items-center overflow-hidden" style="min-height: 100vh;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-8 mx-auto p-0">
+               <h2 class="display-1 text-primary rellax" data-rellax-percentage="0.5" data-rellax-speed="-2">
+                  <div id="konzeption">Konzeption</div>
+                  <div id="design">Design</div>
+                  <div id="entwicklung">Entwicklung</div>
+               </h2>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<section class="py-5 py-xl-7">
+   {% embed '_sections/services' with {
+      content: {
+         headline: entry.sectionServicesHeadline,
+         text: entry.sectionServicesText,
+      },
+      opt: {
+         sliderName: 'services'
+      }
+   }%}{% endembed %}
+</section>
+
+<section class="px-2 px-lg-5 py-7 py-xxl-9">
+   {% embed '_sections/aboutus' with {
+      content: {
+         headline: entry.sectionAboutUsHeadline,
+         subline: entry.sectionAboutUsSubline,        
+         text: entry.sectionAboutUsText,
+         gallery: entry.sectionAboutUsGallery.all()
+      },
+      opt: {
+         sliderName: 'about-us'
+      }
+   }%}{% endembed %}
+</section>
+
+<section class="py-5 py-xl-7">
+   {% embed '_sections/portfolio' with {
+      content: {
+         headline: entry.sectionPortfolioHeadline,
+         text: entry.sectionPortfolioText,
+      },
+      opt: {
+         sliderName: 'portfolio'
+      }
+   }%}{% endembed %}
+</section>
+{% endcache %}
+{% endblock %}

@@ -23,7 +23,7 @@
                                         <li>{{member.memberLocation ?? null}}</li>
                                         <li><a class="text-light" href="mailto:{{member.memberMail ?? null}}">{{member.memberMail ?? null}}</a></li>
                                         <li><a class="text-light" href="phone:{{member.memberPhone ?? null}}">{{member.memberPhone ?? null}}</a> </li>
-                                        <li><a class="text-light" href="https://{{member.memberWeb ?? null}}" target="_blank">{{member.memberWeb ?? null}}</a></li>
+                                        <li><a class="text-light" href="{{member.memberWeb ?? null}}" target="_blank">{{member.memberWeb|replace({'https://': ''})}}</a></li>
                                     </ul>
                                 {% endfor %}
                             </div>

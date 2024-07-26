@@ -1,16 +1,24 @@
 <div id="menu">
-    <h1 class="text-white">Griaß eich die Madln, servas die Buam!</h1>
-    {# <ul class="p-0">
+    <ul class="p-0">
     {% for slug, item in nav.main %}
-
+        {% if slug == 'kontakt' %}
         <li class="">
-            <a href="{{ url(slug) }}">
-            <span class="burger-menu__link">{{ item.title }}</span>
+            <a data-bs-toggle="modal" data-bs-target="#contactModal">
+                <span class="h1 burger-menu__link">{{ item.title }}</span>
             </a>
         </li>
+        {% else %}
+        <li class="">
+            <a href="{{ url(slug) }}">
+                <span class="h1 burger-menu__link {{craft.app.request.getSegment(1) == slug ? 'text-violet' : null}} {{'/' ~ craft.app.request.pathInfo == slug ? 'text-violet' : null}}">
+                    {{ item.title }}
+                </span>
+            </a>
+        </li>
+        {% endif %}
 
     {% endfor %}    
-    </ul> #}
+    </ul>
 
 </div>
 

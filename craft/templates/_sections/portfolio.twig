@@ -15,11 +15,11 @@
    <div class="container-fluid bg-dark rounded-5 p-4 p-lg-7 text-white">
       <div class="container">
          <div class="row pb-7">
-            <div class="col-6">
+            <div class="col-lg-4">
                <h2 class="h1 text-light">{{ headline }}</h2>
             </div>
-            <div class="col-6">
-               <p{{ text }}</p>
+            <div class="col-lg-8">
+               <p class="text-white">{{ text }}</p>
             </div>
          </div>
       </div>
@@ -27,7 +27,7 @@
 </div>
 
 <div class="container-fluid px-0 position-relative mt-n7">
-   <div id="{{ sliderName }}" class="d-flex">
+   <div id="{{ sliderName }}" class="d-flex pb-5">
 
       {% for item in portfolio %}
          {% set title = item.title ?? null %}
@@ -35,29 +35,18 @@
          {% set link = item.portfolioUrl ?? null %}
          {% set image = item.portfolioImage.one() ?? null %}
          <div class="item pointer">
-            {% if link is not empty %}
                <a href="{{link}}" class="pointer" target="_blank" title="{{'Details' ~ ' ' ~ title ~ ' anzeigen'}}">
                   <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} portfolio_card" style="height: 250px;">
-                     <div class="portfolio_card__overlay">
+                     {# <div class="portfolio_card__overlay">
                         <div class="portfolio_card__title p-4">
                            <h4>{{ title ?? null }}</h4>
                            <p>{{ portfolioSubtitle ?? null }}</p>
                         </div>
-                     </div>
+                     </div> #}
                      <img src="{{ image.url() }}" width="250" class="mx-auto object-fit__contain" style="max-height:46%" alt="{{image.title ?? null}}">
                   </div>
                </a>
-            {% else %}
-                  <div class="{% if item.backgroundSwitch %} bg-dark {% else %} bg-light{% endif %} portfolio_card" style="height: 250px;">
-                     <div class="portfolio_card__overlay">
-                        <div class="portfolio_card__title p-4">
-                           <h4>{{ title ?? null }}</h4>
-                           <p>{{ portfolioSubtitle ?? null }}</p>
-                        </div>
-                     </div>
-                     <img src="{{ image.url() }}" width="250" height="auto" class="mx-auto object-fit__contain" style="max-height:46%" alt="{{image.title ?? null}}">
-                  </div>
-            {% endif %}
+
          </div>
       {% endfor %}
    </div>

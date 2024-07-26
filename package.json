@@ -38,6 +38,8 @@
         "@popperjs/core": "^2.11.6",
         "bootstrap": "^5.3.0-alpha1",
         "bootstrap-icons": "^1.10.3",
+        "fslightbox": "^3.4.1",
+        "masonry-layout": "^4.2.2",
         "popper.js": "^1.16.1",
         "rellax": "^1.12.1",
         "tiny-slider": "^2.9.4",
