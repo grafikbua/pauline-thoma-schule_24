@@ -3,7 +3,6 @@
 
 {% set serviceCategories = craft.categories
       .group("serviceCategory")
-      .all()
    %}
 
 {# sliderSettings #}
@@ -31,7 +30,7 @@
    <div id="{{ sliderName }}" class="d-flex">
 
    {% for category in serviceCategories %}
-   {% set services = craft.entries.section('services').relatedTo(category).all %}
+   {% set services = craft.entries.section('services').relatedTo(category) %}
       <div class="item">
          <div class="bg-dark rounded-4 p-5 text-white">
             <h4>{{ category.title }}</h4>

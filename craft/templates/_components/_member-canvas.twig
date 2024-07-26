@@ -19,7 +19,7 @@
         <h2 class="h4 mt-4">{{memberTitle}}</h2>
         <p class="small">{{memberSubline}}</p>
         <div class="py-3">
-            {% for item in memberSkills.all() %}
+            {% for item in memberSkills %}
                 {% if item.portfolioDetails %}
                     <a class="btn btn-petrol btn-sm text-white m-2" title="{{memberTitle}} {{item.title ?? null}} ansehen" href="{{item.getUrl}}">{{item.title}}</a>
                     {% else %}
@@ -31,7 +31,7 @@
         <div class="mt-auto">
             {% if blogEnties is not empty %}
                 <p class="fs-6">Aktuelle Beiträge</p>
-                {% for entry in blogEnties.all() %}
+                {% for entry in blogEnties %}
                 {% set blogAuthor = entry.blogAuthor.one() ?? null %}
 
                     <a class="text-decoration-none" title="Blogbeitrag {{entry.title ?? null}} von {{blogAuthor}} lesen" href="{{entry.getUrl}}">

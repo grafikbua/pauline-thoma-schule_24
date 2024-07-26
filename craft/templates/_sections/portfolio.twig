@@ -1,9 +1,7 @@
 {% set headline = content.headline ?? null %}
 {% set text = content.text ?? null %}
 
-{% set portfolio = craft.entries.section('portfolio')
-   .all 
-   %}
+{% set portfolio = craft.entries.section('portfolio') %}
 
 {# sliderSettings #}
 {% set sliderName = "js-slider-" ~ opt.sliderName ?? 'default' %}
