@@ -1,0 +1,8 @@
+baseUrl: $SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: $SITE_NAME
+primary: true
+siteGroup: 7b199d82-e8f9-4445-a871-3889ac561d45 # pauline-thoma-schule
+sortOrder: 1

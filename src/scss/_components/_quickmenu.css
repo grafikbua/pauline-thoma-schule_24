@@ -1,0 +1,108 @@
+/* -- Quickmenu --*/
+
+/* container for fixed menu position */
+.container-menu{
+  height: 100vh;
+  right: 5rem;
+  position: absolute;
+}
+
+/* pulse animation on botton */
+.pulse {
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+/* pulse animation keyframes */
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+/* hover (show)-titles and animation on all icons */
+.icon-hover {
+  opacity: 0;
+  background-color: #00000052;
+  color: white;
+  transition: .4s;
+}
+.icon-btn:hover .icon-hover {
+  opacity: 100;
+}
+
+.zoom {
+  transition: transform .4s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* rotate btn on click */
+.rotate {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0px 1px 4px #00000063;
+  transition: transform 0.3s ease; /* Sanfter Übergang für die Rotation */
+
+}
+
+.rotated {
+  transform: rotate(90deg); /* Drehung um 90° */
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  bottom: 2rem;
+  z-index: 4;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  right: -1px;
+  top: -9.5rem;
+  text-align: right;
+  transition: top 1s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 4px 1px 2px 1px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {visibility: visible;transition: visibility 1s;}

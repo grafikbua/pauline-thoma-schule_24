@@ -1,25 +1,14 @@
-<div class="container-fluid px-md-5">
-	<div class="row d-flex align-items-center">
-		<div class="col-lg-4 text-start"></div>
-		<div class="col-6 col-lg-4 text-lg-center">
-			<a href="{{siteUrl}}"><img id="js-logo" src="/assets/img/_system/gb_typo.svg" width="180" height="54" alt="{{'Grafikbuam - Webdesigner und Grafiker - Logo'}}" title="Grafikbuam Kreativgemeinschaft Logo"></a>
-		</div>
-		<div class="col-6 col-lg-4 text-end">
-			<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-petrol pulse mt-0" title="Anrage an Grafikbuam senden">Anfragen</button>
-		</div>
-	</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="{{companyLogo.getUrl ?? null}}" width="300" height="150" class="object-fit__cover" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
+        </div>
+        <div class="col-lg-8 d-flex justify-content-end align-items-center">
+            <ul class="list-unstyled">
+                {% for slug, item in nav.main %}
+                    <li class="d-inline mx-16"><a href="{{slug}}" class="text-decoration-none">{{item.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
-<style>
-.animated-path {
-  stroke-dasharray: 100;
-  animation: dash 5s linear;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-</style>
-
-

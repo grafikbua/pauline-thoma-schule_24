@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 29e9db8d-ff2f-4cbf-aa6d-f4800a31cb8b # Über uns
+handle: about
+maxAuthors: 1
+name: 'Über uns'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/about.twig
+    uriFormat: ueber-uns
+type: single

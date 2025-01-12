@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1---1---homescreen-copy" transform="translate(-1362.000000, -944.000000)">
+            <g id="quickmenu_open" transform="translate(1241.000000, 794.000000)">
+                <g id="Group-2" transform="translate(121.000000, 150.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="21" cy="21" r="21"></circle>
+                    <circle id="Oval" fill="#3B83BD" cx="12" cy="21" r="3"></circle>
+                    <circle id="Oval-Copy" fill="#3B83BD" cx="21" cy="21" r="3"></circle>
+                    <circle id="Oval-Copy-2" fill="#3B83BD" cx="30" cy="21" r="3"></circle>
+                    <circle id="Oval" fill="#3B83BD" transform="translate(21.000000, 12.000000) rotate(-270.000000) translate(-21.000000, -12.000000) " cx="21" cy="12" r="3"></circle>
+                    <circle id="Oval-Copy-2" fill="#3B83BD" transform="translate(21.000000, 30.000000) rotate(-270.000000) translate(-21.000000, -30.000000) " cx="21" cy="30" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

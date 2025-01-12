@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  cb9f8bc9-ade2-4084-9ea7-59f1ebd1e271:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-11T15:25:53+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 22e4f59f-0e68-4927-8b3c-c85ab9e970d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: db646e09-355a-4c9c-aa5c-6647011cac9c
+        userCondition: null
+handle: dates
+hasTitleField: true
+icon: ''
+name: Termine
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

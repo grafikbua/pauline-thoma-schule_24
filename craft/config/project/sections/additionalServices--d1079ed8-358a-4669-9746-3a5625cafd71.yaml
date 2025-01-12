@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 62742169-1bdd-4451-88a1-022a2200e9c1 # Zusatzangebote
+handle: additionalServices
+maxAuthors: 1
+name: Zusatzangebote
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: a1e9b16c-1333-4741-8117-f499deff6335
+type: structure

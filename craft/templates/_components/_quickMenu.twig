@@ -1,0 +1,60 @@
+{% set quickNavigation = craft.entries()
+    .section('quickNavigation')
+    .with(['navIcon'])
+%}
+
+
+<div class="black-container"></div>
+<div class="container-menu" style="">
+  <div class="dropdown">
+    <div class="rotate">
+      <img src="/assets/img/_system/toggle-menu-icon.svg" alt="" onclick="quickmenu()" class=" dropbtn pulse">
+    </div>
+    <div id="quickmenu" class="dropdown-content">
+        {% for item in quickNavigation %}
+            {% set navIcon = item.navIcon.one() %}
+            <a class="icon-btn" href="{{item.navLink ?? null}}" target="_blank">
+                <span class="icon-hover ps-16 pe-24 py-4 me-n8">{{item.title ?? null}}</span>
+                <img src="{{navIcon.getUrl ?? null}}" alt="{{item.title ?? null}}" class="zoom">
+            </a>
+        {% endfor %}
+      
+    </div>
+  </div>
+</div>
+
+{% js %}
+    
+function quickmenu() {
+   var menu = document.getElementById("quickmenu");
+   var rotateDiv = document.querySelector(".rotate");
+
+   if (menu) {
+      menu.classList.toggle("show");
+      // Toggle the rotation class on the div
+      if (rotateDiv) {
+         rotateDiv.classList.toggle("rotated");
+      }
+   }
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+   if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var rotateDiv = document.querySelector(".rotate");
+
+      for (var i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            // Reset rotation on the div
+            if (rotateDiv && rotateDiv.classList.contains('rotated')) {
+               rotateDiv.classList.remove('rotated');
+            }
+         }
+      }
+   }
+};
+
+{% endjs %}

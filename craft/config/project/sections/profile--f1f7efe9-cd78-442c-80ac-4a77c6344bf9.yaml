@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 50d8fb77-de09-404a-a04b-2d7db3d2c145 # Schulprofil
+handle: profile
+maxAuthors: 1
+name: Schulprofil
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/profile.twig
+    uriFormat: schulprofil
+type: single

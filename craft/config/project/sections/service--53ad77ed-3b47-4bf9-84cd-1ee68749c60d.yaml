@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 27a9ab6c-b1b6-4357-b7e1-90ac4dbf9880 # Service
+handle: service
+maxAuthors: 1
+name: Service
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/service.twig
+    uriFormat: service
+type: single

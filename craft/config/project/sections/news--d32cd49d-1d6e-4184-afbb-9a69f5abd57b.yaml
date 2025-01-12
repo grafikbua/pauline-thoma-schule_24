@@ -1,0 +1,30 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - 3a40747f-e1f0-4633-8300-d3b7ad43fbce # Aktuelles
+handle: news
+maxAuthors: 1
+name: Blogbeiträge
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_news/_entry.twig
+    uriFormat: 'aktuelles/{slug}'
+structure:
+  maxLevels: 1
+  uid: c8159a9b-d732-4b9c-a6a4-54422f1bb648
+type: structure

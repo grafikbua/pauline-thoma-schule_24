@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - a5bcf3b9-1cb1-46b5-80a1-7a1ca6263972 # Termine
+handle: dates
+maxAuthors: 1
+name: Termine
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_news/_dates.twig
+    uriFormat: 'aktuelles/termine/{slug}'
+structure:
+  maxLevels: 1
+  uid: 1853bc5e-4fa0-40d4-b282-a5ecea576ff0
+type: structure

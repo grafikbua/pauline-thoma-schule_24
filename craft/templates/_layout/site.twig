@@ -1,22 +1,25 @@
 {# site template #}
 {% extends "_layout/base" %}
 {% set isMobile = craft.app.request.isMobileBrowser ? true : false %}
+{% set companyLogo = settings.companyLogo.one() %}
 
 {# the site navigation #}
-      {# ("projekte"):        { title: "Projekte"}, #}
 {% set nav = {
    main: {
       ("/"):               { title: "Startseite" },
-      ("blog"):            { title: "Blog"},
-
-      ("kontakt"):         { title: "Kontakt"},
+      ("ueber-uns"):       { title: "Über uns"},
+      ("aktuelles"):       { title: "Aktuelles"},
+      ("schulprofil"):     { title: "Schulprofil"},
+      ("bildungsangebot"): { title: "Bildungsangebot"},
+      ("aktuelles"):       { title: "Aktuelles"},
+      ("service"):         { title: "Service"},
+      ("pruefungen"):      { title: "Prüfungen"},
    },
    footer: {
       ("impressum"):       { title: "Impressum" },
       ("datenschutz"):     { title: "Datenschutz"},
    }
 } %}
-{% set members = craft.entries.section('team') %}
 
 {# set the `bodyClass` variable to the entry's section handle if there is one,
 or the first URI segment (this is used by the parent template) #}
@@ -30,6 +33,8 @@ or the first URI segment (this is used by the parent template) #}
 {% endif %}
 
 {% block body %}
+
+{% embed "_components/_quickMenu" %}{% endembed %}
 
 <header id="js-header" class="shadow-sm py-4">
    {% include '_layout/_header' %}

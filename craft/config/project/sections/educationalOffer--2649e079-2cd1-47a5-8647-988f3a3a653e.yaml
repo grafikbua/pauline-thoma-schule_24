@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 09b86eba-535b-4e7d-8646-30d81477e69a # Bildungsangebot
+handle: educationalOffer
+maxAuthors: 1
+name: Bildungsangebot
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/educationalOffer.twig
+    uriFormat: bildungsangebot
+type: single

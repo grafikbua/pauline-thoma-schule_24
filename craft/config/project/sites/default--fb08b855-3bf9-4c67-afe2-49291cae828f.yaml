@@ -1,9 +1,0 @@
-baseUrl: $SITE_URL
-enabled: true
-handle: default
-hasUrls: true
-language: de
-name: grafikbuam.
-primary: true
-siteGroup: 257a5eca-fc1b-4a37-8a1d-5841c1c0539b # Craft Basic
-sortOrder: 1

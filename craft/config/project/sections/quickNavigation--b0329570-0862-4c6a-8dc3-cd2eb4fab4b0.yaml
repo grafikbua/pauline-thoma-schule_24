@@ -1,0 +1,30 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - ad6d28fe-8531-45b9-a5d8-720a39087c2c # Quick Menü
+handle: quickNavigation
+maxAuthors: 1
+name: 'Quick Menü'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 6f9a1ccb-879c-4e1c-9522-1166ae59a819
+type: structure

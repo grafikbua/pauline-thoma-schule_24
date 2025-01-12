@@ -9,15 +9,13 @@
 		{% include '_system/_favicons' %}
 		{% cache %}
 		{# preload fonts #}
-		<link rel="preload" href="/assets/fonts/Mulish-Black.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/assets/fonts/Mulish-Regular.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/assets/fonts/NotoSans-Bold.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/assets/fonts/NotoSans-Medium.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/poppins-light.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/assets/fonts/poppins-regular.woff" as="font" type="font/woff" crossorigin>
 			
 		{% endcache %}
 		
 
-		{% set placeholderImg = "https://source.unsplash.com/1800x1000/?creative" %}
 
 		{% block head %}{% endblock %}
 
@@ -34,13 +32,12 @@
 		{% endif %}
 		{# sprig #}
 		<script src="/assets/js/htmx.min.js" defer></script>
-		{#<script src="/assets/js/bootstrap.min.js"></script>
-		<script src="/assets/js/popper.min.js"></script>#}
+		<script src="/assets/js/index.es5.min.js"></script>
+		{# <script src="/assets/js/popper.min.js"></script>#}
 
 	</head>
 	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
-		{% embed "_components/_nav" %}{% endembed %}
-		{% embed "_components/_contactModal" %}{% endembed %}
+
 
 		{# defined in _layout/site #}
 		{% block body %}{% endblock %}

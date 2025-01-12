@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  fd5f5985-ee7f-4f09-8b2e-ff953ebe5ba4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-11T15:27:42+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5f5bdd8f-6bc1-49c8-825b-6fb9fce91e1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a662c8af-03c0-4568-9598-17c4ef69d2e8
+        userCondition: null
+handle: newsEntry
+hasTitleField: true
+icon: ''
+name: Aktuelles
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

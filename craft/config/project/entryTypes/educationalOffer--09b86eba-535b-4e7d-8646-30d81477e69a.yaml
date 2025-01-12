@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  f26c1d38-68d8-462c-b30e-6fc33f413e73:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-11T15:14:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8fa09a3f-008d-4c80-816e-932edbbbe413
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 07da19ad-b5c0-427e-ab24-78d447833f50
+        userCondition: null
+handle: educationalOffer
+hasTitleField: true
+icon: ''
+name: Bildungsangebot
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  0253f806-9580-45e8-8f42-14f46fddb8dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-11T15:08:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e85054a7-88d4-4b12-98d7-c1fb2f502f04
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 687878c5-423f-421a-a509-52436b74ff64
+        userCondition: null
+handle: home
+hasTitleField: true
+icon: ''
+name: Startseite
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

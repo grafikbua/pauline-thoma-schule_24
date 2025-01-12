@@ -5,8 +5,8 @@
 
 
 /*! bootstrap 5 - Update via npm */
-//@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "_bootstrap/config";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// @import "_bootstrap/config";
 
 /*! project plugins
 @import "_plugins/_aos/aos";
@@ -18,19 +18,9 @@
 
 
 /*! components */
-@import "_components/_burgermenu";
-@import "_components/_button";
-@import "_components/_fixed-menu";
-@import "_components/_header";
-@import "_components/_hero";
-@import "_components/_member-canvas";
-@import "_components/_slider";
-@import "_components/_portfolio";
+@import "_components/_quickmenu";
 
 
-
-/*! pagebuilder */
-@import "_components/_pagebuilder";
 
 /*! custom grid and basic css */
 @import "_custom";

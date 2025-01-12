@@ -3,10 +3,9 @@
         "craftcms/ckeditor": "4.1.0",
         "craftcms/cms": "^5.0.0",
         "craftcms/contact-form": "3.1.0",
-        "craftcms/contact-form-honeypot": "2.1.0",
         "ether/seo": "v5.0.0-rc4",
         "putyourlightson/craft-snaptcha": "5.0.0",
-        "putyourlightson/craft-sprig": "3.0.2",
+        "putyourlightson/craft-sprig": "3.1.0",
         "verbb/image-resizer": "4.0.0",
         "verbb/knock-knock": "3.0.1",
         "vlucas/phpdotenv": "^5.4.0"
