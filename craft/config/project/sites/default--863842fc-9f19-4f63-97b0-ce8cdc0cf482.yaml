@@ -1,7 +1,8 @@
 baseUrl: $SITE_URL
+enabled: true
 handle: default
 hasUrls: true
-language: en-US
+language: de
 name: $SITE_NAME
 primary: true
 siteGroup: 7b199d82-e8f9-4445-a871-3889ac561d45 # pauline-thoma-schule

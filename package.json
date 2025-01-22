@@ -15,12 +15,12 @@
         "Safari 12"
     ],
     "devDependencies": {
-        "@babel/core": "^7.21.0",
-        "@babel/preset-env": "^7.20.2",
-        "autoprefixer": "^10.4.13",
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "autoprefixer": "^10.4.20",
         "babelify": "^10.0.0",
-        "core-js": "^3.29.0",
-        "cssnano": "^5.1.15",
+        "core-js": "^3.40.0",
+        "cssnano": "^7.0.6",
         "esmify": "^2.1.1",
         "grunt": "^1.6.1",
         "grunt-browserify": "^6.0.0",
@@ -29,20 +29,20 @@
         "grunt-contrib-uglify-es": "^3.3.0",
         "grunt-contrib-watch": "^1.1.0",
         "grunt-postcss": "^0.9.0",
-        "grunt-purgecss": "^5.0.0",
+        "grunt-purgecss": "^7.0.2",
         "grunt-sass": "^3.1.0",
         "grunt-svgmin": "^7.0.0",
-        "sass": "^1.58.3"
+        "sass": "^1.83.4"
     },
     "dependencies": {
-        "@popperjs/core": "^2.11.6",
-        "bootstrap": "^5.3.0-alpha1",
-        "bootstrap-icons": "^1.10.3",
-        "fslightbox": "^3.4.1",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.3",
+        "bootstrap-icons": "^1.11.3",
+        "fslightbox": "^3.4.2",
         "masonry-layout": "^4.2.2",
         "popper.js": "^1.16.1",
         "rellax": "^1.12.1",
         "tiny-slider": "^2.9.4",
-        "vanilla-lazyload": "^17.8.3"
+        "vanilla-lazyload": "^19.1.3"
     }
 }
