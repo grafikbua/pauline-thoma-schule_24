@@ -2,24 +2,18 @@
 {% extends "_layout/base" %}
 {% set isMobile = craft.app.request.isMobileBrowser ? true : false %}
 {% set companyLogo = settings.companyLogo.one() %}
+{% set companyLogoW = settings.companyLogo2.one() %}
 
 {# the site navigation #}
 {% set nav = {
-   main: {
-      ("/"):               { title: "Startseite" },
-      ("ueber-uns"):       { title: "Über uns"},
-      ("aktuelles"):       { title: "Aktuelles"},
-      ("schulprofil"):     { title: "Schulprofil"},
-      ("bildungsangebot"): { title: "Bildungsangebot"},
-      ("aktuelles"):       { title: "Aktuelles"},
-      ("service"):         { title: "Service"},
-      ("pruefungen"):      { title: "Prüfungen"},
-   },
+
    footer: {
       ("impressum"):       { title: "Impressum" },
       ("datenschutz"):     { title: "Datenschutz"},
    }
 } %}
+
+{% set mainNav = craft.entries.section('mainNavigation') %}
 
 {# set the `bodyClass` variable to the entry's section handle if there is one,
 or the first URI segment (this is used by the parent template) #}
@@ -36,7 +30,9 @@ or the first URI segment (this is used by the parent template) #}
 
 {% embed "_components/_quickMenu" %}{% endembed %}
 
-<header id="js-header" class="shadow-sm py-4">
+
+
+<header id="js-header" class="shadow-sm header">
    {% include '_layout/_header' %}
 </header>
 

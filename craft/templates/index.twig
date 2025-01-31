@@ -1,6 +1,93 @@
 {# index #}
 {% extends "_layout/site" %}
+{% set heroImage = entry.heroImage.eagerly().one() ?? null %}
+{% set aboutImage = entry.heroImage2.eagerly().one() ?? null %}
+{% set newsEntries = craft.entries.section('news').limit(4) %}
+{% set eventEntries = craft.entries.section('dates').limit(4) %}
 
 {% block main %}
-<h1>hallo welt!</h1>
+
+<section>
+    {% embed "_components/_hero" with {
+        image: heroImage,
+        imageAlt: siteName,
+        height: 'full'
+    } %}
+    {% endembed %}
+</section>
+
+<section class="my-194 my-xl-248">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			{% if aboutImage %}
+				<div class="col-xl-6 pe-xl-48">
+					<img src="{{aboutImage.getUrl ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
+				</div>
+			{% endif %}
+			<div class="col-xl-6 ps-xl-128 py-88 py-xl-0">
+				<h2>{{entry.headline2 ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline2 ?? null}}</p>
+				{{entry.intro ?? null}}
+			</div>
+		</div>		
+    </div>
+</section>
+
+{% css %}
+	.card {
+		background-color: unset;
+		border:none
+	}
+	.card-footer {
+		background-color: unset!important
+	}
+{% endcss %}
+
+<section>
+	<div class="container-fluid bg-primary py-88">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-white">Aktuelles</h2>
+					<a href="/aktuelles" class="text-white small" title="Alle Blogbeiträge anzeigen">Alle Beiträge anzeigen</a>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-48 pt-32 justify-content-center">
+			{% if newsEntries|length %}
+				{% for item in newsEntries %}
+					{% set newsImage = item.heroImage.eagerly().one() %}
+					<div class="col">
+						<div class="card">
+							<img src="{{newsImage.getUrl('square600') ?? null}}" height="300" class="card-img-top object-fit__cover" alt="{{item.title ?? null}}">
+							<div class="card-body">
+								<small class="text-white">{{item.postDate|date("d.m.y")}}</small>
+								<h4 class="text-white">{{item.title ?? null}}</h4>
+							</div>
+							<div class="card-footer border-0">
+								<a href="{{item.getUrl ?? null}}" class="btn btn-light stretched-link">mehr erfahren</a>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			{% else %}
+				<div class="col text-white text-center py-48">- Keine Beiträge vorhanden -</div>
+			{% endif %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="my-194 my-xl-248">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pb-16">
+				<h2 class="">Anstehende Termine</h2>
+				<a href="/aktuelles" class="text-dark small" title="Alle Termine anzeigen">Alle Termine anzeigen</a>
+			</div>
+		</div>
+		{% embed "_components/_eventSection" %}
+		{% endembed %}
+	</div>
+</section>
+
 {% endblock %}

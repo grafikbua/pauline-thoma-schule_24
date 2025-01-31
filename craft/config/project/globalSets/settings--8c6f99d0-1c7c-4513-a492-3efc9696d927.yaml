@@ -19,9 +19,165 @@ fieldLayouts:
             uid: 95773708-b706-46ec-ac1a-55a59a5b593a
             userCondition: null
             warning: null
-            width: 100
-        name: Unternehmen
+            width: 50
+          -
+            dateAdded: '2025-01-24T10:51:17+00:00'
+            elementCondition: null
+            fieldUid: c4caefc2-cd31-47bf-b3d5-258093393a6c # Logo
+            handle: companyLogo2
+            includeInCards: false
+            instructions: null
+            label: 'Logo /w'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bcc3227-7878-4e43-b6fc-2062688c88a0
+            userCondition: null
+            warning: null
+            width: 50
+        name: Corporate
         uid: a91e63d8-7645-4b98-b41f-00e455c23492
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Bezeichnung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9707df1a-4b72-4a2b-8c1a-6f385e64d828
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation3
+            includeInCards: false
+            instructions: null
+            label: 'PLZ & Ort'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90ff05a0-12ad-4f5f-828e-38a3a539a3bc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation2
+            includeInCards: false
+            instructions: null
+            label: 'Straße & Hausnummer'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e54accb-31dd-4c01-b70d-f60cb2e70bbd
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation4
+            includeInCards: false
+            instructions: null
+            label: Telefonnummer
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2434813e-e9b5-4bdc-8ff2-5376096fcdd9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation5
+            includeInCards: false
+            instructions: null
+            label: Fax
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6d53075-3148-4933-90e2-f60db3121d31
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-24T11:00:25+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation6
+            includeInCards: false
+            instructions: null
+            label: 'E-Mail Adresse'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 593c52a9-627e-4c7d-b303-b4bb14243de2
+            userCondition: null
+            warning: null
+            width: 50
+        name: Kontaktdaten
+        uid: 4c583f29-fb37-41c0-a9c8-9696d9ea0d5c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-31T15:25:19+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro2
+            includeInCards: false
+            instructions: null
+            label: Impressum
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3aa4a3c6-3d9c-46c3-824b-603783802d53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-31T15:25:19+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Datenschutz
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7700005d-739a-4f45-8741-38f74225b692
+            userCondition: null
+            warning: null
+            width: 100
+        name: Rechtstexte
+        uid: c61ed54f-e173-4abc-9424-6169662a270b
         userCondition: null
 handle: settings
 name: Einstellungen

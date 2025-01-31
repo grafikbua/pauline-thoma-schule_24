@@ -1,0 +1,26 @@
+{% set title = title ?? null %}
+{% set serviceImage = serviceImage ?? null %}
+
+<!-- Modal -->
+<div class="modal fade" id="{{item.title|kebab}}Modal" tabindex="-1" aria-labelledby="{{item.title|kebab}}ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-xl-48 pb-48 pt-0">
+        <div class="row d-flex align-items-center">
+            {% if serviceImage %}
+                <div class="col-xl-6">
+                    <img src="{{serviceImage.getUrl('square600')}}" class="w-100" alt="{{item.title}}">
+                </div>
+            {% endif %}
+            <div class="{{ serviceImage ? 'col-xl-6' : 'col-xl-12'}} px-xl-32 pt-32 pt-xl-0">
+                <h3>{{item.title ?? null}}</h3>
+                {{item.intro ?? null }}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

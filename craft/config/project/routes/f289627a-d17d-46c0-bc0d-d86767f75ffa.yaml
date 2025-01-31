@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 1
+template: _pages/_default.twig
+uriParts:
+  - impressum
+uriPattern: impressum

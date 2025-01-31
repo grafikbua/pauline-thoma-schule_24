@@ -7,9 +7,11 @@ settings:
   availableTransforms: ''
   availableVolumes: '*'
   ckeConfig: 600f67a6-c4a2-4483-9af9-c5ca822d1acf # Simple
-  createButtonLabel: null
+  createButtonLabel: Button
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
+  entryTypes:
+    - e9532a84-539e-4ee5-ac1c-d225f77f6132 # Button
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false

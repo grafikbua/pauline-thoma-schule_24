@@ -6,40 +6,133 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-11T15:10:32+00:00'
-            disabled: false
+            dateAdded: '2025-01-24T14:48:22+00:00'
             elementCondition: null
-            id: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 67115a03-ad4b-4ca1-b734-9c52a5843841
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b8dd190-452d-42d8-9e20-e654b79a26c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: dcef82a4-a33a-4cd9-a5b7-808aafa1ca81
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T09:54:43+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50235737-c297-4982-9cc9-1750b4695475
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T09:54:43+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf047ed8-44b7-455e-af18-1d2a5ec1a910
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T09:54:43+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56f78cb5-d327-469d-beea-d8da54fb06fa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T09:54:43+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: heroImage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d051dea-72ce-43b2-b3ff-3799ad433934
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: dcef82a4-a33a-4cd9-a5b7-808aafa1ca81
+        uid: f20f45ed-809e-4da6-a15b-4bf021d74039
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T10:27:51+00:00'
+            elementCondition: null
+            template: _controlpanel/_mitarbeiter-link.twig
+            templateMode: site
+            type: craft\fieldlayoutelements\Template
+            uid: 66af6882-fe50-4f43-8d56-cae3e5c1a56e
+            userCondition: null
+            width: 100
+        name: Team
+        uid: e7dcb333-f781-4699-936c-d19a1290a86a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T14:26:23+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97a0b6c3-6748-4525-ae34-8d354f5129c1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cd368b34-c339-45df-b7a5-6e5867a452a8
         userCondition: null
 handle: about
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: 'Über uns'
 showSlugField: true

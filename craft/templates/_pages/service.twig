@@ -1,0 +1,43 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set downloads = craft.entries.section('downloads') %}
+
+{% block main %}
+
+
+
+<section class="pt-248">
+    <div class="container pt-128">
+        <div class="row">
+            <div class="col-xl-8 mx-auto">
+                <h1 class="h2">{{entry.headline ?? null}}</h1>
+				<p class="fs-4 mb-24">{{entry.subline ?? null}}</p>
+				{{entry.intro ?? null}}
+            </div>
+        </div>
+        <div class="row pt-48 pb-128">
+            <div class="col-xl-8 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item row d-flex align-items-center py-16">
+                        <div class="col-xl-7"><b>Titel</b></div>
+                        <div class="col"><b>Uploaddatum</b></div>
+                        <div class="col"></div>
+                    </li>
+                    {% for item in downloads %}
+                    {% set document = item.document.eagerly.one() ?? null %}
+                        <li class="list-group-item row d-flex align-items-center py-16">
+                            <div class="col-xl-7">{{item.title ?? null}}</div>
+                            <div class="col-xl d-flex align-items-center"><span>{{ item.postDate|date("d.m.yy") }}</span></div>
+                            <div class="col d-flex ms-xl-auto"><a href="{{ document.getUrl ?? null }}" class="btn btn-primary mt-16 mt-xl-0 stretched-link" target="_blank">Dokument öffnen</a></div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

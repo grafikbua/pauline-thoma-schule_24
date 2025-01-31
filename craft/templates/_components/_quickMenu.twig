@@ -13,7 +13,7 @@
     <div id="quickmenu" class="dropdown-content">
         {% for item in quickNavigation %}
             {% set navIcon = item.navIcon.one() %}
-            <a class="icon-btn" href="{{item.navLink ?? null}}" target="_blank">
+            <a class="icon-btn" href="{{item.navLink ?? null}}" {% if item.navLink.target %} target="{{ item.navLink.target }}"{% endif %}>
                 <span class="icon-hover ps-16 pe-24 py-4 me-n8">{{item.title ?? null}}</span>
                 <img src="{{navIcon.getUrl ?? null}}" alt="{{item.title ?? null}}" class="zoom">
             </a>

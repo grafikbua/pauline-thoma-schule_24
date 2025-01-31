@@ -11,7 +11,6 @@
 use craft\helpers\App;
 
 return [
-    'dsn' => App::env('DB_DSN') ?: null,
     'driver' => App::env('DB_DRIVER'),
     'server' => App::env('DB_SERVER'),
     'port' => App::env('DB_PORT'),
@@ -20,6 +19,6 @@ return [
     'password' => App::env('DB_PASSWORD'),
     'schema' => App::env('DB_SCHEMA'),
     'tablePrefix' => App::env('DB_TABLE_PREFIX'),
-    'charset' => 'utf8',
-    'collation' => 'utf8_unicode_ci',
+    'charset' => 'utf8mb4',
+    'collation' => 'utf8mb4_0900_ai_ci',
 ];

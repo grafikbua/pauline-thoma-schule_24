@@ -1,0 +1,26 @@
+{% if eventEntries|length %}
+    {% for item in eventEntries %}
+        <div class="row py-32 py-md-0 border-bottom d-flex align-items-center">
+            <div class="col-3 col-md-auto px-lg-48 py-32 py-md-48 text-center d-none d-md-block">
+                <p class="h1 mb-0 bigger text-primary">{{ item.date|date("d")}}</p>
+                <p class="m-0">{{ item.date|date("mm")}}</p>
+            </div>
+            <div class="col-9 col-md-7">
+                <h5 class="mt-0 h4">{{ item.title }}</h5>
+                <p class="small mb-0">{{ item.date|date("d.mm.yy")}}</p>
+            </div>
+            <div class="col-12 col-md-auto ms-auto text-start text-md-end pe-md-32 mt-16 mt-md-0">
+                {% set description = item.intro %}
+                {% if description %}
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{{item.id}}">Details anzeigen</button>
+                {% endif %}
+            </div>
+        </div>
+        {% if description %}
+            {% embed "_components/_eventModal" %}
+            {% endembed %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div class="col text-center py-48">- Keine Termine vorhanden -</div>
+{% endif %}

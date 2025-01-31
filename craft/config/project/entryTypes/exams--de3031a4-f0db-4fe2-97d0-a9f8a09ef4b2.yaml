@@ -6,32 +6,50 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-11T15:20:36+00:00'
-            disabled: false
+            dateAdded: '2025-01-31T09:38:14+00:00'
             elementCondition: null
-            id: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8afcb24a-4593-4678-894d-6d17ee28c5ac
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99dcb69e-f966-4e16-ba60-5815e5cf05d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-31T09:38:14+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee106344-88c4-4687-a2df-32da7533d569
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-31T09:38:14+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7f49a82-8351-4021-978c-90de2796c058
             userCondition: null
             warning: null
             width: 100
@@ -39,7 +57,7 @@ fieldLayouts:
         uid: 8379b0a9-65a4-4767-b682-a55230b87ef9
         userCondition: null
 handle: exams
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: Prüfungen
 showSlugField: true

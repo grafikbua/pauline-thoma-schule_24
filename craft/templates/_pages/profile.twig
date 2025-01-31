@@ -1,0 +1,76 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set heroImage = entry.heroImage.eagerly().one() ?? null %}
+{% set aboutImage = entry.heroImage2.eagerly().one() ?? null %}
+{% set additionalServices = craft.entries.section('additionalServices') %}
+
+{% block main %}
+
+<section>
+    {% embed "_components/_hero" with {
+        image: heroImage,
+        imageAlt: siteName,
+        height: ''
+    } %}
+    {% endembed %}
+</section>
+
+<section class="my-194 my-xl-248">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			<div class="col-xl-6 pe-xl-48 py-88 py-xl-0">
+				<h2>{{entry.headline ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline ?? null}}</p>
+				{{entry.intro ?? null}}
+			</div>
+			{% if aboutImage %}
+				<div class="col-xl-6 ps-xl-128 ">
+					<img src="{{aboutImage.getUrl('square600') ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
+				</div>
+			{% endif %}
+		</div>		
+    </div>
+</section>
+
+<section class="py-88 py-xl-128 bg-light">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			{% if aboutImage %}
+				<div class="col-xl-6 pe-xl-48 order-2 order-xl-1">
+					<img src="{{aboutImage.getUrl('square600') ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
+				</div>
+			{% endif %} 
+			<div class="col-xl-6 ps-xl-128 py-88 py-xl-0 order-1 order-xl-2">
+				<h2>{{entry.headline2 ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline2 ?? null}}</p>
+				{{entry.intro ?? null}}
+			</div>
+		</div>		
+    </div>
+</section>
+
+<section class="my-194 my-xl-248">
+    <div class="container">
+        <div class="row">
+            <h2>{{entry.headline3 ?? null}}</h2>
+            <p class="4 mb-24">{{entry.subline3 ?? null}}</p>
+        </div>
+        <div class="row row-cols-2 row-cols-lg-3 g-24 pt-32">
+            {% for item in additionalServices %}
+            {% set serviceImage = item.heroImage.one() ?? null %}
+                <div class="col">
+                    <div class="ratio ratio-1x1 bg-light">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{item.title|kebab}}Modal">
+                           {{item.title ?? null}}
+                            </button>
+                    </div>
+                </div>
+                {% embed "_components/_serviceModal" %}  
+                {% endembed %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

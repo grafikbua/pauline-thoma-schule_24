@@ -6,40 +6,213 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-11T15:12:08+00:00'
-            disabled: false
+            dateAdded: '2025-01-28T15:12:47+00:00'
             elementCondition: null
-            id: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cfdb6faf-cae0-4035-b84f-8e81b30ebb15
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46e88719-4127-4744-8661-42fc133065b7
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: Hero
         uid: 4afd5691-09d4-43e8-8faa-b8beed89f7f6
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76999644-b7c5-4397-890f-4c115e52a71c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 522e2b3b-99d0-4515-88d6-f3e35dffa5d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f931dd9-c4b0-4c50-948f-c9d08d328d9c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: heroImage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d29e789b-f7f5-417a-8306-8d6c641d4b0f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Leitgedanke
+        uid: c4bad445-7a16-4717-8da1-b59c250b72d3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: headline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fc8e3c2-c227-40d2-a474-cbb4f2f525f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: subline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd9cb15f-b4da-4f90-9c3a-5eb1c16c1f1d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bbf8aedf-c353-4552-8ce7-861fd164d00e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: heroImage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6c744dd-73b9-4dea-b3d1-a3ae4787034b
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Sozialwirksame Schule'
+        uid: 20ef27e9-88c9-49c7-9009-4f0f993b16c9
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T15:27:11+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: headline3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 321341dd-0fd8-4f53-9fd0-b4790f300472
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:27:11+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: subline3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6143c8e0-19bf-4390-8118-06f8724c937b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:12:47+00:00'
+            elementCondition: null
+            template: _controlpanel/_angebote-link.twig
+            templateMode: site
+            type: craft\fieldlayoutelements\Template
+            uid: eb60eea1-6fd7-4600-9b24-0f7256d8608a
+            userCondition: null
+            width: 100
+        name: Zusatzangebote
+        uid: 72ba24f2-14e7-4a3a-b98a-27287ab5f26c
+        userCondition: null
 handle: profile
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: Schulprofil
 showSlugField: true

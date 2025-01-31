@@ -1,0 +1,30 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - 5d7b40cb-5dd1-4d66-99d9-24db310c795a # Teammitglieder
+handle: teamMember
+maxAuthors: 1
+name: Teammitglieder
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: b3df0f33-ded2-46e7-9d2e-ee9d8a450282
+type: structure

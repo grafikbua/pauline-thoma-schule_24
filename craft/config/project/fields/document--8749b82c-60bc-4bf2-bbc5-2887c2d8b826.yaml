@@ -1,0 +1,35 @@
+columnSuffix: null
+handle: document
+instructions: null
+name: Dokument
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:3b9b0838-98aa-457f-b6fc-8447fd0017d9' # Dokumente
+  defaultUploadLocationSubpath: '{slug}'
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:b6409508-26c3-4289-b70a-a82ea6811841' # Bilder
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:3b9b0838-98aa-457f-b6fc-8447fd0017d9' # Dokumente
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

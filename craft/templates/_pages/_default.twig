@@ -1,0 +1,26 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set intro = intro ?? null %}
+
+{% block main %}
+
+{% if craft.app.request.segment(1) == 'datenschutz' %}
+    {% set intro = settings.intro ?? null %}
+{% elseif craft.app.request.segment(1) == 'impressum' %}
+    {% set intro = settings.intro2 ?? null %}
+{% endif %}
+
+<section class="py-248">
+    <div class="container py-128">
+        <div class="row">
+            <div class="col-xl-8 mx-auto">
+				{{intro ?? null}}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1736897716
+dateModified: 1738337853
 elementSources:
   craft\elements\Entry:
     -
@@ -16,7 +16,15 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: singles
+      tableAttributes:
+        - status
+        - link
       type: native
     -
       heading: '*****************'
@@ -25,7 +33,17 @@ elementSources:
       heading: Aktuelles
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:d32cd49d-1d6e-4184-afbb-9a69f5abd57b' # Blogbeiträge
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
       type: native
     -
       key: 'section:5f22467e-65eb-4397-a066-ba223c714f7b' # Termine
@@ -37,7 +55,16 @@ elementSources:
       heading: Sonstiges
       type: heading
     -
+      key: 'section:886bc2a9-ef86-4303-b796-88d3747dad07' # Teammitglieder
+      type: native
+    -
       key: 'section:d1079ed8-358a-4669-9746-3a5625cafd71' # Zusatzangebote
+      type: native
+    -
+      key: 'section:a35b7bc5-f82d-4b40-a114-2b1367335e60' # Downloads
+      type: native
+    -
+      key: 'section:389d6baa-55ac-4b68-9556-e7e1a7e6f4a2' # Prüfungen
       type: native
     -
       heading: '*****************'
@@ -46,10 +73,23 @@ elementSources:
       heading: Navigation
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:b16d0a9d-a3c3-47bc-9994-ba3678c2cb8a' # Hauptmenü
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
       type: native
     -
       key: 'section:b0329570-0862-4c6a-8dc3-cd2eb4fab4b0' # Quick Menü
+      type: native
+    -
+      key: 'section:d5d663c2-8ed1-4e47-862a-dc4b0e3e0a5e' # Footer Service
       type: native
 email:
   fromEmail: pedro@grafikbuam.de
@@ -72,30 +112,39 @@ fs:
     url: '@images_url'
 meta:
   __names__:
+    1e283a2a-0769-4bc0-bf96-9407f40abfcf: Unternehmensdaten # Unternehmensdaten
     1fecbeb4-dfb3-4886-82ce-08ca8ee9cfaa: 'Nav Link' # Nav Link
     3a40747f-e1f0-4633-8300-d3b7ad43fbce: Aktuelles # Aktuelles
     3b9b0838-98aa-457f-b6fc-8447fd0017d9: Dokumente # Dokumente
     4ce60e8c-83c3-441d-bab5-2776a4428326: Startseite # Startseite
     5a325d87-4e15-4b2f-81b0-c3233e6e9fa0: Aktuelles # Aktuelles
     5b0b1298-5922-416e-aa58-ca60532c78cb: Editor # Editor
+    5d7b40cb-5dd1-4d66-99d9-24db310c795a: Teammitglieder # Teammitglieder
     5f22467e-65eb-4397-a066-ba223c714f7b: Termine # Termine
-    6e57c3b3-9e16-47c7-9a15-154c8d857b2d: Team # Team
+    6e57c3b3-9e16-47c7-9a15-154c8d857b2d: Abteilung/Personengruppe # Abteilung/Personengruppe
     7a09aaed-d19d-4ede-b382-6f23bce5a0ca: Intro # Intro
     7b199d82-e8f9-4445-a871-3889ac561d45: pauline-thoma-schule # pauline-thoma-schule
     7ddfcaff-57ed-4171-b773-31654d8fb98a: Hauptmenü # Hauptmenü
     8c6f99d0-1c7c-4513-a492-3efc9696d927: Einstellungen # Einstellungen
     09b86eba-535b-4e7d-8646-30d81477e69a: Bildungsangebot # Bildungsangebot
+    17f71c47-7d0f-4b3d-9ef6-d460fb27c222: Logo/Icon # Logo/Icon
     27a9ab6c-b1b6-4357-b7e1-90ac4dbf9880: Service # Service
     29e9db8d-ff2f-4cbf-aa6d-f4800a31cb8b: 'Über uns' # Über uns
     35e33973-944b-4b51-9f27-cd93d0b3eaf0: Aktuelles # Aktuelles
     50d8fb77-de09-404a-a04b-2d7db3d2c145: Schulprofil # Schulprofil
     53ad77ed-3b47-4bf9-84cd-1ee68749c60d: Service # Service
+    389d6baa-55ac-4b68-9556-e7e1a7e6f4a2: Prüfungen # Prüfungen
     600f67a6-c4a2-4483-9af9-c5ca822d1acf: Simple # Simple
+    876b3d7d-2e3a-406b-8690-c00734ba4f9e: Datum # Datum
+    886bc2a9-ef86-4303-b796-88d3747dad07: Teammitglieder # Teammitglieder
     2649e079-2cd1-47a5-8647-988f3a3a653e: Bildungsangebot # Bildungsangebot
+    8749b82c-60bc-4bf2-bbc5-2887c2d8b826: Dokument # Dokument
+    60858e18-bc1b-4d81-ba23-8bd5ec4e4238: Bildergalerie # Bildergalerie
     863842fc-9f19-4f63-97b0-ce8cdc0cf482: $SITE_NAME # $SITE_NAME
     03155892-e06c-4f04-89dd-78fdec9bd67c: 'Über uns' # Über uns
     62742169-1bdd-4451-88a1-022a2200e9c1: Zusatzangebote # Zusatzangebote
     a5bcf3b9-1cb1-46b5-80a1-7a1ca6263972: Termine # Termine
+    a35b7bc5-f82d-4b40-a114-2b1367335e60: Downloads # Downloads
     a66e7f80-6b50-4a80-9b00-e9b7dbf02c3d: Prüfungen # Prüfungen
     ad6d28fe-8531-45b9-a5d8-720a39087c2c: 'Quick Menü' # Quick Menü
     b0329570-0862-4c6a-8dc3-cd2eb4fab4b0: 'Quick Menü' # Quick Menü
@@ -106,11 +155,19 @@ meta:
     cde20e84-eb8a-4bd9-bb93-2d53c03e54eb: 'Hero Image' # Hero Image
     ce51fadb-483c-4fc2-9160-7cf85ac48cad: Headline # Headline
     cf27a32b-d23f-4ee3-a52f-09465c833f30: 'Nav Icon' # Nav Icon
+    d5d663c2-8ed1-4e47-862a-dc4b0e3e0a5e: 'Footer Service' # Footer Service
     d32cd49d-1d6e-4184-afbb-9a69f5abd57b: Blogbeiträge # Blogbeiträge
     d1079ed8-358a-4669-9746-3a5625cafd71: Zusatzangebote # Zusatzangebote
+    d1270803-eb1d-401b-a9fd-06b5282bc552: square600 # square600
     ddd5b525-dd9d-481c-8147-e1e0c4e6351c: Startseite # Startseite
     de3031a4-f0db-4fe2-97d0-a9f8a09ef4b2: Prüfungen # Prüfungen
+    deec8964-03a8-4f19-94ac-4ee755da3bc1: 'Button Link' # Button Link
+    e60cec95-a25d-45ae-8c86-3d2a2cfbd160: Portraitbild # Portraitbild
+    e9532a84-539e-4ee5-ac1c-d225f77f6132: Button # Button
     f1f7efe9-cd78-442c-80ac-4a77c6344bf9: Schulprofil # Schulprofil
+    f513df2a-8170-43cb-9fdd-44642ba2093b: Prüfungen # Prüfungen
+    f730a4e0-09dc-4bc6-af82-e36ddf1c0c51: Abteilung # Abteilung
+    fe81b9d7-c6a4-4987-b95b-ae7c9517f22f: Downloads # Downloads
 plugins:
   ckeditor:
     edition: standard
@@ -124,6 +181,43 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+    settings:
+      assetSourceSettings:
+        1:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - '80'
+        2:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - '80'
+      enabled: true
+      imageHeight: 2048
+      imageQuality: 80
+      imageWidth: 2048
+      nonDestructiveCrop: false
+      nonDestructiveResize: false
+      skipLarger: true
   seo:
     edition: standard
     enabled: true

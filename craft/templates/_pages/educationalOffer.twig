@@ -1,0 +1,130 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set heroImage = entry.heroImage.eagerly().one() ?? null %}
+{% set partnerLogo = entry.partnerLogo.one() ?? null %}
+{% set imageGallery = entry.imageGallery %}
+
+{% set beratungImage1 = entry.portraitImage.one() %}
+{% set beratungImage2 = entry.portraitImage2.one() %}
+{% set beratungImage3 = entry.portraitImage3.one() %}
+
+{% block main %}
+
+<section>
+    {% embed "_components/_hero" with {
+        image: heroImage,
+        imageAlt: siteName,
+        height: ''
+    } %}
+    {% endembed %}
+</section>
+
+{# Abschlüsse #}
+<section class="my-194 mt-xl-248 mb-128 mb-xl-194">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			<div class="col-xl-8 mx-auto pe-xl-48 py-88 py-xl-0">
+				<h2>{{entry.headline ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline ?? null}}</p>
+				{{entry.intro ?? null}}
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{'aufnahmebedingungen'}}Modal">
+                    {{'Aufnahmebedingungen'}}
+                </button>
+			</div>
+		</div>		
+    </div>
+</section>
+
+{% embed "_components/_serviceModal" with {
+    item: {
+    title: 'Aufnahmebedingungen',
+    intro: entry.intro7
+    }    
+} %}  
+{% endembed %}
+
+{# Praxisklasse #}
+<section class="my-88 py-194 bg-light">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			<div class="col-xl-8 mx-auto pe-xl-48 py-88 py-xl-0">
+				<h2>{{entry.headline2 ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline2 ?? null}}</p>
+				{{entry.intro2 ?? null}}
+                {% if partnerLogo %}
+                    <img src="{{partnerLogo.getUrl}}" width="300" class="mt-32" alt="{{partnerLogo.title ?? null}}">
+                {% endif %}
+			</div>
+		</div>		
+    </div>
+</section>
+
+{# Gebundener Ganztag #}
+<section class="mt-128 mt-xl-194">
+    <div class="container pb-xl-88">
+		<div class="row d-flex align-items-center">
+			<div class="col-xl-8 mx-auto py-88 py-xl-0">
+				<h2>{{entry.headline3 ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline3 ?? null}}</p>
+				{{entry.intro3 ?? null}}
+                {% if imageGallery|length %}
+                    <div class="row row-cols-2 row-cols-xl-3 g-24 pt-32 text-center">
+                        {% for item in imageGallery %}
+                            <div class="col"><img src="{{item.getUrl}}" width="" height="300" class="w-100 object-fit__cover" alt="{{item.title ?? null}}"></div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+			</div>
+		</div>		
+    </div>
+    <div class="container-fluid mt-128 mt-xl-248 pb-88 bg-primary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3 g-24 px-xl-128">
+                <div class="col ">
+                    <div class="bg-light h-100 p-24 p-xl-32">
+                        <img src="{{beratungImage1.getUrl ?? null}}" height="300" class="w-100 object-fit__cover" alt="{{beratungImgae1.title ?? null}}">
+                        <div class="pt-24">
+                        {{entry.intro4}}
+                        <hr class="">
+                        <ul class="list-unstyled">
+                            <li><a href="tel:{{entry.companyInformation ?? null}}">{{entry.companyInformation ?? null}}</a></li>
+                            <li><a href="mailto:{{entry.companyInformation2 ?? null}}">{{entry.companyInformation2 ?? null}}</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="bg-light h-100 p-24 p-xl-32">
+                        <img src="{{beratungImage1.getUrl ?? null}}" height="300" class="w-100 object-fit__cover" alt="{{beratungImgae1.title ?? null}}">
+                        <div class="pt-24">
+                        {{entry.intro5}}
+                        <hr class="">
+                        <ul class="list-unstyled">
+                            <li><a href="tel:{{entry.companyInformation3 ?? null}}">{{entry.companyInformation3 ?? null}}</a></li>
+                            <li><a href="mailto:{{entry.companyInformation4 ?? null}}">{{entry.companyInformation4 ?? null}}</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="bg-light h-100 p-24 p-xl-32">
+                        <img src="{{beratungImage1.getUrl ?? null}}" height="300" class="w-100 object-fit__cover" alt="{{beratungImgae1.title ?? null}}">
+                        <div class="pt-24">
+                        {{entry.intro6}}
+                        <hr class="">
+                        <ul class="list-unstyled">
+                            <li><a href="tel:{{entry.companyInformation5 ?? null}}">{{entry.companyInformation5 ?? null}}</a></li>
+                            <li><a href="mailto:{{entry.companyInformation6 ?? null}}">{{entry.companyInformation6 ?? null}}</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+{% endblock %}

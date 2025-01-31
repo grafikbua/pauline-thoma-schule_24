@@ -1,0 +1,101 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set heroImage = entry.heroImage.eagerly().one() ?? null %}
+{% set aboutImage = entry.heroImage2.eagerly().one() ?? null %}
+{% set departments = craft.categories.group('department') %}
+{% set teamMember = craft.entries.section('teamMember') %}
+
+{% block main %}
+
+<section>
+    {% embed "_components/_hero" with {
+        image: heroImage,
+        imageAlt: siteName,
+        height: ''
+    } %}
+    {% endembed %}
+</section>
+
+<section class="my-194 my-xl-248">
+    <div class="container">
+		<div class="row d-flex align-items-center">
+			<div class="col-xl-6 pe-xl-48 py-88 py-xl-0">
+				<h2>{{entry.headline ?? null}}</h2>
+				<p class="fs-4 mb-24">{{entry.subline ?? null}}</p>
+				{{entry.intro ?? null}}
+			</div>
+			{% if aboutImage %}
+				<div class="col-xl-6 ps-xl-128 ">
+					<img src="{{aboutImage.getUrl('square600') ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
+				</div>
+			{% endif %}
+		</div>		
+    </div>
+</section>
+
+{% css %}
+    .nav-tabs .nav-link {
+        background-color: transparent!important;
+        color: white;
+        border: none
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: white!important;
+        border-bottom: 3px solid white
+    }
+{% endcss %}
+
+<section>
+	<div class="container-fluid bg-primary py-88">
+		<div class="container">
+            <div class="row">
+                <ul class="nav nav-tabs" id="departmentTab" role="tablist">
+                    {% for item in departments %}
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link {{loop.index == 1 ? 'active' : ''}}" id="{{item.title|kebab}}-tab" data-bs-toggle="tab" data-bs-target="#{{item.title|kebab}}" type="button" role="tab" aria-controls="{{item.title|kebab}}" aria-selected="true">{{item.title}}</button>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="tab-content" id="departmentTabContent">
+                    {% for item in departments %}
+                    {% set teamMember = craft.entries.section('teamMember').relatedTo(item) %}
+                    {% set groupeImage = item.portraitImage.eagerly().one() %}
+                        <div class="tab-pane fade {{loop.index == 1 ? 'show active' : ''}}" id="{{item.title|kebab}}" role="tabpanel" aria-labelledby="{{item.title|kebab}}-tab">
+                            <div class="row g-24 pt-32 justify-content-center" >
+                                {% if teamMember|length %}
+                                    {% embed "_components/_teamMember" with {
+                                        items: teamMember
+                                    } %}
+                                    {% endembed %}
+                                {% elseif groupeImage  %}
+                                    <div class="col-lg-8 col-xl-6">
+                                        <img src="{{groupeImage.getUrl}}" alt="{{item.title ~ ' Gruppenfoto'}}" style="max-height:500px" class="w-100 object-fit__cover">
+                                    </div>
+                                {% else %}
+                                    <div class="col text-white text-center py-48">- Keine Einträge vorhanden -</div>
+                                {% endif %}
+                                <div class="text-light border-top border-light pt-32 mt-32">{{ item.intro }}</div>
+                            </div>
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+            </div>
+		</div>
+	</div>
+</section>
+
+{% if entry.intro2 %}
+    <section class="my-194 my-xl-248">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mx-auto">
+                {{entry.intro2 ?? null}}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+{% endblock %}

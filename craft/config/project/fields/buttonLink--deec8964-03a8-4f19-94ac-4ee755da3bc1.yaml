@@ -1,0 +1,34 @@
+columnSuffix: null
+handle: buttonLink
+instructions: null
+name: 'Button Link'
+searchable: false
+settings:
+  maxLength: 255
+  showLabelField: false
+  showTargetField: true
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - '1'
+  types:
+    - entry
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

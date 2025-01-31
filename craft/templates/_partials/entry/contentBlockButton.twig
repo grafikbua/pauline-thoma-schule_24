@@ -1,0 +1,4 @@
+{% set buttonText = entry.title ?? null %}
+{% set buttonLink = entry.buttonLink ?? null %}
+
+<a href="{{buttonLink}}" class="btn btn-primary mt-24">{{buttonText}}</a>

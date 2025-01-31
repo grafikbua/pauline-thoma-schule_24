@@ -1,0 +1,34 @@
+columnSuffix: null
+handle: portraitImage
+instructions: null
+name: Portraitbild
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: true
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:b6409508-26c3-4289-b70a-a82ea6811841' # Bilder
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: teammitglieder/
+  restrictedLocationSource: 'volume:b6409508-26c3-4289-b70a-a82ea6811841' # Bilder
+  restrictedLocationSubpath: teammitglieder/
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

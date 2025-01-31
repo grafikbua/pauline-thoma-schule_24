@@ -6,46 +6,134 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-11T15:08:06+00:00'
-            disabled: false
+            dateAdded: '2025-01-23T06:30:19+00:00'
             elementCondition: null
-            id: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e85054a7-88d4-4b12-98d7-c1fb2f502f04
+            type: craft\fieldlayoutelements\CustomField
+            uid: b109f423-b430-4dce-ad60-a4d1956bf219
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 993de6c1-fb8f-4aab-a870-dea5ed7a4fe7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 364235f8-ef64-430f-b1fc-bc24c6b928d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 687878c5-423f-421a-a509-52436b74ff64
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: heroImage2
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eed26fdc-0667-4e9d-a1bd-1b9fc055a28d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: headline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c9b9953-d61f-47a4-a08a-3c3cd1fc1542
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: subline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b50be070-2a6f-4cad-ae27-93126acb8618
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T06:30:19+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3757c791-725e-4f0a-8074-071e5fbd4d06
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 687878c5-423f-421a-a509-52436b74ff64
+        uid: 8b764a3b-8ab9-487d-bbb8-5306ed2fd14a
         userCondition: null
 handle: home
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: Startseite
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

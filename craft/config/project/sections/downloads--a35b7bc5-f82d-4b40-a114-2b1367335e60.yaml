@@ -1,0 +1,30 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - fe81b9d7-c6a4-4987-b95b-ae7c9517f22f # Downloads
+handle: downloads
+maxAuthors: 1
+name: Downloads
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 2
+  uid: eaacc070-d2e3-4ffb-a86e-715f3a317cab
+type: structure

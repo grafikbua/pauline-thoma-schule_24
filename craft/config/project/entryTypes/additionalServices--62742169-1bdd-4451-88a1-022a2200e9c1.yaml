@@ -35,6 +35,38 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-01-28T15:38:06+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0540cedb-f3e4-4a5a-bfee-44b86a86b4ab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T15:38:06+00:00'
+            elementCondition: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 412114df-3cc1-4d0c-8822-46bc480a67d7
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: e155feb0-7311-4cbf-8ffd-672b1cfcb46b
         userCondition: null

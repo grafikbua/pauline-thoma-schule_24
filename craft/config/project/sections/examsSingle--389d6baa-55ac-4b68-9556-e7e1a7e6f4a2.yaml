@@ -1,0 +1,31 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - f513df2a-8170-43cb-9fdd-44642ba2093b # Prüfungen
+  - 52cd3cd3-101f-4210-ab7e-d1be2c3acaed
+handle: examsSingle
+maxAuthors: 1
+name: Prüfungen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  863842fc-9f19-4f63-97b0-ce8cdc0cf482: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 2
+  uid: 8e346ad3-1d55-4171-985b-ec9ab300a82f
+type: structure

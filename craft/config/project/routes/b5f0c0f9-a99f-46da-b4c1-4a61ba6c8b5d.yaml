@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 2
+template: _pages/_default.twig
+uriParts:
+  - datenschutz
+uriPattern: datenschutz

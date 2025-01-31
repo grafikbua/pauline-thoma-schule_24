@@ -1,14 +1,32 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <img src="{{companyLogo.getUrl ?? null}}" width="300" height="150" class="object-fit__cover" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
+        <div class="col-8 col-lg-5">
+            <a href="{{siteUrl}}">
+                <img id="js-logo" src="{{companyLogo.getUrl ?? null}}" width="500" height="130" class="object-fit__cover" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
+            </a>
         </div>
-        <div class="col-lg-8 d-flex justify-content-end align-items-center">
-            <ul class="list-unstyled">
-                {% for slug, item in nav.main %}
-                    <li class="d-inline mx-16"><a href="{{slug}}" class="text-decoration-none">{{item.title}}</a></li>
+        <div class="col-lg-7 justify-content-end align-items-center d-none d-xxl-flex">
+            <ul class="list-unstyled m-0 ">
+                {% for item in mainNav %}
+                {% set itemLink = item.navLink %}
+                    <li class="d-inline mx-8 nav-title">
+                        <a href="{{itemLink ?? null}}" class="text-decoration-none fs-6
+                        {% if craft.app.request.getSegment(1) == item.slug|kebab %}
+                            active-nav
+                        {% elseif craft.app.request.getSegment(1) == null %}
+                            {% if item.title == 'Startseite' %}
+                                active-nav
+                            {% endif %}
+                        {% endif %}">
+                        {{item.title}}</a>
+                    </li>
                 {% endfor %}
             </ul>
+        </div>
+        <div class="col-4 col-lg-7 d-xxl-none d-flex align-items-center justify-content-end">
+            {% embed "_components/_burgermenu" %}
+                
+            {% endembed %}
         </div>
     </div>
 </div>

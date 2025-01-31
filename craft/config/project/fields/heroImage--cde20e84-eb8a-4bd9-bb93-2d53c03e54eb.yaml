@@ -5,26 +5,26 @@ name: 'Hero Image'
 searchable: false
 settings:
   allowSelfRelations: false
-  allowSubfolders: false
+  allowSubfolders: true
   allowUploads: true
   allowedKinds:
     - image
     - video
   branchLimit: null
   defaultUploadLocationSource: 'volume:b6409508-26c3-4289-b70a-a82ea6811841' # Bilder
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSubpath: hero/
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
   previewMode: full
   restrictFiles: true
   restrictLocation: true
-  restrictedDefaultUploadSubpath: null
+  restrictedDefaultUploadSubpath: hero/
   restrictedLocationSource: 'volume:b6409508-26c3-4289-b70a-a82ea6811841' # Bilder
   restrictedLocationSubpath: hero/
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

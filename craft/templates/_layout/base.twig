@@ -31,12 +31,13 @@
 		
 		{% endif %}
 		{# sprig #}
+
 		<script src="/assets/js/htmx.min.js" defer></script>
 		<script src="/assets/js/index.es5.min.js"></script>
 		{# <script src="/assets/js/popper.min.js"></script>#}
 
 	</head>
-	<body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
+	<body id="body" class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} position-relative">
 
 
 		{# defined in _layout/site #}
@@ -46,6 +47,27 @@
 
 	</body>
 
+    <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger");
+  const overlay = document.querySelector(".overlay");
+  const mobileNav = document.querySelector(".mobile-nav");
+  const body = document.body;
+
+  function toggleMenu() {
+    burger.classList.toggle("clicked");
+    overlay.classList.toggle("show");
+    mobileNav.classList.toggle("show");
+    body.classList.toggle("overflow");
+  }
+
+  burger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+});
+
+    </script>
+
+
 	<script>
 		window.onscroll = function() {scrollFunction()};
 		var header = document.getElementById("js-header");
@@ -53,29 +75,18 @@
 
 		function scrollFunction() {
 		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-			logo.style.width = ("150px");
-			header.classList.remove("py-4", "shadow-sm");
-			header.classList.add("py-3", "shadow");
+			logo.style.height = ("80px");
+			header.classList.remove("shadow-sm");
+			header.classList.add("shadow");
 		} else {
-			logo.style.width = ("180px");
-			header.classList.add("py-4", "shadow-sm");
-			header.classList.remove("py-3", "shadow");
+			logo.style.height = ("130px");
+			header.classList.add("shadow-sm");
+			header.classList.remove("shadow");
 		}
 		};
 	</script>
 
 
-			{#<script src="{{ url('/assets/js/plugins/tiny-slider.js') }}"></script>#}
-			<!--[if (lt IE 9)]><script src="{{ url('/assets/js/plugins/tiny-slider.helper.ie8.js') }}"></script><![endif]-->
-
-			{# master js #}
-			{% if devMode %}
-				<script type="module" src="{{ url('/assets/js/index.module.js') }}"> </script>
-				<script nomodule src="{{ url('/assets/js/index.es5.js') }}" async></script>
-			{% else %}
-				<script type="module" src="{{ url('/assets/js/index.module.min.js') }}"></script>
-				<script nomodule src="{{ url('/assets/js/index.es5.min.js') }}" async></script>
-			{% endif %}
 
 			{# Safari Fix -> https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc #}
 			<script>

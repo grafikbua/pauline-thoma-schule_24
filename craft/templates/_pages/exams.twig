@@ -1,0 +1,51 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set exams = craft.entries.section('examsSingle') %}
+
+{% block main %}
+
+
+
+<section class="pt-248">
+    <div class="container pt-128">
+        <div class="row">
+            <div class="col-xl-8 mx-auto">
+                <h1 class="h2">{{entry.headline ?? null}}</h1>
+				<p class="fs-4 mb-24">{{entry.subline ?? null}}</p>
+				{{entry.intro ?? null}}
+            </div>
+        </div>
+        <div class="row pt-48 pb-128">
+            {% for exam in exams.level(1) %}
+                <div class="col-xl-8 mx-auto py-128">
+                    <h2 class="h3">{{exam.title}}</h2>
+                    {{exam.intro}}
+
+                    <div class="accordion accordion-flush mt-32" id="accordionFlush{{exam.title|kebab}}">
+                        {% for item in exams.descendantOf(exam).level(2) %}
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading{{item.id}}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{item.id}}" aria-expanded="false" aria-controls="flush-collapse{{item.id}}">
+                                    {{item.title}}
+                                </button>
+                                </h2>
+                                <div id="flush-collapse{{item.id}}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{item.id}}" data-bs-parent="#accordionFlush{{exam.title|kebab}}">
+                                <div class="accordion-body">{{item.intro ?? null}}</div>
+                                </div>
+                            </div>   
+                        {% endfor %}
+                    </div>
+
+                </div>
+                
+                {% if loop.index == 1 %}<hr>{% endif %}
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

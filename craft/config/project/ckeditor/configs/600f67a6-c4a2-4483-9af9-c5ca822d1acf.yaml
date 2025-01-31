@@ -5,10 +5,18 @@ headingLevels:
   - 4
   - 5
   - 6
+js: "return {\r\n  alignment: {\r\n    options: [\r\n      'left',\r\n      'right',\r\n    ],\r\n  },\r\n  link: {\r\n    decorators: {\r\n      isExternal: {\r\n        mode: 'manual',\r\n        label: 'Open in a new tab',\r\n        attributes: {\r\n          target: '_blank',\r\n        },\r\n      },\r\n    },\r\n  },\r\n  enterMode: 'BR', // Neue Zeilen durch <br> statt <p>\r\n  autoParagraph: false, // Verhindert automatische <p>-Generierung\r\n};"
 name: Simple
 toolbar:
   - heading
   - '|'
+  - fontColor
   - bold
   - italic
+  - underline
+  - alignment
+  - bulletedList
+  - todoList
+  - numberedList
   - link
+  - createEntry

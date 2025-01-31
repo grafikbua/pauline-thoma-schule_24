@@ -1,0 +1,60 @@
+{% set quickNavigation = craft.entries()
+    .section('quickNavigation')
+    .with(['navIcon'])
+%}
+<div id="burger-menu" class="d-block d-xl-none" onclick="noScroll()">
+  <span class="burger-line"></span>
+</div>
+
+<div id="menu" style="overflow:auto">
+   <div class="container" style="height:80vh">
+      <div class="row d-flex h-100">
+         <div class="col-12">
+            <ul class="px-0">
+              {% for item in mainNav %}
+              {% set itemLink = item.navLink %}
+                <div class="nav-button px-0">
+                  <a href="{{itemLink}}" class="mb-16 burgerNav-title
+                        {% if craft.app.request.getSegment(1) == item.slug|kebab %}
+                            active-nav
+                        {% elseif craft.app.request.getSegment(1) == null %}
+                            {% if item.title == 'Startseite' %}
+                                active-nav
+                            {% endif %}
+                        {% endif %}"
+                  title="{{item.title ?? siteName}}">{{item.title ?? null}}</a>
+                  
+                </div>
+              {% endfor %}
+            </ul>
+         </div>
+        <div class="col-12 mt-auto border-top border-light">
+            <ul class="px-0 pt-32">
+                {% for item in quickNavigation %}
+                    <div class="nav-button px-0">
+                        <a class="mb-16 burgerNav-title" href="{{item.navLink ?? null}}" {% if item.navLink.target %} target="{{ item.navLink.target }}"{% endif %} title="{{item.title ?? siteName}}">{{item.title ?? null}}</a>
+                    </div>
+                {% endfor %}
+            </ul>
+        </div>
+      </div>
+   </div>
+</div>
+
+{% js %}
+// burger menu
+var burgerMenu = document.getElementById('burger-menu');
+
+var overlay = document.getElementById('menu');
+
+burgerMenu.addEventListener('click', function() {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
+// noScroll on overlay
+function noScroll() {
+  var element = document.getElementById("body");
+  body.classList.toggle("overflow-hidden");
+};
+{% endjs %}

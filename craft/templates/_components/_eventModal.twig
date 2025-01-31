@@ -1,0 +1,15 @@
+<div class="modal fade" id="modal{{ item.id }}" tabindex="-1" aria-labelledby="modal{{ item.id }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-48 pt-16 pb-32">
+        <h4 class="modal-title" id="modal{{item.id}}">{{ item.title }}</h4>
+        <p class="h5 mt-16">{{ item.date|date("d.mm.yy")}}</p>
+        {{ item.intro }}
+      </div>
+      
+    </div>
+  </div>
+</div>

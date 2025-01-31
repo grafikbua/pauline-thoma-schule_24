@@ -1,0 +1,19 @@
+.active-nav {
+    border-bottom: 4px solid $primary;
+}
+.nav-title:hover {
+    border-bottom: 4px solid $primary;
+    cursor: pointer;
+    transition: .3s
+}
+
+.header {
+    position: fixed;
+    z-index:999;
+    background-color: white;
+    width: 100%;
+    transition: 0.5s
+ }
+ #js-logo {
+    transition: .5s
+ }

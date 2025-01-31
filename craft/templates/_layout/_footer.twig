@@ -1,0 +1,53 @@
+{% set footerNav = craft.entries.section('footerNav') %}
+
+{% css %}
+    .footer-logo {
+        filter: grayscale();
+    }
+{% endcss %}
+<div class="container-fluid bg-dark text-white pt-88">
+    <div class="container">
+        <div class="row g-32">
+            <div class="col-sm-6 col-lg-3">
+                <img src="{{companyLogoW.getUrl ?? null}}" width="400" class="footer-logo object-fit__cover w-100" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="fw-bold small text-white mb-0">Anschrift</p>
+                <ul class="list-unstyled mb-0">
+                    <li class="small">{{settings.companyInformation ?? null}}</li>
+                    <li class="small">{{settings.companyInformation2 ?? null}}</li>
+                    <li class="small">{{settings.companyInformation3 ?? null}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="fw-bold small text-white mb-0">Kontakt</p>
+                <ul class="list-unstyled mb-0">
+                    <li class="small">Tel.: <a href="tel:{{settings.companyInformation4 ?? null}}" class="text-white">{{settings.companyInformation4 ?? null}}</a></li>
+                    <li class="small">Fax: {{settings.companyInformation5 ?? null}}</li>
+                    <li class="small"><a href="mailto:{{settings.companyInformation6 ?? null}}" class="text-white">{{settings.companyInformation6 ?? null}}</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="fw-bold small text-white mb-0">Service</p>
+                <ul class="list-unstyled mb-0">
+                    {% for item in footerNav %}
+                        {% set itemLink = item.navLink %}
+                        <li class="small"><a href="{{itemLink.value}}" {% if itemLink.target %} target="{{ itemLink.target }}"{% endif %} class="text-white text-decoration-none">{{item.title ?? null}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container border-top border-light mt-32 py-16">
+        <div class="row">
+            <div class="col-md-6">
+                <small>© {{"now"|date('Y')}} | {{siteName}} <a href="https://www.grafikbuam.de" class="text-decoration-none text-white">by grafikbuam with ♥</a> </small>
+            </div>
+            <div class="col-md-6 text-end">
+                {% for slug, item in nav.footer %}
+                    <a href="{{slug}}" class="text-decoration-none small text-white">{{item.title}}</a> {{loop.index == 1 ? ' | ' : ''}}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

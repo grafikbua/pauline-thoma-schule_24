@@ -1,0 +1,72 @@
+{# index #}
+{% extends "_layout/site" %}
+{% set heroImage = entry.heroImage.eagerly().one() ?? null %}
+
+{% set newsEntries = craft.entries.section('news') %}
+{% set eventEntries = craft.entries.section('dates') %}
+
+{% block main %}
+
+<section>
+    {% embed "_components/_hero" with {
+        image: heroImage,
+        imageAlt: siteName,
+        height: ''
+    } %}
+    {% endembed %}
+</section>
+{% css %}
+	.card {
+		background-color: unset;
+		border:none
+	}
+	.card-footer {
+		background-color: unset!important
+	}
+{% endcss %}
+
+<section class="my-194 my-xl-248">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pb-16">
+				<h2 class="">Anstehende Termine</h2>
+			</div>
+		</div>
+		{% embed "_components/_eventSection" %}
+		{% endembed %}
+	</div>
+</section>
+
+<section>
+	<div class="container-fluid bg-primary py-88">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-white">Aktuelles</h2>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4 g-24 pt-32 ">
+			{% if newsEntries|length %}
+				{% for item in newsEntries %}
+					{% set newsImage = item.heroImage.eagerly().one() %}
+					<div class="col">
+						<div class="card">
+							<img src="{{newsImage.getUrl('square600') ?? null}}" height="300" class="card-img-top object-fit__cover" alt="{{item.title ?? null}}">
+							<div class="card-body">
+								<small class="text-white">{{item.postDate|date("d.m.y")}}</small>
+								<h4 class="text-white">{{item.title ?? null}}</h4>
+							</div>
+							<div class="card-footer border-0">
+								<a href="{{item.getUrl ?? null}}" class="btn btn-light stretched-link">mehr erfahren</a>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			{% else %}
+				<div class="col text-white text-center py-48">- Keine Beiträge vorhanden -</div>
+			{% endif %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

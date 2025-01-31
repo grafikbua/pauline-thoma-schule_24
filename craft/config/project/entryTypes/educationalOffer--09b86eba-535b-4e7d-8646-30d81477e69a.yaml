@@ -6,40 +6,452 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-11T15:14:20+00:00'
-            disabled: false
+            dateAdded: '2025-01-29T10:47:18+00:00'
             elementCondition: null
-            id: null
+            fieldUid: cde20e84-eb8a-4bd9-bb93-2d53c03e54eb # Hero Image
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8fa09a3f-008d-4c80-816e-932edbbbe413
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3a4edef-0f70-4e04-845f-d44d028e47b5
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: Hero
         uid: 07da19ad-b5c0-427e-ab24-78d447833f50
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d5a78d4-db15-4b39-ab6b-585cd2ec060f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36070586-3a66-40dc-b2fb-7c14fffbbbc9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af32dff3-23b0-4a37-b4d9-d036eff1ef25
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:48:36+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: ea10d944-8fe7-454c-83cd-ff2019f0e3e1
+            userCondition: null
+          -
+            dateAdded: '2025-01-29T10:48:36+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro7
+            includeInCards: false
+            instructions: null
+            label: Aufnahmebedingungen
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96a9143d-6626-4c98-ade8-f3ccd00c4051
+            userCondition: null
+            warning: null
+            width: 100
+        name: Abschlüsse
+        uid: d114f20d-a6b4-4dee-a829-7a1f91517f57
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: headline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 454e9fb0-9f87-449c-8801-855eb8b309ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: subline2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8a3861d-d2e1-48f4-91eb-7325d4b9aa2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8286c073-6377-4aa3-b751-d10b8c1c2dc0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 17f71c47-7d0f-4b3d-9ef6-d460fb27c222 # Logo/Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05756653-1cf1-4a39-8e4e-afddb24c83bc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Praxisklasse
+        uid: 73733323-8780-42d5-8c34-e34dce720692
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: ce51fadb-483c-4fc2-9160-7cf85ac48cad # Headline
+            handle: headline3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 845b7a5f-ee8e-401c-94c5-ea06fac7e932
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: b8e20bcc-ca90-457d-8a96-dc15a1ff10ee # Subline
+            handle: subline3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a2906e4-772f-4562-9810-ae4657413829
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8891ce2b-9747-4896-9a27-a883ab4cf77a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 60858e18-bc1b-4d81-ba23-8bd5ec4e4238 # Bildergalerie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c11cb3c8-c281-46d2-8a23-4a4531d4a3ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Gebundener Ganztag'
+        uid: f2a45bcf-8917-4c67-a1bc-9c202e9ee625
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro4
+            includeInCards: false
+            instructions: null
+            label: Beratung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e1582a3-08ed-423a-ac72-1936a55a3d40
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: e60cec95-a25d-45ae-8c86-3d2a2cfbd160 # Portraitbild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30e82b87-7002-462f-9b9d-085eda526df8
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Telefon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09c96dab-bfbc-41f0-8671-7b0055a2a0e2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation2
+            includeInCards: false
+            instructions: null
+            label: E-Mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a332245b-e0fb-4c54-814f-e2770413e482
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-29T15:28:48+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c824ee40-6a0a-4ed1-a435-cfe2f4d5687b
+            userCondition: null
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro5
+            includeInCards: false
+            instructions: null
+            label: 'Schulpsychologische Beratung'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a58cf302-d977-43dc-b997-e64058ad216c
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: e60cec95-a25d-45ae-8c86-3d2a2cfbd160 # Portraitbild
+            handle: portraitImage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02db498a-cee5-4f46-8e8d-e98c4024a0dd
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation3
+            includeInCards: false
+            instructions: null
+            label: Telefon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d1c4b1b-3aad-4a70-8394-2240f39064fa
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation4
+            includeInCards: false
+            instructions: null
+            label: E-Mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07f3fc3f-713f-44b2-b2e9-434a410cfcd2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-29T15:28:48+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 7329528c-ee40-45a1-8070-0d265cf2965c
+            userCondition: null
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: 7a09aaed-d19d-4ede-b382-6f23bce5a0ca # Intro
+            handle: intro6
+            includeInCards: false
+            instructions: null
+            label: Berufsberatung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef9e7e07-2773-41ac-be2b-39627c032726
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-01-29T10:47:18+00:00'
+            elementCondition: null
+            fieldUid: e60cec95-a25d-45ae-8c86-3d2a2cfbd160 # Portraitbild
+            handle: portraitImage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c3bfa25-24f6-4839-9226-e59aa1144f46
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation5
+            includeInCards: false
+            instructions: null
+            label: Telefon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67eef714-5858-454e-b479-2d08224f1c32
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-29T15:28:32+00:00'
+            elementCondition: null
+            fieldUid: 1e283a2a-0769-4bc0-bf96-9407f40abfcf # Unternehmensdaten
+            handle: companyInformation6
+            includeInCards: false
+            instructions: null
+            label: E-Mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d712a8d-5430-488d-9bbf-a5327b415d13
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Weitere Informationen'
+        uid: 085b1ad7-2009-4c3a-a29e-692983674555
+        userCondition: null
 handle: educationalOffer
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: Bildungsangebot
 showSlugField: true
