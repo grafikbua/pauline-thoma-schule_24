@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70c3f15f580cbafc019ae0529701922c",
+    "content-hash": "ff8825b21c5bf2a129f7f1baee0d9c82",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2705,53 +2705,6 @@
                 "simple-cache"
             ],
             "time": "2021-10-29T13:26:27+00:00"
-        },
-        {
-            "name": "putyourlightson/craft-snaptcha",
-            "version": "5.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-snaptcha/zipball/a677cc2197337b13dddb8506e46b7984f98ca96a",
-                "reference": "a677cc2197337b13dddb8506e46b7984f98ca96a",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Snaptcha",
-                "handle": "snaptcha",
-                "developer": "PutYourLightsOn",
-                "developerUrl": "https://putyourlightson.com/",
-                "documentationUrl": "https://putyourlightson.com/plugins/snaptcha",
-                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-snaptcha/develop/CHANGELOG.md",
-                "class": "putyourlightson\\snaptcha\\Snaptcha"
-            },
-            "autoload": {
-                "psr-4": {
-                    "putyourlightson\\snaptcha\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "description": "Automatically validates forms and prevents spam bots from submitting to your site.",
-            "homepage": "https://putyourlightson.com/plugins/snaptcha",
-            "keywords": [
-                "blocker",
-                "form",
-                "protection",
-                "security",
-                "spam"
-            ],
-            "support": {
-                "docs": "https://putyourlightson.com/plugins/snaptcha",
-                "source": "https://github.com/putyourlightson/craft-snaptcha",
-                "issues": "https://github.com/putyourlightson/craft-snaptcha/issues"
-            },
-            "time": "2024-04-08T15:55:38+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig",

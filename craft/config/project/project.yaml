@@ -1,4 +1,4 @@
-dateModified: 1738662565
+dateModified: 1738673399
 elementSources:
   craft\elements\Entry:
     -
@@ -222,11 +222,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.2.0
-  snaptcha:
-    edition: standard
-    enabled: true
-    licenseKey: 2XTW2YUYBFV3RKLD00NR2P9W
-    schemaVersion: 3.0.6
   sprig:
     edition: standard
     enabled: true
