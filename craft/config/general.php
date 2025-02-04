@@ -7,54 +7,62 @@
  *
  * @see \craft\config\GeneralConfig
  */
-
 use craft\helpers\App;
 
 $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
+putenv("PATH={$_SERVER["PATH"]}:/Users/Shared/DBngin/mysql/8.0.27/bin");
 
 return [
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 1,
+    // Global settings
+    '*' => [
+        // Default Week Start Day (0 = Sunday, 1 = Monday...)
+        'defaultWeekStartDay' => 1,
 
-    // Whether generated URLs should omit "index.php"
-    'omitScriptNameInUrls' => true,
-    'generateTransformsBeforePageLoad' => true,
+        // Whether generated URLs should omit "index.php"
+        'omitScriptNameInUrls' => true,
+        'generateTransformsBeforePageLoad' => true,
 
-    // Make sure URL's are fine
-    'convertFilenamesToAscii' => true,
-    'limitAutoSlugsToAscii' => true,
+        // Make sure URL's are fine
+        'convertFilenamesToAscii' => true,
+        'limitAutoSlugsToAscii' => true,
 
-    // The URI segment that tells Craft to load the control panel
-    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
+        // Control Panel trigger word
+        'cpTrigger' => 'admin',
 
-    // The secure key Craft will use for hashing and encrypting data
-    'securityKey' => App::env('SECURITY_KEY'),
+        // maxUploadFileSize
+        'maxUploadFileSize' => 161214400,
 
-    // Aliases to keep our Templates DRY
-    'aliases' => [
-        '@web' => App::env('SITE_URL'),
-        '@assets' => App::env('SITE_URL').App::env('ASSETS_PATH'),
+        // The secure key Craft will use for hashing and encrypting data
+        'securityKey' => App::env('SECURITY_KEY'),
 
-        // Volumes
-        '@images_path' => App::env('IMAGES_PATH'),
-        '@images_url' => App::env('SITE_URL').App::env('IMAGES_PATH'),
-        '@images_root' => App::env('DOCUMENT_ROOT').App::env('IMAGES_PATH'),
-        '@documents_path' => App::env('DOCUMENTS_PATH'),
-        '@documents_url' => App::env('SITE_URL').App::env('DOCUMENTS_PATH'),
-        '@documents_root' =>App::env('DOCUMENT_ROOT').App::env('DOCUMENTS_PATH'),
-        '@theme_path' => App::env('THEME_PATH'),
-        '@theme_url' => App::env('SITE_URL').App::env('THEME_PATH'),
-        '@theme_root' =>App::env('DOCUMENT_ROOT').App::env('THEME_PATH'),
+        // Whether to save the project config out to config/project.yaml
+        // (see https://docs.craftcms.com/v3/project-config.html)
+
+        // Maximal filesize for upload
+        'maxUploadFileSize' => 55554432,
+
+
     ],
 
-    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
-    'devMode' => $isDev,
+    // Dev environment settings
+    'dev' => [
+        // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+        'devMode' => true,
+        'cacheDuration' => false, // Cache im Dev Mode deaktivieren
 
-    // Whether administrative changes should be allowed
-    'allowAdminChanges' => $isDev,
 
-    // Whether crawlers should be allowed to index pages and following links
-    'disallowRobots' => !$isProd,
+    ],
 
+    // Staging environment settings
+    'staging' => [
+        // Set this to `false` to prevent administrative changes from being made on staging
+        'allowAdminChanges' => false,
+    ],
+
+    // Production environment settings
+    'production' => [
+        // Set this to `false` to prevent administrative changes from being made on production
+        'allowAdminChanges' => false,
+    ],
 ];

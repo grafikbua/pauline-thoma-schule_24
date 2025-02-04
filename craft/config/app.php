@@ -23,7 +23,7 @@ return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
         //'my-module' => \modules\Module::class,
-       // 'mamp-helper' => \modules\MampHelper::class,
+        //'mamp-helper' => \modules\MampHelper::class,
      ],
      //'bootstrap' => ['mamp-helper'],
     //'bootstrap' => ['my-module'],
