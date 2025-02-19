@@ -7,16 +7,18 @@ settings:
   availableTransforms: ''
   availableVolumes: '*'
   ckeConfig: 600f67a6-c4a2-4483-9af9-c5ca822d1acf # Simple
-  createButtonLabel: Button
+  createButtonLabel: Pagebuilder
   defaultTransform: null
-  enableSourceEditingForNonAdmins: false
   entryTypes:
     - e9532a84-539e-4ee5-ac1c-d225f77f6132 # Button
+    - 98ec5689-7324-4f1a-a3d7-de7467499a86 # Bilder
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

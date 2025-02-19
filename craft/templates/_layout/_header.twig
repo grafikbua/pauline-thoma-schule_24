@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-8 col-lg-5">
+        <div class="col-8 col-lg-5 col-xxl-3">
             <a href="{{siteUrl}}">
-                <img id="js-logo" src="{{companyLogo.getUrl ?? null}}" width="500" height="130" class="object-fit__cover" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
+                <img id="js-logo" src="{{companyLogo.getUrl ?? null}}" width="500" height="130" class="w-100 object-fit__cover" alt="{{siteName}}{{ companyLogo.title ? ' - ' ~ companyLogo.title : null}}">
             </a>
         </div>
-        <div class="col-lg-7 justify-content-end align-items-center d-none d-xxl-flex">
+        <div class="col-4 col-lg-7 col-xxl-9 justify-content-end align-items-center d-none d-xxl-flex">
             <ul class="list-unstyled m-0 ">
                 {% for item in mainNav %}
                 {% set itemLink = item.navLink %}

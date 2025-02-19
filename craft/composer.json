@@ -1,11 +1,11 @@
 {
     "require": {
-        "craftcms/ckeditor": "4.5.0",
-        "craftcms/cms": "5.6.4",
+        "craftcms/ckeditor": "4.6.0",
+        "craftcms/cms": "5.6.7",
         "craftcms/contact-form": "3.1.0",
         "ether/seo": "5.0.0",
         "putyourlightson/craft-sprig": "3.5.2",
-        "verbb/image-resizer": "4.0.1",
+        "verbb/image-resizer": "4.0.2",
         "verbb/knock-knock": "3.0.1",
         "vlucas/phpdotenv": "^5.4.0"
     },
