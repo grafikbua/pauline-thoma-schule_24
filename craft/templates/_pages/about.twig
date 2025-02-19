@@ -69,7 +69,7 @@
                                     {% endembed %}
                                 {% elseif groupeImage  %}
                                     <div class="col-lg-8 col-xl-6">
-                                        <img src="{{groupeImage.getUrl}}" alt="{{item.title ~ ' Gruppenfoto'}}" style="max-height:500px" class="w-100 object-fit__cover">
+                                        <img src="{{groupeImage.getUrl('galleryImage')}}" alt="{{item.title ~ ' Gruppenfoto'}}" style="max-height:500px" class="w-100 object-fit__cover">
                                     </div>
                                 {% else %}
                                     <div class="col text-white text-center py-48">- Keine Einträge vorhanden -</div>
