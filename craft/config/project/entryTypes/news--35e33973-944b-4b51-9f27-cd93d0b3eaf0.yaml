@@ -35,17 +35,26 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-02-24T10:04:43+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Auf dieser Seite werden Termine und Blogbeiträge angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: ba67ddc9-8c17-4c8f-b135-cc20d14755ef
+            userCondition: null
         name: Content
         uid: 337a91cf-ab79-440a-aa54-e90daf67064a
         userCondition: null
 handle: news
 hasTitleField: true
-icon: ''
+icon: null
 name: Aktuelles
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 35e33973-944b-4b51-9f27-cd93d0b3eaf0 # Aktuelles
+  -
+    uid: 35e33973-944b-4b51-9f27-cd93d0b3eaf0 # Aktuelles
 handle: newsIndex
 maxAuthors: 1
 name: Aktuelles
