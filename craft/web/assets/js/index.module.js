@@ -35,23 +35,40 @@ document.addEventListener("DOMContentLoaded", function () {
   burger.addEventListener("click", toggleMenu);
   overlay.addEventListener("click", toggleMenu);
 });
-window.onscroll = function () {
-  scrollFunction();
-};
-var header = document.getElementById("js-header");
-var logo = document.getElementById("js-logo");
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    logo.style.height = "80px";
-    header.classList.remove("shadow-sm");
-    header.classList.add("shadow");
-  } else {
-    logo.style.height = "130px";
-    header.classList.add("shadow-sm");
-    header.classList.remove("shadow");
+document.addEventListener("DOMContentLoaded", function () {
+  var burger = document.querySelector(".burger");
+  var overlay = document.querySelector(".overlay");
+  var mobileNav = document.querySelector(".mobile-nav");
+  var body = document.body;
+  function toggleMenu() {
+    burger.classList.toggle("clicked");
+    overlay.classList.toggle("show");
+    mobileNav.classList.toggle("show");
+    body.classList.toggle("overflow");
   }
-}
-;
+  burger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.getElementById("js-header");
+  var logo = document.getElementById("js-logo");
+  function scrollFunction() {
+    if (!header || !logo) return; // Sicherstellen, dass die Elemente existieren
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      logo.style.height = "80px";
+      header.classList.remove("shadow-sm");
+      header.classList.add("shadow");
+    } else {
+      logo.style.height = "130px";
+      header.classList.add("shadow-sm");
+      header.classList.remove("shadow");
+    }
+  }
+
+  // Füge den Scroll-Listener erst hinzu, nachdem die Funktion definiert wurde
+  window.onscroll = scrollFunction;
+});
 (function () {
   var check = document.createElement('script');
   if (!('noModule' in check) && 'onbeforeload' in check) {
