@@ -2,6 +2,7 @@
 {% extends "_layout/site" %}
 {% set heroImage = entry.heroImage.eagerly().one() ?? null %}
 {% set aboutImage = entry.heroImage2.eagerly().one() ?? null %}
+{% set socialImage = entry.heroImage3.eagerly().one() ?? null %}
 {% set additionalServices = craft.entries.section('additionalServices') %}
 
 {% block main %}
@@ -35,9 +36,9 @@
 <section class="py-88 py-xl-128 bg-light">
     <div class="container">
 		<div class="row d-flex align-items-center">
-			{% if aboutImage %}
+			{% if socialImage %}
 				<div class="col-xl-6 pe-xl-48 order-2 order-xl-1">
-					<img src="{{aboutImage.getUrl('square600') ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
+					<img src="{{socialImage.getUrl('square600') ?? null}}" width="600" class="w-100" alt="{{siteName ~ ' - ueber uns'}}">
 				</div>
 			{% endif %} 
 			<div class="col-xl-6 ps-xl-128 py-88 py-xl-0 order-1 order-xl-2">

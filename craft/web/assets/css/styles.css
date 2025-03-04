@@ -24066,7 +24066,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hyphens {
+.hyphens-auto {
   hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
