@@ -2,50 +2,29 @@
 // import './polyfills/custom-event';
 
 // Node Modules
-import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 // import Lazyload from 'vanilla-lazyload';
 // import Rellax from 'rellax';
 // import { tns } from 'tiny-slider';
 // import "../../node_modules/fslightbox/index.js";
 // import "../../node_modules/masonry-layout/masonry.js";
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const burger = document.querySelector(".burger");
+//     const overlay = document.querySelector(".overlay");
+//     const mobileNav = document.querySelector(".mobile-nav");
+//     const body = document.body;
 
-document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.querySelector(".burger");
-    const overlay = document.querySelector(".overlay");
-    const mobileNav = document.querySelector(".mobile-nav");
-    const body = document.body;
+//     function toggleMenu() {
+//         burger.classList.toggle("clicked");
+//         overlay.classList.toggle("show");
+//         mobileNav.classList.toggle("show");
+//         body.classList.toggle("overflow");
+//     }
 
-    function toggleMenu() {
-    burger.classList.toggle("clicked");
-    overlay.classList.toggle("show");
-    mobileNav.classList.toggle("show");
-    body.classList.toggle("overflow");
-    }
-
-    burger.addEventListener("click", toggleMenu);
-    overlay.addEventListener("click", toggleMenu);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.querySelector(".burger");
-    const overlay = document.querySelector(".overlay");
-    const mobileNav = document.querySelector(".mobile-nav");
-    const body = document.body;
-
-    function toggleMenu() {
-    burger.classList.toggle("clicked");
-    overlay.classList.toggle("show");
-    mobileNav.classList.toggle("show");
-    body.classList.toggle("overflow");
-    }
-
-    burger.addEventListener("click", toggleMenu);
-    overlay.addEventListener("click", toggleMenu);
-});
-    
-    
-    
+//     burger.addEventListener("click", toggleMenu);
+//     overlay.addEventListener("click", toggleMenu);
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.getElementById("js-header");
@@ -70,30 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-    
-    
-    
 
-(function () {
-var check = document.createElement('script');
-if (!('noModule' in check) && 'onbeforeload' in check) {
-var support = false;
-document.addEventListener('beforeload', function (e) {
-if (e.target === check) {
-support = true;
-} else if (! e.target.hasAttribute('nomodule') || ! support) {
-return;
-}
-e.preventDefault();
-}, true);
 
-check.type = 'module';
-check.src = '.';
-document.head.appendChild(check);
-check.remove();
-}
-}());
 
-    
-
-    

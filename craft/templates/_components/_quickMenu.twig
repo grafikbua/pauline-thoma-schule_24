@@ -30,7 +30,7 @@ function quickmenu() {
    var rotateDiv = document.querySelector(".rotate");
 
    if (menu) {
-      menu.classList.toggle("show");
+      menu.classList.toggle("showQuickMenu");
       // Toggle the rotation class on the div
       if (rotateDiv) {
          rotateDiv.classList.toggle("rotated");
@@ -46,8 +46,8 @@ window.onclick = function(event) {
 
       for (var i = 0; i < dropdowns.length; i++) {
          var openDropdown = dropdowns[i];
-         if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+         if (openDropdown.classList.contains('showQuickMenu')) {
+            openDropdown.classList.remove('showQuickMenu');
             // Reset rotation on the div
             if (rotateDiv && rotateDiv.classList.contains('rotated')) {
                rotateDiv.classList.remove('rotated');
