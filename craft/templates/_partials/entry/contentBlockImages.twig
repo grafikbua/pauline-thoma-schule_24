@@ -14,9 +14,7 @@
         <div class="carousel-inner">
             {% for image in galleryImages %}
                 <div class="carousel-item {{loop.index == 1 ? 'active' : ''}} position-relative">
-                    <a href="{{image.getUrl}}" download="{{image.title}}.{{image.getExtension}}" title="Bild speichern" class="pt-12 rounded-circle position-absolute bottom-0 start-50 translate-middle index-10 btn btn-light mb-0 mb-lg-32">
-                        ⬇
-                    </a>
+
                     <img src="{{image.getUrl('galleryImage') ?? null}}" class="object-fit__cover d-block w-100 h-100" loading="lazy" height="600" alt="{{image.title ?? null}}">
                 </div>
             {% endfor %}
