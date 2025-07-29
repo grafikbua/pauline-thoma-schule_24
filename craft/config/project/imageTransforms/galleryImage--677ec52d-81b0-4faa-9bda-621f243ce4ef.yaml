@@ -1,11 +1,11 @@
 fill: null
 format: webp
 handle: galleryImage
-height: 1200
+height: 600
 interlace: none
 mode: crop
 name: 'gallery image'
 position: center-center
 quality: 90
 upscale: true
-width: 2048
+width: 1024
