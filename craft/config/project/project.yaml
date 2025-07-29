@@ -1,4 +1,4 @@
-dateModified: 1740391487
+dateModified: 1753776249
 elementSources:
   craft\elements\Entry:
     -
@@ -232,7 +232,7 @@ system:
   edition: solo
   live: true
   name: pauline-thoma-schule
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
