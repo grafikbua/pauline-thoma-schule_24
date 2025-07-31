@@ -13,11 +13,22 @@
         </div>
         <div class="carousel-inner" style="height: 624px;">
             {% for image in galleryImages %}
-                <div class="carousel-item {{loop.index == 1 ? 'active' : ''}} position-relative">
+                <div class="carousel-item {{loop.index == 1 ? 'active' : ''}} position-relative h-100">
                     <a href="{{image.getUrl}}" download="{{image.title}}.{{image.getExtension}}" title="Bild speichern" class="pt-12 rounded-circle position-absolute bottom-0 start-50 translate-middle index-10 btn btn-light mb-0 mb-lg-32">
                         ⬇
                     </a>
-                    <img src="{{image.getUrl('galleryImage_1024') ?? null}}" class="object-fit__cover d-block mx-auto mw-100" loading="lazy" height="624" alt="{{image.title ?? null}}">
+                    <img
+  src="{{ image.getUrl('galleryImage_1024') }}"
+  srcset="
+    {{ image.getUrl('galleryImage_550') }} 550w,
+    {{ image.getUrl('galleryImage_1024') }} 1024w
+  "
+  sizes="(max-width: 600px) 600px, 1024px"
+  class="object-fit__cover d-block mx-auto h-100"
+  style="width: auto; max-width: 100%;"
+  loading="lazy"
+  alt="{{ image.title ?? null }}"
+>
                 </div>
             {% endfor %}
         </div>

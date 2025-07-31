@@ -1,4 +1,4 @@
-dateModified: 1753948692
+dateModified: 1753951110
 elementSources:
   craft\elements\Entry:
     -
@@ -134,6 +134,7 @@ meta:
     50d8fb77-de09-404a-a04b-2d7db3d2c145: Schulprofil # Schulprofil
     53ad77ed-3b47-4bf9-84cd-1ee68749c60d: Service # Service
     98ec5689-7324-4f1a-a3d7-de7467499a86: Bilder # Bilder
+    197e6d2c-4d98-4d25-865e-7b514bfac75d: 'Gallery Image Mobile' # Gallery Image Mobile
     389d6baa-55ac-4b68-9556-e7e1a7e6f4a2: Prüfungen # Prüfungen
     600f67a6-c4a2-4483-9af9-c5ca822d1acf: Simple # Simple
     677ec52d-81b0-4faa-9bda-621f243ce4ef: 'gallery image' # gallery image

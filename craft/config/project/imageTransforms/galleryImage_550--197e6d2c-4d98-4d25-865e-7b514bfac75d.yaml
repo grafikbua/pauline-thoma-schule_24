@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: galleryImage_550
+height: 624
+interlace: none
+mode: crop
+name: 'Gallery Image Mobile'
+position: center-center
+quality: 90
+upscale: true
+width: 550
