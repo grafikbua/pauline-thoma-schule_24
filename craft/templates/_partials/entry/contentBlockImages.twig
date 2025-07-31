@@ -44,6 +44,6 @@
     </div>
 {% else %}
     {% for image in galleryImages %}
-            <img src="{{image.getUrl('galleryImage') ?? null}}" class="object-fit__cover d-block w-100 my-24" height="500" alt="{{image.title ?? null}}">
+            <img src="{{image.getUrl('galleryImage_1024') ?? null}}" class="object-fit__cover d-block w-100 my-24" height="500" alt="{{image.title ?? null}}">
     {% endfor %}
 {% endif %}
